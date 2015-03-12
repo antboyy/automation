@@ -52,6 +52,10 @@ public class Given {
             driverIE.close();
             driverIE.quit();
         }
+		
+		    public void test() {
+            
+        }
 
 
 }
