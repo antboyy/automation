@@ -16,9 +16,9 @@ public class WaitHelpers
 {
 
     private static final boolean SHOW_PAGE_SOURCE_IN_ERRORS = false;
-    private static final long CHECK_OUT_WAIT_TIME = 25;
-    private static final int WAIT_TIME_IN_SEC = 25;
-    private static final int WAIT_TIME_FOR_ANIMATION = 25;
+    private static final long CHECK_OUT_WAIT_TIME = 30;
+    private static final int WAIT_TIME_IN_SEC = 30;
+    private static final int WAIT_TIME_FOR_ANIMATION = 30;
 
     public static class ErrorElementFoundException extends Exception
     {
@@ -358,10 +358,10 @@ public class WaitHelpers
     }
 
     static public void waitForElementToDisplayOnScreen(WebDriver driver, By by){
-        WebElement myDynamicElement = (new WebDriverWait(driver, 25))
+        WebElement myDynamicElement = (new WebDriverWait(driver, 30))
                 .until(ExpectedConditions.presenceOfElementLocated(by));
 
-        WebDriverWait wait = new WebDriverWait(driver, 25);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
 
 

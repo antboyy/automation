@@ -1,0 +1,6 @@
+#surefire
+#Tue Mar 24 15:50:59 GMT 2015
+user.dir=C\:\\tests\\tests
+webdriver.chrome.driver=C\:\\Development\\chromedriver.exe
+localRepository=C\:\\Users\\alewi143\\.m2\\repository
+basedir=C\:\\tests\\tests

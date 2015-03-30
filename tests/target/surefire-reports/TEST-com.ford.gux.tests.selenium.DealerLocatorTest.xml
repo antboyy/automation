@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="244.728" errors="1" skipped="4" tests="19" name="com.ford.gux.tests.selenium.DealerLocatorTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
+    <property name="java.vm.version" value="23.25-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\tests\tests"/>
+    <property name="java.runtime.version" value="1.7.0_25-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\tests\tests"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\tests\tests\target\surefire\surefirebooter7817497154310630470.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\ALEWI143\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_25\bin;C:\Users\alewi143\maven\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\7-Zip;C:\Program Files (x86)\AccuRev\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\; C:\Program Files\Java\jdk1.7.0_67\bin;C:\Users\ALEWI143\Documents\Apache Software Foundation\apache-maven-3.2.3\bin;C:\Program Files (x86)\WebEx\Productivity Tools;C:\Users\ALEWI143\AppData\Local\Google\Chrome\Application;."/>
+    <property name="surefire.test.class.path" value="C:\tests\tests\target\test-classes;C:\tests\tests\target\classes;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-java\2.40.0\selenium-java-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.40.0\selenium-chrome-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.40.0\selenium-remote-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\alewi143\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\alewi143\.m2\repository\com\google\guava\guava\15.0\guava-15.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.40.0\selenium-htmlunit-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar;C:\Users\alewi143\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\alewi143\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\alewi143\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\alewi143\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar;C:\Users\alewi143\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar;C:\Users\alewi143\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\alewi143\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar;C:\Users\alewi143\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\alewi143\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.40.0\selenium-firefox-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\alewi143\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.40.0\selenium-ie-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\alewi143\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.40.0\selenium-safari-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-support\2.40.0\selenium-support-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-api\2.40.0\selenium-api-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\alewi143\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\alewi143\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\alewi143\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\alewi143\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ALEWI143"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="alewi143"/>
+    <property name="java.class.path" value="C:\tests\tests\target\test-classes;C:\tests\tests\target\classes;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-java\2.40.0\selenium-java-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.40.0\selenium-chrome-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.40.0\selenium-remote-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\alewi143\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\alewi143\.m2\repository\com\google\guava\guava\15.0\guava-15.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.40.0\selenium-htmlunit-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar;C:\Users\alewi143\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\alewi143\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\alewi143\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\alewi143\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar;C:\Users\alewi143\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar;C:\Users\alewi143\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\alewi143\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar;C:\Users\alewi143\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar;C:\Users\alewi143\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\alewi143\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar;C:\Users\alewi143\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.40.0\selenium-firefox-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\alewi143\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.40.0\selenium-ie-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\alewi143\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.40.0\selenium-safari-driver-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-support\2.40.0\selenium-support-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\seleniumhq\selenium\selenium-api\2.40.0\selenium-api-2.40.0.jar;C:\Users\alewi143\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\alewi143\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\alewi143\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\alewi143\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\alewi143\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_25\jre"/>
+    <property name="sun.java.command" value="C:\tests\tests\target\surefire\surefirebooter7817497154310630470.jar C:\tests\tests\target\surefire\surefire6423315723178065361tmp C:\tests\tests\target\surefire\surefire7019762364248659979tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_25\jre\classes"/>
+    <property name="webdriver.chrome.driver" value="C:\tests\tests/Resources/ChromeDriver/chromedriver.exe"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="C:\Users\alewi143\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="8.969" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="dealerAutocompleteTest"/>
+  <testcase time="21.48" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="fordStorePresearchFilter"/>
+  <testcase time="31.194" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="filterServicesResultsTest"/>
+  <testcase time="4.815" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="dealerLocatorResponsiveComponentsTest"/>
+  <testcase time="4.816" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="unsupportedBrowserTest">
+    <skipped/>
+  </testcase>
+  <testcase time="5.542" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="searchForDealer"/>
+  <testcase time="25.093" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="filterDistanceResultsTest"/>
+  <testcase time="5.43" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="searchDealerThroughLocation"/>
+  <testcase time="6.113" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="showMoreDealersRevealsMore"/>
+  <testcase time="3.674" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="ukIslandsSearches"/>
+  <testcase time="60.815" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="currentLocationSearch"/>
+  <testcase time="60.815" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="tabThroughAutocomplete">
+    <skipped/>
+  </testcase>
+  <testcase time="6.682" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="locationDisambiguationTest"/>
+  <testcase time="6.682" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="hyphenDoesNotBreakServices">
+    <skipped/>
+  </testcase>
+  <testcase time="6.682" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="mustangPreFilterTest">
+    <skipped/>
+  </testcase>
+  <testcase time="35.644" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="numberOfMapPinsAreCorrect">
+    <error message="Timed out after 30 seconds waiting for presence of element located by: By.xpath: //*[@id=&quot;map&quot;]/div/div[8]/div[3]/div[4]
+Build info: version: &apos;2.40.0&apos;, revision: &apos;4c5c0568b004f67810ee41c459549aa4b09c651e&apos;, time: &apos;2014-02-19 11:13:01&apos;
+System info: host: &apos;WGC1W79VVT5Y1&apos;, ip: &apos;19.151.154.134&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.xpath: //*[@id=&quot;map&quot;]/div/div[8]/div[3]/div[4]
+Build info: version: &apos;2.40.0&apos;, revision: &apos;4c5c0568b004f67810ee41c459549aa4b09c651e&apos;, time: &apos;2014-02-19 11:13:01&apos;
+System info: host: &apos;WGC1W79VVT5Y1&apos;, ip: &apos;19.151.154.134&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.ford.gux.tests.selenium.WaitHelpers.waitForElementToDisplayOnScreen(WaitHelpers.java:361)
+	at com.ford.gux.tests.selenium.DealerLocatorPage.waitForMapPinsToRender(DealerLocatorPage.java:374)
+	at com.ford.gux.tests.selenium.DealerLocatorTest.numberOfMapPinsAreCorrect(DealerLocatorTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.115)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.40.0&apos;, revision: &apos;4c5c0568b004f67810ee41c459549aa4b09c651e&apos;, time: &apos;2014-02-19 11:13:01&apos;
+System info: host: &apos;WGC1W79VVT5Y1&apos;, ip: &apos;19.151.154.134&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 86c593cb0dbae54ce820a007657bcd31
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\ALEWI143\AppData\Local\Temp\scoped_dir6024_9605}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.115, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:423)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:103)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 34 more
+</error>
+  </testcase>
+  <testcase time="3.707" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="invalidLocationSearch"/>
+  <testcase time="15.8" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="pinExitButtonsPresentOnMapPopups"/>
+  <testcase time="5.494" classname="com.ford.gux.tests.selenium.DealerLocatorTest" name="locationAutocompleteTest"/>
+</testsuite>

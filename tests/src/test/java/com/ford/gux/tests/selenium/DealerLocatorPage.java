@@ -1,14 +1,10 @@
 package com.ford.gux.tests.selenium;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionNotFoundException;
+import org.openqa.selenium.interactions.touch.TouchActions;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -37,6 +33,16 @@ public class DealerLocatorPage {
     private By byLogo = By.id("logo");
     private By byErrorMessage = By.xpath("//p[@data-ng-bind='dealerlocator.errorMessage']");
     private By byMustangFilter = By.xpath("//label[@for='premium-filter']");
+    private By byDealerNameOnDetailsView = By.xpath("//h3[@class='dl-dealer-name dl-dealer-name-details ng-binding']");
+    private By byDealerDetailsPostCode = By.xpath("//p[@class='dl-address-line ng-binding'][4]");
+    private By byMapPin = By.xpath("//div[@class='map-marker']");
+    private By byMap = By.xpath("//*[@id=\"map\"]/div/div[1]/div[2]");
+    private By byCurrentLocationButton = By.xpath("//button[@data-ng-click='useCurrentLocation($event)']");
+    private By byPinExitButton = By.xpath("//a[@class='close-info-window']");
+    private By byResultsHeader = By.cssSelector("div.dl-results-header");
+    private By byHighlightedMapPin = By.xpath("//img[@src='/cs/globalux/img/map-marker-active.png']/..");
+    private By byMapZoomOut = By.xpath("//*[@id=\"map\"]/div/div[8]/div[3]/div[4]");
+    private By bySpinnerGIF = By.cssSelector("img.search-loading");
 
     public DealerLocatorPage(WebDriver driver) {
         this.driver = driver;
@@ -59,8 +65,10 @@ public class DealerLocatorPage {
 
     public String getResultText() {
         try {
-            return driver.findElement(By.xpath("//div[@class='row result ng-scope']")).getText();
+            return driver.findElement(byResultsList).getText();
         } catch (NoSuchElementException e) {
+           System.out.println(e.toString());
+
             return e.toString();
         }
     }
@@ -83,13 +91,22 @@ public class DealerLocatorPage {
 
     }
 
+    public void enterIntoInputBoxWithoutSubmitting(String inputText) throws InterruptedException {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, By.cssSelector("div.columns.premium-filters"));
+        driver.findElement(bySearchBox).sendKeys(inputText);
+        Thread.sleep(500);
+        driver.findElement(bySearchBox).sendKeys(Keys.ARROW_RIGHT);
+
+        Thread.sleep(1000);
+}
+
 
     public void onAMobileView() {
         driver.manage().window().setSize(new Dimension(320, 568));
     }
 
     public void onADesktopView() {
-        driver.manage().window().setSize(new Dimension(1500, 1000));
+        driver.manage().window().setSize(new Dimension(1600, 1100));
     }
 
     public static void tearDown() {
@@ -114,19 +131,28 @@ public class DealerLocatorPage {
         return numberOfMobileElementsVisible;
     }
 
-    public void waitForResultsToBeDisplayed() {
-
-
-        WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
-
+    public void waitForResultsToBeDisplayed() throws InterruptedException {
+        try {
+            WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
+        }catch (TimeoutException e){
+//            System.out.println("TimeoutException");
+            Thread.sleep(1500);
+        }
     }
 
-    public String getNameOfFirstDealer() {
+    public String getNameOfFirstDealerInResultList() {
         return driver.findElement(byFirstDealerName).getText();
     }
 
-    public String getPostcodeofFirstDealer() {
+    public String getNameOfDealerInDetailsView() {
+        return driver.findElement(byDealerNameOnDetailsView).getText();
+    }
+
+    public String getPostcodeofFirstDealerInResultsList() {
         return driver.findElement(byFirstDealerPostcode).getText();
+    }
+    public String getPostcodeofDealerInDetailsView() {
+        return driver.findElement(byDealerDetailsPostCode).getText();
     }
 
     public void waitForpageToLoad() {
@@ -144,6 +170,7 @@ public class DealerLocatorPage {
         if (driver.findElement(byAutocompleteList).getText().contains(locationName)) {
             String xpath = "//a[contains(text(),\"" + locationName + "\")]";
             driver.findElement(By.xpath(xpath)).click();
+
             WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
         }
 
@@ -171,7 +198,7 @@ public class DealerLocatorPage {
     }
 
     public void clickFilterSubmit() throws InterruptedException {
-        Thread.sleep(1500);
+        Thread.sleep(2000);
         driver.findElement(byFilterSubmit).click();
 //        WaitHelpers.waitForElementToBeHidden(byFilterSubmit,driver);
 
@@ -319,7 +346,204 @@ public class DealerLocatorPage {
     }
 
     public void selectMustangFilter() {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byMustangFilter);
         driver.findElement(byMustangFilter).click();
 
     }
+
+    public void touchAutocompleteOption(String s) {}
+
+    private void touch(By byCSSSelctor){
+
+            JavascriptExecutor executor = (JavascriptExecutor) driver;
+            executor.executeScript("");
+
+        }
+
+    public int getNumberOfMapPins() {
+        return driver.findElements(byMapPin).size();
+
+    }
+
+    public void clearInputBox() {
+        driver.findElement(bySearchBox).clear();
+
+    }
+
+    public void waitForMapPinsToRender() throws InterruptedException {
+        Thread.sleep(2500);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byMapPin);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byMapZoomOut);
+        driver.findElement(byMapZoomOut).click();
+        Thread.sleep(1000);
+        driver.findElement(byMapZoomOut).click();
+        Thread.sleep(1000);
+    }
+
+    public void swipeMap() {
+
+        WebElement pages = driver.findElement(byMap);
+        TouchActions flick = new TouchActions(driver).flick(pages, 500, 50, 50);
+        flick.perform();
+
+    }
+
+    public void swipe() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap< String, Double > swipeObject = new HashMap < String, Double > ();
+        swipeObject.put("startX", 500.95);
+        swipeObject.put("startY", 200.5);
+        swipeObject.put("endX", 0.05);
+        swipeObject.put("endY", 0.5);
+        swipeObject.put("duration", 1.0);
+        js.executeScript("emulator: swipe", swipeObject);
+    }
+
+    public void clickPinIndexNumber(int indexOfNumberOfPin) {
+        String xpath = "(//div[@class='map-marker'])["+indexOfNumberOfPin+"]";
+        driver.findElement(By.xpath(xpath)).click();
+
+    }
+
+    public String getInputBoxText() {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        String inputBoxValue = (String) executor.executeScript("return $('input#search-field.ng-valid.ng-dirty').val();");
+        return inputBoxValue;
+
+    }
+
+    public void clickSearchGeoLocation() {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byCurrentLocationButton);
+        driver.findElement(byCurrentLocationButton).click();
+    }
+
+    public void clickPinExitButton() {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byPinExitButton);
+        driver.findElement(byPinExitButton).click();
+    }
+
+    public void clickResultsHeader() throws InterruptedException {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byResultsHeader);
+        driver.findElement(byResultsHeader).click();
+        waitForResultsToBeDisplayed();
+    }
+
+    public void clickDealerIndexNumber(int indexOfDealer) {
+        String xpath = "(//span[@class='icon-details'])[" + indexOfDealer + "]";
+        driver.findElement(By.xpath(xpath)).click();
+    }
+
+    public void clickHighlightedMapPin() {
+        WebElement element = driver.findElement(byHighlightedMapPin);
+        element.click();
+
+    }
+
+    public boolean mapPinExitButtonIsDisplayed() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            return driver.findElement(byPinExitButton).isDisplayed();
+        }catch(NoSuchElementException e){
+            return false;
+        }
+    }
+
+    public void waitForResultsToChangeAfterClickingSubmit() {
+
+        try {
+            if (driver.findElement(byResultsList).isDisplayed()) {
+
+                WebDriverAction action = new WebDriverAction() {
+                    @Override
+                    public void perform() {
+                        clickSubmit();
+                    }
+                };
+                WaitHelpers.waitForElementTextToChangeAfter(action, byResultsList, driver);
+
+            }
+        }catch(NoSuchElementException e){
+            clickSubmit();
+            WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
+
+        }
+
+    }
+
+    public void waitForSubmitSpinnerToStop() throws InterruptedException {
+        try {
+            WaitHelpers.waitForElementToBeHidden(bySpinnerGIF, driver);
+        }catch (NoSuchElementException e){
+            Thread.sleep(1000);
+            System.out.println("No GIF Spinner -- waiting instead");
+        }
+    }
+
+    public String checkTextIsPresentOnListAfterShowingMore(String textToCheck) {
+        try {
+            int showMoreCounter = 1;
+
+            while (!(checkTextIsPresentInList(textToCheck)) && isShowMorePresent() /*&& !(showMoreCounter > 5)*/ && checkResultsAreDisplayed()) {
+//                        System.out.println("clicking show more No. " + showMoreCounter);
+                try {
+                    clickShowMoreDealers();
+                } catch (ElementNotVisibleException e) {
+//                            System.out.println("couldn't find show more button to click " + e);
+
+                }
+                showMoreCounter++;
+
+            }
+            if (checkTextIsPresentInList(textToCheck)) {
+                return "Pass";
+            } else {
+
+//                        System.out.println("XXXXXXXX FAIL XXXXXXXX");
+//                System.out.println("Test No. " + i +" ::Dealer name : "+ currentDealerName + " :: " + "Dealer postcode : "+ currentDealerLocationInfo);
+//                        System.out.println("XXXXXXXX FAIL XXXXXXXX");
+
+                if (!checkResultsAreDisplayed()) {
+                    return "No Results";
+                } else {
+                    return "Fail";
+//                            System.out.println("Failed on page : " + showMoreCounter);
+                }
+
+            }
+
+        } catch (NoSuchElementException e) {
+//                    System.out.println("Couldn't find element: "+e);
+
+        } return "null";
+    }
+
+
+
+
+    public boolean checkTextIsPresentInList(String textToCheck) {
+        try {
+            return driver.findElement(byResultsList).getText().contains(textToCheck);
+        }catch (NoSuchElementException e){
+            return false;
+        }
+    }
+
+
+    public boolean isShowMorePresent() {
+
+            try {
+                return driver.findElement(byShowMoreDealers).isDisplayed();
+            }catch (NoSuchElementException e){
+                return false;
+            }
+
+        }
+    public boolean checkResultsAreDisplayed() {
+        try {
+            return driver.findElement(byResultsList).isDisplayed();
+        }catch (NoSuchElementException e){
+            return false;
+        }
+    }
+
 }

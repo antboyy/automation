@@ -1,0 +1,49 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   n120wber.0lk.txt
+#	new file:   tests/.idea/libraries/Maven__net_sourceforge_javacsv_javacsv_2_0.xml
+#	modified:   tests/.idea/workspace.xml
+#	modified:   tests/GuxSelenium.iml
+#	new file:   tests/Resources/ChromeDriver/chromedriver.exe
+#	new file:   tests/Resources/IEDriver/IEDriverServer.exe
+#	modified:   tests/pom.xml
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DataTest.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerData.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerDataHelper.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerLocalityHelper.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerNamesHelper.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerPostcodeHelper.java
+#	new file:   tests/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DutchDealerDataTest.java
+#	modified:   tests/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java
+#	modified:   tests/src/test/java/com/ford/gux/tests/selenium/DealerLocatorTest.java
+#	modified:   tests/src/test/java/com/ford/gux/tests/selenium/Given.java
+#	modified:   tests/src/test/java/com/ford/gux/tests/selenium/HomepageTest.java
+#	modified:   tests/src/test/java/com/ford/gux/tests/selenium/WaitHelpers.java
+#	new file:   tests/target/surefire-reports/TEST-com.ford.gux.tests.selenium.DealerLocatorTest.xml
+#	new file:   tests/target/surefire-reports/TEST-com.ford.gux.tests.selenium.HomepageTest.xml
+#	new file:   tests/target/surefire-reports/com.ford.gux.tests.selenium.DealerLocatorTest.txt
+#	new file:   tests/target/surefire-reports/com.ford.gux.tests.selenium.HomepageTest.txt
+#	new file:   tests/target/surefire/surefire1646383968431078003tmp
+#	new file:   tests/target/surefire/surefire6423315723178065361tmp
+#	new file:   tests/target/surefire/surefire7019762364248659979tmp
+#	new file:   tests/target/surefire/surefire853543329578467497tmp
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DataTest.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DealerData.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DealerDataHelper.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DealerLocalityHelper.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DealerNamesHelper.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DealerPostcodeHelper.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerDataSelenium/DutchDealerDataTest.class
+#	new file:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerLocatorPage$1.class
+#	modified:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerLocatorPage.class
+#	modified:   tests/target/test-classes/com/ford/gux/tests/selenium/DealerLocatorTest.class
+#	modified:   tests/target/test-classes/com/ford/gux/tests/selenium/Given.class
+#	modified:   tests/target/test-classes/com/ford/gux/tests/selenium/HomepageTest.class
+#	modified:   tests/target/test-classes/com/ford/gux/tests/selenium/WaitHelpers.class
+#
+

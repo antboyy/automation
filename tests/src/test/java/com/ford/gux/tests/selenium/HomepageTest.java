@@ -28,7 +28,8 @@ public class HomepageTest {
 
     HomePage homepage = GIVEN.iamOnTheHomePage();
     homepage.onADesktopView();
-    homepage.go("http://ahivas02987.ahi.ford.com:4503/content/ford-gux/gbr/en/index.html");
+//    homepage.go("http://ahivas02987.ahi.ford.com:4503/content/ford-gux/gbr/en/index.html");
+    homepage.go("http://m.intpublish-couk.engine.ford.com/");
 
     homepage.clickCarousellNext();
     String firstImageURL = homepage.getImageURL();
