@@ -26,7 +26,8 @@ public class Given {
     public DealerLocatorPage iamOnAUKDealerLocatorPage() throws InterruptedException {
 
         DealerLocatorPage dealerLocatorPage = new DealerLocatorPage(driver);
-        dealerLocatorPage.go("http://m.intpublish-couk.engine.ford.com/GlobalUXDealerLocator");
+//        dealerLocatorPage.go("http://m.intpublish-couk.engine.ford.com/GlobalUXDealerLocator");
+        dealerLocatorPage.go("http://m.wwwprod-couk.engine.ford.com/Hidden/GUX_TestPages/GUXDealerLocatorMobile");
 //        dealerLocatorPage.go("http://wwwedu-couk.engine.ford.com/Hidden/GUX_TestPages/GUXDealerLocatorDesktop");
 //        dealerLocatorPage.go("http://wwwprod-couk.engine.ford.com/Hidden/GUX_TestPages/GUXDealerLocatorDesktop");
         return dealerLocatorPage;

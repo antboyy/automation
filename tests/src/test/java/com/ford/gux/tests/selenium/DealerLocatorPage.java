@@ -73,8 +73,9 @@ public class DealerLocatorPage {
         }
     }
 
-    public void clickShowMoreDealers() {
+    public void clickShowMoreDealers() throws InterruptedException {
         driver.findElement(byShowMoreDealers).click();
+        Thread.sleep(500);
     }
 
 
@@ -479,7 +480,7 @@ public class DealerLocatorPage {
         }
     }
 
-    public String checkTextIsPresentOnListAfterShowingMore(String textToCheck) {
+    public String checkTextIsPresentOnListAfterShowingMore(String textToCheck) throws InterruptedException {
         try {
             int showMoreCounter = 1;
 

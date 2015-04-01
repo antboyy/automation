@@ -262,7 +262,17 @@ public class DealerLocatorTest {
         //Small Business, Fleet is present
     }
 
-    //Showmore
+    @Test
+    public void locationSearchForSpecificDealer() throws InterruptedException {
+
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAFrenchDealerLocatorPage();
+        dealerLocatorPage.waitForpageToLoad();
+        dealerLocatorPage.onADesktopView();
+        dealerLocatorPage.enterIntoInputBox("73210");
+        dealerLocatorPage.waitForResultsToBeDisplayed();
+        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Tarentaise Automobiles SARL");
+        System.out.print(result);
+    }
 
 
     @AfterClass
