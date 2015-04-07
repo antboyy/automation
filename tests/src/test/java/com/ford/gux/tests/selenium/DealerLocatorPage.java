@@ -93,7 +93,7 @@ public class DealerLocatorPage {
     }
 
     public void enterIntoInputBoxWithoutSubmitting(String inputText) throws InterruptedException {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver, By.cssSelector("div.columns.premium-filters"));
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, bySearchBox);
         driver.findElement(bySearchBox).sendKeys(inputText);
         Thread.sleep(500);
         driver.findElement(bySearchBox).sendKeys(Keys.ARROW_RIGHT);

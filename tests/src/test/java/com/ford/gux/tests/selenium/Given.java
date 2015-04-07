@@ -60,7 +60,8 @@ public class Given {
     public DealerLocatorPage iamOnAnItalianDealerLocatorPage() throws InterruptedException {
 
         DealerLocatorPage dealerLocatorPage = new DealerLocatorPage(driver);
-        dealerLocatorPage.go("http://m.wwwedu-it.engine.ford.com/Hidden/GUXDealerLocatorMobile");
+        dealerLocatorPage.go("http://intpublish-it.engine.ford.com/DealerLocatorGux");
+//        dealerLocatorPage.go("http://m.wwwedu-it.engine.ford.com/Hidden/GUXDealerLocatorMobile");
 
         return dealerLocatorPage;
     }
@@ -68,7 +69,8 @@ public class Given {
     public DealerLocatorPage iamOnASpanishDealerLocatorPage() throws InterruptedException {
 
         DealerLocatorPage dealerLocatorPage = new DealerLocatorPage(driver);
-        dealerLocatorPage.go("http://m.wwwedu-es.engine.ford.com/Hidden/GUXDealerLocatorMobile");
+        dealerLocatorPage.go("http://intpublish-es.engine.ford.com/OwnerServicesMike/DealerLocatorGux");
+//        dealerLocatorPage.go("http://m.wwwedu-es.engine.ford.com/Hidden/GUXDealerLocatorMobile");
 
         return dealerLocatorPage;
     }

@@ -268,10 +268,11 @@ public class DealerLocatorTest {
         DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAFrenchDealerLocatorPage();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
-        dealerLocatorPage.enterIntoInputBox("73210");
+        dealerLocatorPage.enterIntoInputBox("87200");
         dealerLocatorPage.waitForResultsToBeDisplayed();
-        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Tarentaise Automobiles SARL");
-        System.out.print(result);
+        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Garage Alfred  Boos SARL");
+        System.out.println(result);
+
     }
 
 

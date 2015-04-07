@@ -23,6 +23,8 @@ public class DataTest {
 
     @Test
     public void dealerDataNameTest() throws InterruptedException {
+        System.out.println("Dealer Name Test");
+
         this.testResults = new HashMap();
         Boolean disambiguationPresent;
         String resultText = null;
@@ -30,8 +32,8 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentDealerLocality = "";
 
-        DealerData dealerData = new DealerData("FR");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAFrenchDealerLocatorPage();
+        DealerData dealerData = new DealerData("DE");
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
 
 
         dealerLocatorPage.waitForpageToLoad();
@@ -42,7 +44,7 @@ public class DataTest {
 
 
         for (int i=0 ; i< noOfDealers ;i++) {
-//        for (int i=500 ; i< 510 ;i++) {
+//        for (int i=0 ; i< 5;i++) {
 
             currentDealerName = dealerNames[i];
             currentDealerPostcode = dealerLocations[i];
@@ -90,13 +92,19 @@ public class DataTest {
                 }
 
             }
+            System.out.println(testResults.get(currentDealerName).toString().replace(", ","\r\n").replace("{","").replace("}",""));
+            System.out.println("------------------------------------------------------------");
+
         }
+
 
     }
 
 
     @Test
     public void locationDataNameTest() throws InterruptedException {
+        System.out.println("Location Test");
+
         this.testResults = new HashMap();
         Boolean disambiguationPresent;
         String resultText = null;
@@ -104,8 +112,8 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentDealerLocality = "";
 
-        DealerData dealerData = new DealerData("FR");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAFrenchDealerLocatorPage();
+        DealerData dealerData = new DealerData("DE");
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
 
 
         dealerLocatorPage.waitForpageToLoad();
@@ -116,6 +124,7 @@ public class DataTest {
 
 
         for (int i=0 ; i< noOfDealers ;i++) {
+//        for (int i=0 ; i< 5 ;i++) {
 
             currentDealerName = dealerNames[i];
             currentDealerPostcode = dealerLocations[i];
@@ -147,7 +156,7 @@ public class DataTest {
                 }
 
             }
-            if (resultText.contains(currentDealerPostcode)){
+            if (resultText.contains(currentDealerName)){
 
                 testResults.put(currentDealerName, "Pass");
                 dealerLocatorPage.clickDealerRadioButton();
@@ -155,7 +164,7 @@ public class DataTest {
             else {
                 // If dealer Name not found on the page THEN .... Check after showing more
                 if(dealerLocatorPage.isShowMorePresent()){
-                    testResults.put(currentDealerName,dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerPostcode));
+                    testResults.put(currentDealerName,dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName));
                     dealerLocatorPage.clickDealerRadioButton();
                     dealerLocatorPage.clickLocationRadioButton();
 
@@ -166,21 +175,48 @@ public class DataTest {
                 }
 
             }
+            System.out.println(testResults.get(currentDealerName).toString().replace(", ","\r\n").replace("{","").replace("}",""));
+            System.out.println("------------------------------------------------------------");
+
         }
+
 
     }
 
+/*    @Ignore
+    @Test
+    public void printNumberOfDealersAndLocations() throws InterruptedException {
+        this.testResults = new HashMap();
+        Boolean disambiguationPresent;
+        String resultText = null;
+        String currentDealerName = "";
+        String currentDealerPostcode = "";
+        String currentDealerLocality = "";
+
+        DealerData dealerData = new DealerData("DE");
+
+        int noOfDealers = dealerData.getNames().length;
+        String [] dealerNames = dealerData.getNames();
+        String [] dealerLocations = dealerData.getPostcodes();
+
+        System.out.println("Number of Dealers: "+ noOfDealers);
+        System.out.println("Number of Locations: "+ dealerLocations.length);
+
+    }*/
 
 
+    /*@Test
+    public void dataLoad() throws InterruptedException {
+        System.out.println("Location Test");
+        DealerData data = new DealerData("DE");
+
+
+    }*/
 
 
 
     @AfterClass
     public static void tearDown() {
-        System.out.println("--------Test Results--------");
-        System.out.println(testResults.toString().replace(", ","\r\n").replace("{","").replace("}",""));
-        System.out.println("----------------------------");
-
         GIVEN.tearDown();
         DealerLocatorPage.tearDown();
     }
