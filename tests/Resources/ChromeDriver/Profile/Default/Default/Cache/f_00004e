@@ -1,0 +1,972 @@
+
+<!doctype html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<head>
+<script src='/cs/ContentServer?pagename=ESES_ENGInE/script/packager&c=Page&cid=1204859741207&location=head&isMobile=false'></script>  
+<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=8,chrome=1">
+<link REL="Shortcut icon" HREF="/cs/ENGInE/img/favicon.ico" type="image/x-icon">
+<link REL="Shortcut icon" HREF="/cs/ENGInE/img/favicon.gif" type="image/x-icon">
+<title>GUX Dealer Locator</title>
+<meta name="robots" content="index,follow">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="Dealer Locator"><meta name="keywords" content="Dealor Locator keywords">
+<script src="/cs/ContentServer?pagename=EP2/ENGInE/script/api/modernizr-2.5.3.min"></script>
+<link href="/cs/ContentServer?pagename=EP2%2fENGInE%2fcss%2fGroupedCSS" type="text/css" rel="stylesheet">
+<link href="/cs/ContentServer?pagename=GlobalUX/assets/css/ladDesktop" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/cs/ContentServer?pagename=GlobalUX/assets/css/foundation">
+<link rel="stylesheet" href="/cs/ContentServer?pagename=GlobalUX/assets/css/global-ux">
+<script src="/cs/ContentServer?pagename=ENGInE/EP2/common/EngineJSGlobals&amp;mode=script&amp;site=ESES_ENGInE&amp;mobile=null"></script>
+<script src="/cs/ContentServer?pagename=ENGInE/GlobalUX/JavaScriptGlobals&amp;mode=script&amp;site=ESES_ENGInE&amp;mobile=false"></script>
+</head>
+<body>
+<script type="text/javascript">
+// mobile sniffer
+var ForceRedirectUserAgents = 'null';
+var ForceRedirectMinWidth = 'null';
+var MobileHomePageRedirectURL = 'http:\/\/m.intpublish-es.engine.ford.comnull';
+var redirect = function(){ 
+var path = window.location.href;
+var hashPath =path.split("#");
+if(typeof hashPath[1] != 'undefined'){
+MobileHomePageRedirectURL = MobileHomePageRedirectURL+'#'+ hashPath[1];
+}
+window.location.href = MobileHomePageRedirectURL;
+};
+var readCookie =  function(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) 
+return c.substring(nameEQ.length,c.length);
+}
+return null;
+};
+var mobileSnifferCheckRedirect = function() {
+var  userAgent, forceAgents, i, n;
+if (MobileHomePageRedirectURL != 'abort') {
+MobileSnifferCookieName = "ford_mobile_sniffer_forcefullsite";
+// Check further only if "ford_mobile_sniffer_forcefullsite" cookie was not set
+if (readCookie(MobileSnifferCookieName) === null) {
+// Check user agent
+if (ForceRedirectUserAgents !== 'null') {
+userAgent = window.navigator.userAgent.toLowerCase();
+forceAgents = ForceRedirectUserAgents.split(",");
+for (i = 0, n = forceAgents.length; i < n; i++) {
+if (userAgent.indexOf(forceAgents[i].toLowerCase()) > -1) {
+redirect();
+}
+}
+}
+// Check width
+if (ForceRedirectMinWidth !== 'null' && screen !== undefined && screen.width !== undefined) {
+if (screen.width < Number(ForceRedirectMinWidth)) {
+redirect();
+}
+}
+}
+}
+};
+try {
+mobileSnifferCheckRedirect();
+} catch (ignore) {
+}
+</script>
+<script src='/cs/ContentServer?pagename=ESES_ENGInE/script/packager&c=Page&cid=1204859741207&location=body&isMobile=false'></script>
+<div id="appWrapper" class="eUsedWrapper" style="max-width:100%">
+<div id="wrapper" class='ep2_globalux'>
+<script type="text/javascript">
+var fw_animationSpeed = 350;
+</script>
+<div id="cookieAlertBoxID" class="cookieAlertBox">
+<div class="midContent">
+<div class="cookie-closebtn"><a id="closeBtnID" class="icon closeBtn" href="#" title="closeTitle">Close</a></div>
+<p>
+<ul>
+<li>You&rsquo;re in total command. A revolutionary powerful, digital command centre, operated by two toggles on the steering wheel, puts intuitive control of navigation, entertainment and information systems at your fingertips Qualit&auml;t. (Standard on Titanium X)</li>
+</ul>
+<a id="linkID" class="link" href="http://wwwdev.engine.ford.com/Footer/TermsAndConditions"> See Cookie Guide </a>
+</p>
+</div>
+</div>
+<header class="global" role="banner">
+<div id="headerContent">
+<ul role="list" title="ir a una zona específica de la página" class="skip">
+<li role="listitem"><a role="link" href="#sbe">Ir a herramientas para clientes de Ford</a></li>
+<li role="listitem"><a role="link" href="#mainTopNav">Ir al menú principal</a></li>
+</ul>	
+<!-- FIXME Change this -->
+<!-- TODO : to get common site from sitesetup instead of hardcoding and to check on what basis image data will be retrieved (currently retrieved based on name)  -->
+<div id="logo"><h1 class="bigHeading visuallyhidden">Ford</h1><a href="/"><img src='/cs/BlobServer?blobtable=MungoBlobs&#38;blobcol=urldata&#38;blobwhere=1204852617458&#38;blobkey=id' role="presentation" alt="Ford"></a></div>
+<nav id="sbe" class="sbeLinks" role="navigation">
+<h2 class="navTitle">Navegación de Ford</h2>
+<ul class="sbeNav" role="list">
+<li role="listitem"  class='levelOne'><a role="link" class="sbe om_he_sb" 
+href="#"  data-selenium="sbelistitem">
+<span style="background-image:url('/cs/BlobServer?blobtable=MungoBlobs&amp;blobcol=urldata&amp;blobheader=image%2Fpng&amp;blobwhere=1204853653512&amp;blobkey=id')"></span>
+Build and Price</a>
+<div class="flyout">
+<dl role="tree">
+<dd role="treeitem"><a href='/BuildAndPrice' class="om_he_sb_SBEC" data-selenium="EP2_topnavtreeitem">CARS</a></dd>
+<dd role="treeitem"><a href='/CVBuildAndPrice' class="om_he_sb_SBEC" data-selenium="EP2_topnavtreeitem">Commercial Vehicles</a></dd>
+</dl>
+</div>
+</li><li role="listitem"><a role="link" class="sbe om_he_sb_SBET" 
+href="/SBE/TEST%20DRIVE"  data-selenium="sbelistitem">
+<span style="background-image:url('/cs/BlobServer?blobtable=MungoBlobs&amp;blobcol=urldata&amp;blobheader=image%2Fpng&amp;blobwhere=1204851286145&amp;blobkey=id')"></span>
+Test Drive</a> </li><li role="listitem"><a role="link" class="sbe om_he_sb_SBED" 
+href="/SBE/DEALER%20LOCATOR"  data-selenium="sbelistitem">
+<span style="background-image:url('/cs/BlobServer?blobtable=MungoBlobs&amp;blobcol=urldata&amp;blobheader=image%2Fpng&amp;blobwhere=1204851286145&amp;blobkey=id')"></span>
+Dealer Locator</a> </li><li role="listitem"  class='levelOne'><a role="link" class="sbe om_he_sb_SBEB" 
+href="#"  data-selenium="sbelistitem">
+<span style="background-image:url('/cs/BlobServer?blobtable=MungoBlobs&amp;blobcol=urldata&amp;blobheader=image%2Fpng&amp;blobwhere=1204851286603&amp;blobkey=id')"></span>
+Brochures</a>
+<div class="flyout">
+<dl role="tree">
+<dt role="treeitem"><span data-selenium="EP2_topnavtreeitem">CARS</span></dt><dd role="treeitem" ><a href='/SBE/Brochures/CARS/PRINTED%20BROCHURE' class="om_he_sb" data-selenium="EP2_topnavtreeitem">PRINTED BROCHURE</a></dd><dd role="treeitem" ><a href='/SBE/Brochures/CARS/DOWNLOAD%20PDF' class="om_he_sb" data-selenium="EP2_topnavtreeitem">DOWNLOAD PDF</a></dd><dt role="treeitem"><span data-selenium="EP2_topnavtreeitem">COMMERCIAL VEHICLES</span></dt><dd role="treeitem" ><a href='/SBE/Brochures/COMMERCIAL%20VEHICLES/PRINTED%20BROCHURE' class="om_he_sb" data-selenium="EP2_topnavtreeitem">PRINTED BROCHURE</a></dd><dd role="treeitem" ><a href='/SBE/Brochures/COMMERCIAL%20VEHICLES/DOWNLOAD%20PDF' class="om_he_sb" data-selenium="EP2_topnavtreeitem">DOWNLOAD PDF</a></dd>
+</dl>
+</div>
+</li><li role="listitem"><a role="link" class="sbe om_he_sb_SBEI" 
+href="/SBE/Keep%20Me%20Informed"  data-selenium="sbelistitem">
+<span style="background-image:url('/cs/BlobServer?blobtable=MungoBlobs&amp;blobcol=urldata&amp;blobheader=image%2Fpng&amp;blobwhere=1204851286547&amp;blobkey=id')"></span>
+Keep me Informed</a> </li>
+</ul>
+<ul class="userAccess fr">
+<li><a href="/MyFord_v1/OwnersHome" target='_blank'>
+<span id="loggedinTitle"> </span></a></li>
+</ul>
+<script type="text/javascript">	
+if(window.addEventListener){
+window.addEventListener("load", function() {
+if(EngineGlobals.cookie.read('opus_auth')){
+$('#loggedinTitle').html('My Ford');	
+}else{
+$('#loggedinTitle').html(' ');	
+}
+}
+,false);
+}else{
+window.attachEvent("onload", function() {
+if(EngineGlobals.cookie.read('opus_auth')){
+$('#loggedinTitle').html('My Ford');	
+}else{
+$('#loggedinTitle').html(' ');	
+}
+});
+}
+</script>
+</nav>
+<nav id="mainTopNav" role="navigation">
+<h2 class="navTitle">Navegación de Ford</h2>
+<ul id="sections" role="menu">
+<li class="levelOne" role="menuitem" data-nav="pv">
+<a role="link" class="mainTopNav om_he_pv_li" href="/Cars" data-selenium="EP2_mainTopNav"><span>Turismos</span></a>
+<div class="doormat">
+<div class="innerWrap">
+<a class="skip om_he_cv_sk" href="#cVehicles">Ir a vehículos comerciales</a>
+<!-- Displaying market nameplates  -->
+<ul class="subMenu" role="menu">
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection Fiesta" class="om_he_pv_np " href="/Cars/Nuevo%20Ford%20Fiesta" >Fiesta</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection New Fiesta ST" class="om_he_pv_np " href="/Cars/Fiesta-ST" >New Fiesta ST</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection Galaxy" class="om_he_pv_np " href="/Cars/Ford%20Galaxy" >Galaxy</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection C-Max" class="om_he_pv_np " href="/Cars/New%20Ford%20C-MAX" >C-Max</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection Tourneo Custom" class="om_he_pv_np " href="/Cars/New%20Tourneo%20Custom" >Tourneo Custom</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection EcoSport" class="om_he_pv_np " href="/Cars/Ecosport" >EcoSport</a></li>
+<li role="menuitem" class=""><a role="link" data-selenium="doormat_car_selection Ford Mustang" class="om_he_pv_np " href="/Cars/Mustang" >Ford Mustang</a></li>
+</ul>
+<div class="pvnp-gradient"></div>
+<div class="wrapperTabContent">
+<div class="tabContent" id="Fiesta" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark"></span> Fiesta</h2>
+<figure>
+<a href="/Cars/Nuevo%20Ford%20Fiesta" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="https://wwwqa.gforce.ford.com/nas/gforcenaslive/esp/00c/yyv/images/resize340xesp00cyyvr838w3(a)(a)9nj_1_0.png" role="presentation" alt="Fiesta"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/Nuevo%20Ford%20Fiesta" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="NewFiestaST" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark">Ford</span> Fiesta ST</h2>
+<figure>
+<a href="/Cars/Fiesta-ST" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="https://wwwqa.gforce.ford.com/nas/gforcenaslive/esp/00c/yyv/images/resize340xesp00cyyvr838w8(a)(a)9nm_1_0.png" role="presentation" alt="New Fiesta ST"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/Fiesta-ST" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="Galaxy" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark"></span> Galaxy</h2>
+<figure>
+<a href="/Cars/Ford%20Galaxy" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="https://wwwqa.gforce.ford.com/nas/gforcenaslive/esp/00f/yyn/images/resize340xesp00fyynbgbdb4(a)(a)fcj_1_0.png" role="presentation" alt="Galaxy"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/Ford%20Galaxy" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="CMax" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark"></span> C-Max</h2>
+<figure>
+<a href="/Cars/New%20Ford%20C-MAX" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="https://wwwqa.gforce.ford.com/nas/gforcenaslive/esp/009/yyw/images/resize340xesp009yywb9bd9b(a)(a)w9f_1_0.png" role="presentation" alt="C-Max"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/New%20Ford%20C-MAX" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="TourneoCustom" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark">Ford</span> Tourneo Custom</h2>
+<figure>
+<a href="/Cars/New%20Tourneo%20Custom" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="https://www.gforce.ford.com/nas/gforcenaslive/esp/su_dv/images/resize618xespsu_dvca_ctcd205cd425cd101(pay)(eng)(tra)(axl)(rwh)pn3gz_1_0.png" role="presentation" alt="Tourneo Custom"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/New%20Tourneo%20Custom" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="EcoSport" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark">Ford</span> EcoSport</h2>
+<figure>
+<a href="/Cars/Ecosport" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204857324696&blobkey=id" role="presentation" alt="EcoSport"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/Ecosport" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Ver este vehículo teșșst</a>
+</div>
+</figure>
+</section>
+</div>
+<div class="tabContent" id="FordMustang" role="tabpanel" style="display:none;">
+<section class="doormatContent fl">
+<h2 class="bigHeading" data-selenium="doormat_nameplate"><span data-selenium="doormat_brand" class="mark">Ford</span> Mustang</h2>
+<figure>
+<a href="/Cars/Mustang" class="om_he_pv_np" data-selenium="doormat_nameplateImage"><img src="/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204858328566&blobkey=id" role="presentation" alt="Ford Mustang"></a> 
+<!--Rendering the CTA Button-->
+<div class="btnLink">
+<a  title="" href="/Cars/Mustang" class="om_he_pv_np" data-selenium="doormat_View_vehicle" >Linda Experience</a>
+</div>
+</figure>
+</section>
+</div>
+</div>
+<!-- Displaying 3 additional market specified links  -->
+<div class="pvNavLinkWrapper">
+<div class="pvHeroWrapper">
+</div>
+<!-- Displaying Tertiary Block Links -->
+<div class="pvTertiaryWrapper">
+</div>
+</div>
+</div>	
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="cv">
+<a role="link" class="mainTopNav om_he_pv_li" href="/CommercialVehicles" ><span>Comerciales</span></a>
+<div class="doormat navigation-grid-wrapper">
+<ul class="primary-nav-items" role="menu">
+<li role="menuitem" class='active'>
+<a role="link" class="om_he_pv_np" >People Movers</a>
+<!-- these are the child vehicles of this menu item node. They need to appear here as direct descendants -->
+<ul class="navigation-grid-items">
+<li class="title">People Movers</li>
+<li> 
+<a href="/CommercialVehicles/FiestaVan">
+<img src="https://www.gforce.ford.com/nas/gforcenaslive/esp/su_va/images/resize400xespsu_vaca_vacd202cd401cd101(pay)(eng)(tra)(axl)(rwh)pn3gz_1_0.png" alt="Fiesta Van" style="width:153px; height:86px; margin-top:0px;"/>
+<h5>Fiesta Van</h5>
+<span>
+Desde&nbsp; <strong>9.338 € </strong>No incluye IVA* <br>
+<strong>9.338 € </strong>Incluye IVA* 
+</span>
+</a>
+</li>
+<li> 
+<a href="/CommercialVehicles/TransitCustom">
+<img src="https://www.gforce.ford.com/nas/gforcenaslive/esp/su_ct/images/resize400xespsu_ctca_mxcd202cd425cd101(pay)(eng)(tra)(axl)(rwh)pn3gz_1_0.png" alt="Transit Custom" style="width:153px; height:86px; margin-top:0px;"/>
+<h5>Transit Custom</h5>
+<span>
+Desde&nbsp; <strong>17.468 € </strong>No incluye IVA* <br>
+<strong>17.468 € </strong>Incluye IVA* 
+</span>
+</a>
+</li>
+<li> 
+<a href="/Cars/New%20Tourneo%20Custom">
+<img src="https://www.gforce.ford.com/nas/gforcenaslive/esp/su_dv/images/resize400xespsu_dvca_ctcd205cd425cd101(pay)(eng)(tra)(axl)(rwh)pn3gz_1_0.png" alt="Tourneo Custom" style="width:153px; height:86px; margin-top:0px;"/>
+<h5>Tourneo Custom</h5>
+<span>
+Desde&nbsp; <strong>36.650 € </strong>No incluye IVA* <br>
+<strong>36.650 € </strong>Incluye IVA* 
+</span>
+</a>
+</li>
+<li> 
+<a href="/CommercialVehicles/Ford%20Ranger">
+<img src="https://www.gforce.ford.com/nas/gforcenaslive/esp/su_ng/images/resize400xespsu_ngca_bzcd220(len)(hei)(pay)(eng)(tra)(axl)(rwh)pnyag_1_0.png" alt="Ford Ranger" style="width:153px; height:86px; margin-top:0px;"/>
+<h5>Ford Ranger</h5>
+<span>
+Desde&nbsp; <strong>20.325 € </strong>No incluye IVA* <br>
+<strong>20.325 € </strong>Incluye IVA* 
+</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- Displaying 3 additional market specified links  -->
+<!-- Displaying Tertiary Block Links for CV -->
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/MyFord_v1" class="om_he_at_li"><span>My Ford</span></a>
+<div class="flyout">
+<ul class="subMenu" role="menu">
+<li role="menuitem"><a href="/MyFord_v1/OwnersHome" class="om_he_ac_li">MyFord Home</a></li>
+<li role="menuitem"><a href="/MyFord_v1/Register" class="om_he_ac_li">Register</a></li>
+<li role="menuitem"><a href="/MyFord_v1/MyProfile" class="om_he_ac_li">My Profile</a></li>
+<li role="menuitem"><a href="/MyFord_v1/ResetPassword" class="om_he_ac_li">Reset Password</a></li>
+<li role="menuitem"><a href="/MyFord_v1/Login" class="om_he_ac_li">Login to MyFord</a></li>
+<li role="menuitem"><a href="/MyFord_v1/MyVehicles" class="om_he_ac_li">My Vehicles</a></li>
+<li role="menuitem"><a href="/MyFord_v1/PDFManuals" class="om_he_ac_li">Owner Manuals</a></li>
+<li role="menuitem"><a href="/MyFord_v1/Online%20Service%20Booking" class="om_he_ac_li">Online Service Booking</a></li>
+<li role="menuitem"><a href="/MyFord_v1/eSCAPE" class="om_he_ac_li">eSCAPE Mockup</a></li>
+</ul>
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/Future_Vehicles_OverviewUAT" class="om_he_at_li"><span>Future Vehicles</span></a>
+<div class="flyout">
+<ul class="subMenu" role="menu">
+<li role="menuitem"><a href="/Future_Vehicles_OverviewUAT/Mustang_Page" class="om_he_ac_li">2015 Mustang</a></li>
+<li role="menuitem"><a href="/Future_Vehicles_OverviewUAT/Kuga_Page" class="om_he_ac_li">2015 Kuga</a></li>
+</ul>
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/OSB" class="om_he_at_li"><span>Online Service Booking</span></a>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/OwnerServicesMike" class="om_he_at_li"><span>Owners Services</span></a>
+<div class="flyout">
+<ul class="subMenu" role="menu">
+<li role="menuitem"><a href="/OwnerServicesMike/DealerLocatorGux" class="om_he_ac_li">DealerLocator Gux</a></li>
+</ul>
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/CC" class="om_he_at_li"><span>CC</span></a>
+<div class="flyout">
+<ul class="subMenu" role="menu">
+<li role="menuitem"><a href="/CC/CC_Layout4_Test4_EP2Package_B" class="om_he_ac_li">CC_Layout4_Test4_EP2Package</a></li>
+<li role="menuitem"><a href="/CC/CC_Layout4_Test5_a" class="om_he_ac_li">CC_Layout4_Test5_a</a></li>
+</ul>
+</div>
+</li>
+<li class="levelOne" role="menuitem" data-nav="generic">
+<a role="link" href="/OSBOV" class="om_he_at_li"><span>OSB</span></a>
+</li>
+</ul>
+</nav>
+<!--  TODO : breadcrumb navigation, viewAs and search field html fragment goes here  -->
+<div class="topContainer">
+<div id="fr" class="fr">
+<form class="searchBox fl" method="get" action="http://intpublish-es.engine.ford.com/cs/ContentServer" role="search">
+<fieldset>
+<legend class="visuallyhidden">Search</legend>
+<div class="leftcap">
+<label for="s" class="fl">
+<span class="visuallyhidden">Search</span>
+<input class="searchField" type="search" name="s" id="s" placeholder="Escribir el término de búsqueda" value="" maxlength="250" autocomplete="off"/>
+</label>
+</div>
+<input type="hidden" name="pagename" value="ESES_ENGInE/LayoutSearchResults_EP2" />
+<input type="hidden" name="c" value="Page" />
+<input type="hidden" name="cid" value="1204854265533" />
+<input class="find om_he_se" type="submit" name="Search" value="Search" />
+</fieldset>		
+</form>
+</div>
+</div>
+<!--  TODO : ends -->		
+</div>
+</header>
+<!-- Global-ux container - start -->
+<div id="global-ux" data-page="dealer_locater">
+<!-- Dealer Locator Content - START  -->
+<div class="row">
+<div class="columns large-12">
+<div id="dealer-locator" data-ng-controller="MainController" class="row">
+<div class="columns large-5 dl-search" data-ng-controller="DealerSearchController" role="region">
+<div class="row">
+<div class="columns large-12 dl-heading">
+<h1>Search for dealers</h1>
+</div>
+<div class="dl-use-location columns large-12 show-for-medium-down">
+<button data-ng-click="useCurrentLocation($event)"><span class="icon-get-location"></span>Use my location please</button>
+</div>
+</div>
+<div class="row">
+<div class="columns dl-search-type">
+<fieldset class='search-dealer-group'>
+<legend>Search for dealers</legend>
+<p>
+<input class="custom-radio" type="radio" data-ng-change="searchTypeChange()" data-ng-model="dealerlocator.searchType" data-ng-class="{selected:dealerlocator.searchType==='location'}" name="search-type" id="search-type-location" value="location" data-placeholder='Enter your Postcode, City or place'>
+<label for="search-type-location"><span class="radio-button"></span>Search by location</label>
+</p>
+<p data-ng-hide="config.premiumFilter.selected">
+<input class="custom-radio" type="radio" data-ng-change="searchTypeChange()" data-ng-model="dealerlocator.searchType" data-ng-class="{selected:dealerlocator.searchType==='dealername'}" name="search-type" id="search-type-dealername" value="dealername" data-placeholder='Enter a dealer name'>
+<label for="search-type-dealername"><span class="radio-button"></span>Search by Dealer</label>
+</p>
+</fieldset>
+</div>
+</div>
+<div class="row" data-ng-show="config.premiumFilter">
+<div class="columns premium-filters loading">
+<fieldset>
+<p>
+<input type="checkbox" id="premium-filter" data-ng-change="selectPremiumFilter()" class="custom-checkbox" data-ng-model="config.premiumFilter.selected" data-ng-class="{checked:config.premiumFilter.selected}">
+<label for="premium-filter">Filter by {{config.premiumFilter.displayFilter}}</label>
+</p>
+</fieldset>
+</div>
+</div>
+<div class="row">
+<div class="columns large-12 dl-search-field loading">
+<form id="search-form" data-ng-submit="dealerlocator.usingCurrentLocation = false; search($event)" action="#">								
+<label for="search-field">{{dealerlocator.searchTypePlaceholders[dealerlocator.searchType]}}</label>
+<input id="search-field" data-ng-focus="searchFieldFocus()" data-ng-model="searchInput" data-ng-change="autocomplete()" type="text" placeholder="{{dealerlocator.searchTypePlaceholders[dealerlocator.searchType]}}">
+<button class="icon-search search-submit" data-ng-hide="dealerlocator.searchLoading" data-ng-click="dealerlocator.usingCurrentLocation = false; search($event)">
+<span>Search for Dealers</span>
+</button>
+<img class="search-loading" src="/cs/ContentServer?pagename=ENGInE/EP2/common/GetImageByName&imageName=load" alt="Searching for dealers" data-ng-show="dealerlocator.searchLoading">
+<div class="row autocomplete ng-hide loading" data-ng-show="dealerlocator.suggestions.dealers.length || dealerlocator.suggestions.locations.length || dealerlocator.suggestions.disambiguations.length">
+<div class="columns large-12">
+<p>Did you mean...</p>
+<ul class="dealer-autocomplete-list">
+<li data-ng-repeat="dealer in dealerlocator.suggestions.dealers">
+<a href="#" data-ng-bind="dealer.DealerName" data-ng-click="dealerSearch(dealer.EntityID, $event)"></a>
+</li>
+<li data-ng-repeat="location in dealerlocator.suggestions.locations">
+<a href="#" data-ng-bind="location" data-ng-click="locationSearch(location, $event)"></a>
+</li>
+<li data-ng-repeat="disambig in dealerlocator.suggestions.disambiguations">
+<a href="#" data-ng-bind="disambig.description" data-ng-click="disambigSearch(disambig, $event)"></a>
+</li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="row dl-error ng-hide loading" data-ng-show="dealerlocator.errorMessage">
+<div class="columns large-12">
+<p class="error" data-ng-bind="dealerlocator.errorMessage"></p>
+</div>
+</div>
+</div>
+<img data-ng-show="dealerlocator.displaySplash" class="dl-splash-img" src='' alt=''>
+<div class="columns large-12 map-container" data-ng-class="{'splash-screen': dealerlocator.displaySplash}">
+<div id="map"></div>
+</div>				
+<div class="columns large-5 dl-results" data-ng-show="showDlResults()" data-ng-mouseover="dealerlocator.resultsVisible = true" data-ng-mouseout="dealerlocator.resultsVisible = dealerlocator.resultsAlwaysVisible || !desktop.matches" role="region">
+<div class="row">
+<div class="columns large-12" data-ng-view>
+</div>
+<div class="columns large-12 filters offscreen-filters" data-ng-class="{'offscreen-filters': filterSettings.hidden}">
+<div class="accordian">
+<h5>Distance <span class="dl-distance-display" data-ng-if="filter.distance" data-ng-bind="filter.distance + ' ' + config.distances.display"></span><span class="dl-distance-display" data-ng-if="!filter.distance" data-ng-bind="config.distances.options[0].display"></span></h5>
+<div class="accordian-content">
+<div class="select-style">
+<select name="distances" id="distances" data-ng-model="filter.distance" data-ng-options="distance.option as distance.display for distance in config.distances.options" data-ng-init="filter.distance=config.distances.options[1].option"></select>
+</div>
+</div>
+</div>
+<div class="accordian" data-ng-show="config.filters.length && config.categories.length">
+<h5>Services</h5>
+<div class="accordian-content">
+<fieldset>
+<legend>Filter by:</legend>
+<p class="right clear-filter"><a data-ng-click="clearFilters($event)">Clear my selections</a></p>
+<div class="row" data-ng-repeat="filterCat in config.categories" data-ng-show="filterCat.filters.length">
+<div class="columns">
+<h6>{{ filterCat.name }}</h6>
+<div class="row filter-row" data-ng-repeat="filter in filterCat.filters" data-gux-dealer-filter></div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div class="row filter-submit">
+<div class="columns large-9 large-centered">
+<button class="dl-button cta-blue" data-ng-click="updateFilters()" data-ng-hide="filterSettings.hidden" data-ng-focus="dealerlocator.resultsVisible = true">Submit</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="unsupported-browser" class="row">
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204859741229&blobkey=id' alt='Ford. 'Don't find fault, find a remedy.' Henry Ford'>
+<div class="unsupported-content columns">						
+<div class="row">
+<div class="columns">
+<h1>Your browser is not supported</h1>
+<p>Sorry, but you seem to be using a browser that’s a bit… old!</p>
+<p>For the best online experience, please use an alternative browser, such as the latest version of Chrome, Internet Explorer 11 or Firefox. If you don't have one of these installed, please click on one of the icons below to download a compatible browser.</p>
+</div>
+</div>
+<div class="row">
+<div class="columns small-6 small-centered">
+<ul class='browsers small-block-grid-3'>
+<li><a href='http://www.google.com/chrome/' target='_blank'><img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204859741282&blobkey=id' alt='Chrome'></a><p><a href='http://www.google.com/chrome/' target='_blank'>Chrome</a></p></li>
+<li><a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie' target='_blank'><img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204859741326&blobkey=id' alt='IE11'></a><p><a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie' target='_blank'>IE11</a></p></li>
+<li><a href='https://www.mozilla.org/en-GB/firefox/new/' target='_blank'><img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204859741369&blobkey=id' alt='FireFox'></a><p><a href='https://www.mozilla.org/en-GB/firefox/new/' target='_blank'>Firefox</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="error-messages">
+<p class="error-no-results">No dealers found. Please try broadening your search.</p>
+<p class="error-no-locations">Unable to find any locations</p>
+<p class="error-empty-search">Search field is empty</p>
+<p class="error-critical">There has been a critical error with the request</p>
+<p class="error-geolocation-unavailable">You have disabled location sharing in your browser, please enable it to use your current location.</p>
+</div>
+<script type="text/ng-template" id="list-template">
+<div class="row dl-results-header">
+<div class="columns small-8 dl-count" data-ng-click="showResultsBlock()">
+<h2 data-ng-if="dealerlocator.totalDealers.length > 0 && filterSettings.hidden" data-ng-class="{'results-closed': !dealerlocator.resultsVisible}">Search Results
+<span class="collapse-block" data-ng-class="{'opened': dealerlocator.resultsVisible}"><span class"open">Open Results</span></span>
+</h2>
+<h2 data-ng-if="dealerlocator.totalDealers.length == 0 && filterSettings.hidden" data-ng-class="{'results-closed': !dealerlocator.resultsVisible}">No dealers found</h2>
+<p data-ng-if="!filterSettings.hidden">
+<a data-ng-href="" data-ng-click="toggleFilters()"><span class="icon-chevron-thin-left"></span>Back to Search Results</a>
+<span class="collapse-block" data-ng-class="{'opened': dealerlocator.resultsVisible}"><span class"open">Open Results</span></span>
+</p>
+</div>
+<div class="columns small-4 dl-filter-toggle" data-ng-class="{'filters-open': !filterSettings.hidden}">
+<a data-ng-click="dealerlocator.resultsAlwaysVisible = true; toggleFilters()">Filter<span class="icon-filter"></span></a>
+</div>
+</div>
+<div class="row dl-results-container" data-ng-class="{'results-hidden': !filterSettings.hidden}">
+<div class="columns large-12 dl-results-list" data-ng-class="{'results-list-hidden': !dealerlocator.resultsVisible && desktop.matches, 'visibility-hidden': !filterSettings.hidden}">
+<div class="scroll-container">
+<div data-ng-attr-id="{{ 'dealer-' + dealer.EntityID }}" class="row result" data-ng-repeat="dealer in dealerlocator.dealers" data-ng-class="{selected: dealer.selected}">
+<div class="columns large-12">
+<div class="row">
+<div class="columns small-8">
+<p class="dl-index">{{ $index + 1 }}</p>
+<p data-ng-show="dealer.distance >= 0" class="dl-distance">{{ dealer.distance / (1000 * config.distances.distanceConversion) | number:1 | formatNumber}}{{ config.distances.display }}</p>
+<p data-ng-show="!(dealer.distance >= 0) && dealer.directDistance" class="dl-distance">{{ dealer.directDistance / (1000 * config.distances.distanceConversion) | number:1  | formatNumber }}{{ config.distances.display }}*</p>
+</div>
+<div class="columns small-4">
+</div>
+</div>
+<div class="row">
+<div class="columns large-12">
+<h3 class="dl-dealer-name"><a data-ng-click="showDetails($index)" data-ng-href="#/search/{{ params.encodedSearchParams }}/dealer/{{ dealer.EntityID }}/" data-ng-focus="dealerlocator.resultsVisible = true">{{ dealer.DealerName }}</a></h3>
+</div>
+<div class="columns large-12" data-ng-show="dealer.todayClosingTime">
+<p class="dl-hours">Open today until {{ dealer.todayClosingTime }}</p>
+</div>
+<div class="columns large-12 dl-address">
+<p class='dl-address-line' data-ng-show='dealer.AddressLine1'>{{ dealer.AddressLine1 }}</p><p class='dl-address-line' data-ng-show='dealer.SubLocality'>{{ dealer.SubLocality }}</p><p class='dl-address-line' data-ng-show='dealer.Locality'>{{ dealer.Locality }}</p><p class='dl-address-line' data-ng-show='dealer.AdministrativeArea'>{{ dealer.AdministrativeArea }}</p><p class='dl-address-line' data-ng-show='dealer.PostCode'>{{ dealer.PostCode }}</p>
+</div>
+<div class="columns large-12">
+<p class="dl-telephone"><span class="icon-phone"></span>{{ dealer.PrimaryPhone }}</p>
+</div>
+</div>
+<div class="row dl-ctas">
+<div class="columns small-4 large-12">
+<p class="dl-details"><a data-ng-click="showDetails($index)" data-ng-href="#/search/{{ params.encodedSearchParams }}/dealer/{{ dealer.EntityID }}/"><span class="icon-details"></span>DEALER DETAILS <span class='offscreen'>{{ dealer.DealerName }}</span></a></p>
+</div>
+<div class="columns small-4 large-6 hide-for-large-up">
+<p class="dl-call"><a data-ng-href="tel:{{ dealer.PrimaryPhoneURL }}" data-ng-click="callDealer(dealer, 'search results', $index)"><span class="icon-phone-circled"></span>Call <span class='offscreen'>{{ dealer.DealerName }}</span></a></p>
+</div>
+<div class="columns small-4 large-6 end">
+<p class="dl-directions"><a data-ng-href="{{ dealer.directionsURL }}" target="_blank" data-ng-click="getDirections(dealer, 'search results', $index)" data-ng-focus="dealerlocator.resultsVisible = true"><span class="icon-directions"></span>DIRECTIONS <span class='offscreen'>{{ dealer.DealerName }}</span></a></p>
+</div>
+<!--
+<div class="columns small-4 large-6 show-for-large-up end">
+<p class="dl-to-phone"><a><span class="icon-sendto"></span>Send to Phone</a></p>
+</div>
+-->
+</div>
+</div>
+</div>
+<div class="row more-dealers" data-ng-show="dealerlocator.totalDealers.length > dealerlocator.dealers.length">
+<div class="columns large-9 large-centered">
+<button class="dl-button cta-blue" data-ng-click="showMoreDealers()">View more dealers</button>
+</div>
+</div>
+</div>	
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="details-template">
+<div class="row dl-results-header">
+<div class="columns small-8 dl-dealers-link" data-ng-class="{'small-8': params.searchParam, 'small-12': !params.searchParam}" data-ng-click="showResultsBlock()">
+<p>
+<a data-ng-show="params.searchParam" data-ng-href="#/search/{{ params.encodedSearchParams }}/" data-ng-click="!filterSettings.hidden && toggleFilters()"><span class="icon-chevron-thin-left"></span>Back to Search Results</a>
+<span data-ng-show="params.searchParam" class="collapse-block" data-ng-class="{'opened': dealerlocator.resultsVisible}"><span class"open">Open Results</span></span>
+<h2 data-ng-hide="params.searchParam" data-ng-class="{'results-closed': !dealerlocator.resultsVisible}">Dealer result
+<span class="collapse-block" data-ng-class="{'opened': dealerlocator.resultsVisible}"><span class"open">Open Results</span></span>
+</h2>
+</p>
+</div>
+<div data-ng-show="params.searchParam" class="columns small-4 dl-filter-toggle" data-ng-class="{'filters-open': !filterSettings.hidden}">
+<a data-ng-click="dealerlocator.resultsAlwaysVisible = true; toggleFilters()">Filter<span class="icon-filter"></span></a>
+</div>
+</div>
+<div class="row dl-results-container" data-ng-class="{'results-hidden': !filterSettings.hidden}">
+<div class="columns large-12 dl-results-list" data-ng-class="{'results-list-hidden': !dealerlocator.resultsVisible && desktop.matches}">
+<div class="row dealer-details selected">
+<div class="columns large-12">
+<div class="row">
+<div class="columns small-6">
+<p class="dl-index">{{ dealerlocator.dealer.index + 1 }}</p>
+<p class="dl-distance" data-ng-show="dealerlocator.dealer.distance">{{ dealerlocator.dealer.distance / (1000 * config.distances.distanceConversion) | number:1 | formatNumber }}{{ config.distances.display }}</p>
+<p data-ng-show="!dealerlocator.dealer.distance && dealerlocator.dealer.directDistance" class="dl-distance">{{ dealerlocator.dealer.directDistance / (1000 * config.distances.distanceConversion) | number:1 | formatNumber }}{{ config.distances.display }}</p>
+</div>
+<div class="columns small-6">
+</div>
+</div>
+<div class="row">
+<div class="columns large-12">
+<h3 class="dl-dealer-name dl-dealer-name-details">{{ dealerlocator.dealer.DealerName }}</h3>
+</div>
+<div class="columns large-12" data-ng-show="dealerlocator.dealer.todayClosingTime">
+<p class="dl-hours">Open today until {{ dealerlocator.dealer.todayClosingTime }}</p>
+</div>
+<div class="columns large-12 dl-address">
+<p class='dl-address-line' data-ng-show='dealerlocator.dealer.AddressLine1'>{{ dealerlocator.dealer.AddressLine1 }}</p><p class='dl-address-line' data-ng-show='dealerlocator.dealer.SubLocality'>{{ dealerlocator.dealer.SubLocality }}</p><p class='dl-address-line' data-ng-show='dealerlocator.dealer.Locality'>{{ dealerlocator.dealer.Locality }}</p><p class='dl-address-line' data-ng-show='dealerlocator.dealer.AdministrativeArea'>{{ dealerlocator.dealer.AdministrativeArea }}</p><p class='dl-address-line' data-ng-show='dealerlocator.dealer.PostCode'>{{ dealerlocator.dealer.PostCode }}</p>				
+</div>
+<div class="columns large-12">
+<p class="dl-telephone"><span class="icon-phone"></span>{{ dealerlocator.dealer.PrimaryPhone }}</p>
+</div>
+</div>
+<div class="row dl-ctas">
+<div class="columns small-4 large-12">
+<p class="dl-details disabled"><span class="icon-details"></span>DEALER DETAILS</p>
+</div>
+<div class="columns small-4 large-6 hide-for-large-up">
+<p class="dl-call"><a data-ng-href="tel:{{ dealerlocator.dealer.PrimaryPhoneURL }}" data-ng-click="callDealer(dealerlocator.dealer, 'dealer info', dealerlocator.dealer.index)"><span class="icon-phone-circled"></span>Call</a></p>
+</div>
+<div class="columns small-4 large-6 end">
+<p class="dl-directions"><a data-ng-href="{{ dealerlocator.dealer.directionsURL }}" target="_blank" data-ng-click="getDirections(dealerlocator.dealer, 'dealer info', dealerlocator.dealer.index)" data-ng-focus="dealerlocator.resultsVisible = true"><span class="icon-directions"></span>DIRECTIONS</a></p>
+</div>
+<!--
+<div class="columns small-4 large-6 show-for-large-up end">
+<p class="dl-to-phone"><a><span class="icon-sendto"></span>Send to Phone</a></p>
+</div>
+-->
+</div>
+<div class="row">
+<div class="columns small-12">
+<p data-ng-show="dealerlocator.dealer.PrimaryURL">
+<a class="ext-link dealerWebsiteLink" data-ng-href="{{ dealerlocator.dealer.PrimaryURL }}" title="Visit the dealer's website" target="_blank" data-ng-click="dealerWebsite(dealerlocator.dealer, 'dealer info', dealerlocator.dealer.index)">Visit the dealer's website <span class="offscreen">LinkToNewWindow</span></a>
+</p>
+<p data-ng-show="dealerlocator.dealer.ServiceURL">
+<a class="ext-link serviceWebsiteLink" data-ng-href="{{ dealerlocator.dealer.ServiceURL }}" title="Visit the dealer's service website" target="_blank" data-ng-click="dealerWebsite(dealerlocator.dealer, 'dealer info', dealerlocator.dealer.index)">Visit the dealer's service website <span class="offscreen">LinkToNewWindow</span></a>
+</p>
+</div>
+</div>
+<div class="row dl-dealer-info">
+<div class="columns large-12">
+<div class="accordian" data-ng-show="dealerlocator.dealer.SalesMondayOpenTime || dealerlocator.dealer.SalesTuesdayOpenTime || dealerlocator.dealer.SalesWednesdayOpenTime || dealerlocator.dealer.SalesThursdayOpenTime || dealerlocator.dealer.SalesFridayOpenTime || dealerlocator.dealer.SalesSaturdayOpenTime || dealerlocator.dealer.SalesSundayOpenTime" data-ng-click="openServices('opening hours', $event)">
+<h5>Opening Hours</h5>
+<div class="accordian-content">
+<table>
+<tbody>
+<tr>
+<td>Monday</td>
+<td data-ng-if="dealerlocator.dealer.SalesMondayOpenTime">{{dealerlocator.dealer.SalesMondayOpenTime}} - {{dealerlocator.dealer.SalesMondayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesMondayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td data-ng-if="dealerlocator.dealer.SalesTuesdayOpenTime">{{dealerlocator.dealer.SalesTuesdayOpenTime}} - {{dealerlocator.dealer.SalesTuesdayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesTuesdayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td data-ng-if="dealerlocator.dealer.SalesWednesdayOpenTime">{{dealerlocator.dealer.SalesWednesdayOpenTime}} - {{dealerlocator.dealer.SalesWednesdayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesWednesdayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td data-ng-if="dealerlocator.dealer.SalesThursdayOpenTime">{{dealerlocator.dealer.SalesThursdayOpenTime}} - {{dealerlocator.dealer.SalesThursdayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesThursdayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td data-ng-if="dealerlocator.dealer.SalesFridayOpenTime">{{dealerlocator.dealer.SalesFridayOpenTime}} - {{dealerlocator.dealer.SalesFridayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesFridayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td data-ng-if="dealerlocator.dealer.SalesSaturdayOpenTime">{{dealerlocator.dealer.SalesSaturdayOpenTime}} - {{dealerlocator.dealer.SalesSaturdayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesSaturdayOpenTime">Closed</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td data-ng-if="dealerlocator.dealer.SalesSundayOpenTime">{{dealerlocator.dealer.SalesSundayOpenTime}} - {{dealerlocator.dealer.SalesSundayCloseTime}}</td>
+<td data-ng-if="!dealerlocator.dealer.SalesSundayOpenTime">Closed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="accordian accordian-open" data-ng-show="dealerlocator.dealer.servicesExist" data-ng-click="openServices('services', $event)">
+<h5>Services</h5>
+<div class="accordian-content">
+<p class="dealer-service" data-ng-repeat="service in config.services" data-ng-init="dealerlocator.dealer.servicesExist = dealerlocator.dealer.servicesExist || dealerlocator.dealer[service.option]" data-ng-if="dealerlocator.dealer[service.option]" ng-bind-html="service.display"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row dealer-ctas">
+</div>
+</div>
+</div>
+</div>
+</div>
+</script>
+<!-- Dealer Locator Content - END  -->
+</div>
+<!-- Global-ux container - end -->
+<!-- Footer section--> 
+<footer>
+<nav id="footerNav" role="navigation">
+<div class="listColumn">
+<dl >
+<dt>Ford Cars</dt>
+<dd><a href="/Cars" class="om_fo_ff_pv">Ver todos los coches</a></dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Nuevo%20Ford%20Fiesta">
+Fiesta</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Fiesta-ST">
+Fiesta ST</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/New%20Ford%20Focus">
+Focus</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Focus-ST">
+Focus ST</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Ford%20Mondeo">
+Mondeo</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Ford%20Galaxy">
+Galaxy</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/New%20Ford%20C-MAX">
+C-MAX</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/New%20Tourneo%20Custom">
+New Tourneo Custom </a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Ford%20Ranger">
+Ford Ranger</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Ecosport">
+EcoSport</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Focus-STTEST">
+Focus ST</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/Mustang">
+Ford Mustang</a></h4>
+</dd>
+</dl>
+</div>
+<div class="listColumn">
+<dl >
+<dt>Commercial Vehicles</dt>
+<dd><a href="/CommercialVehicles" class="om_fo_ff_cv">Ver todos los Vehículos Comerciales</a></dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/CommercialVehicles/FiestaVan">
+Fiesta Van</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/CommercialVehicles/TransitCustom">
+New Transit Custom</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/Cars/New%20Tourneo%20Custom">
+New Tourneo Custom</a></h4>
+</dd>
+<dd>
+<h4><a class='sbe om_fo_ff_li ' href="/CommercialVehicles/Ford%20Ranger">
+Ford Ranger</a></h4>
+</dd>
+</dl>
+</div>
+<div class="listColumn">
+<dl >
+<dt>More From Ford</dt>
+<dd>
+<a class='om_fo_ff_li ' href="/Company">
+Company</a>
+</dd>
+<dd>
+<a class='om_fo_ff_li ' href="/News">
+News</a>
+</dd>
+<dd>
+<a class='om_fo_ff_li ' href="/OwnerServicesMike">
+Owners Services</a>
+</dd>
+<dd>
+<a class='om_fo_ff_li ' href="/Compatibility">
+Compatibilite-Portail</a>
+</dd>
+</dl>
+</div>
+<div class="listColumn">
+<dl class='social'>
+<dt>Follow Us</dt>
+<dd>
+<a class='om_fo_ff_li ' target="_new" href="http://www.facebook.com">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204854507814&blobkey=id')"></span>
+Facebook</a>
+</dd>
+<dd>
+<a class='om_fo_ff_li ' target="_new" href="http://www.youtube.com">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204854507827&blobkey=id')"></span>
+Youtube</a>
+</dd>
+<dd>
+<a class='om_fo_ff_li ' target="_new" href="http://www.twitter.com">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204854508120&blobkey=id')"></span>
+Twitter</a>
+</dd>
+</dl>
+</div>
+<div class="listColumn">
+<dl >
+<dt>I want to... </dt>
+<dd>
+<a class='sbe om_fo_ff_li expand' href="/SBE/BuildAndPrice">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204853653512&blobkey=id')"></span>
+Build and Price</a>
+<dl class="flyout">
+<dd>
+<a class="sbe" href="/BuildAndPrice">
+CARS
+</a>
+</dd>
+<dd>
+<a class="sbe" href="/CVBuildAndPrice">
+Commercial Vehicles
+</a>
+</dd>
+</dl>
+</dd>
+<dd>
+<a class='sbe om_fo_ff_SBET ' href="/SBE/TEST%20DRIVE">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204851286145&blobkey=id')"></span>
+Test Drive</a>
+</dd>
+<dd>
+<a class='sbe om_fo_ff_SBED ' href="/SBE/DEALER%20LOCATOR">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204851286145&blobkey=id')"></span>
+Dealer Locator</a>
+</dd>
+<dd>
+<a class='sbe om_fo_ff_SBEB expand' href="/SBE/Brochures">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204851286603&blobkey=id')"></span>
+Brochures</a>
+<dl class="flyout">
+<dt><span>CARS</span></dt>
+<dd>
+<a class="sbe om_fo_ff_SBEB" href="/SBE/Brochures/CARS/PRINTED%20BROCHURE">
+PRINTED BROCHURE
+</a>
+</dd>
+<dd>
+<a class="sbe om_fo_ff_SBEB" href="/SBE/Brochures/CARS/DOWNLOAD%20PDF">
+DOWNLOAD PDF
+</a>
+</dd>
+<!--/dl-->
+<dt><span>COMMERCIAL VEHICLES</span></dt>
+<dd>
+<a class="sbe om_fo_ff_SBEB" href="/SBE/Brochures/COMMERCIAL%20VEHICLES/PRINTED%20BROCHURE">
+PRINTED BROCHURE
+</a>
+</dd>
+<dd>
+<a class="sbe om_fo_ff_SBEB" href="/SBE/Brochures/COMMERCIAL%20VEHICLES/DOWNLOAD%20PDF">
+DOWNLOAD PDF
+</a>
+</dd>
+<!--/dl-->
+</dl>
+</dd>
+<dd>
+<a class='sbe om_fo_ff_SBEI ' href="/SBE/Keep%20Me%20Informed">
+<span style="background-image: url('/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fpng&blobwhere=1204851286547&blobkey=id')"></span>
+Keep me Informed</a>
+</dd>
+</dl>
+</div>
+</nav>
+<nav id="footerLinks">
+<ul class="footerBottomLinks fl">
+<li><a href="/" class="om_fo_ho">Homepage</a></li><li><a href="/Footer/ContactUs" class="om_fo_tf_li">Contact US</a></li><li><a href="/Footer/SiteMap" class="om_fo_tf_li">Site Map</a></li><li><a href="/Footer/TermsAndConditions" class="om_fo_tf_li">Terms and Conditions</a></li></ul><ul class="footerBottomLinks fr"><li><a href="/Footer/PrivacyPolicy" class="om_fo_tf_li">Privacy Policy</a></li><li><a href="/Footer/Accessibility" class="om_fo_tf_li">Accessibility</a></li><li><a href="/Footer/Guiadecookies" class="om_fo_tf_li">Guía de Cookies</a></li>
+<li><a href="http://m.ford.es" class="om_fo_mv">Sitio móvil</a></li>
+<li class="last">©2014, Ford Motor Company</li>
+</ul>
+</nav>
+</footer>
+</div>
+<!-- nosc comp -->
+</div>
+<!--<script src="/cs/ContentServer?pagename=eUsed/script/vendor/jquery"></script>-->
+<!-- responsive fall back scripts for IE8 order is important -->
+<!--[if lt IE 9 ]>
+<![endif]-->
+<script src="/cs/ContentServer?pagename=eUsed/script/vendor/jquery" ></script>
+<script type="text/javascript" src="/cs/ContentServer?pagename=GlobalUX/assets/js/vendor/require.min.js" data-main="/cs/ContentServer?pagename=GlobalUX/assets/js/main.js"></script>
+<script src="/cs/ContentServer?pagename=eUsed/script/EP2_Eused_JS" type="text/javascript"></script>
+<script src="/cs/ContentServer?pagename=EP2/ENGInE/script/topNavigation" ></script>
+<script src="/cs/ContentServer?pagename=EP2/ENGInE/script/api/mediaelement" ></script>
+<script src="/cs/ContentServer?pagename=ENGInE/script/messaging/core"></script>
+<script src='/cs/ContentServer?pagename=ESES_ENGInE/script/packager&c=Page&cid=1204859741207&location=load&isMobile=false&require=main' defer></script>
+</body>
+</html>

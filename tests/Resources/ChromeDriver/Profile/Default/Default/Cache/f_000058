@@ -1,0 +1,263 @@
+
+var __Omniture
+var __temp = {};__temp.hier1='shopping tools:locate dealervp:OLD';__temp.channel='dealerships';__temp['vehicle category']='null';__temp.eVar4='esp';__temp.prop4='esp';__temp.eVar14='ford-es';__temp.prop14='ford-es';__temp.eVar15='ford-brand';__temp.prop15='ford-brand';
+_Omniture = { "core" : __temp, "events" : 
+[{"brand:dealer_locater:error:unsupported_browser":{"prop11":"brand:dealer locater:error:unsupported browser","channel":"dealerships","eVar54":"ui:rad:<deviceType>","prop4":"<language>","hier1":"shopping tools:locate dealer","prop54":"ui:rad:<deviceType>","_event":"load","eVar11":"brand:dealer locater:error:unsupported browser","event22":"x","list3":"dealer search:unsupported browser","pageName":"brand:dealer locater:error:unsupported browser","eVar4":"<language>"}},{"brand:dealer_locater:select_new_browser:<browserType>":{"channel":"dealerships","eVar54":"ui:rad:<deviceType>","prop4":"<language>","hier1":"shopping tools:locate dealer","prop5":"unsupported browser:select new browser","prop54":"ui:rad:<deviceType>","_event":"click","pev2":"brand:dealer locater:select new browser:<browserType>","pe":"o","eVar4":"<language>"}},{"brand:dealer_locater":{"channel":"dealerships","prop4":"<language>","_event":"load","prop54":"ui:rad:<deviceType>","prop48":"event:find dealer-start","prop11":"brand:dealer locater","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer","event43":"x","eVar48":"event:find dealer-start","eVar11":"brand:dealer locater","pageName":"brand:dealer locater","eVar4":"<language>"}},{"brand:dealer_locater:results:page_<pageNumber>":{"channel":"dealerships","prop49":"dealer search:<searchSelection>:<searchType>","prop4":"<language>","prop5":"dealership:<searchType>","event1":"data['pageNumber'] == 1","prop54":"ui:rad:<deviceType>","_event":"load","prop48":"event:find dealer-complete","list2":"[<facetSelection>]","prop21":"0:<totalResults>","prop11":"brand:dealer locater:results:page <pageNumber>","eVar54":"ui:rad:<deviceType>","event43":"data['pageNumber'] == 1","hier1":"shopping tools:locate dealer","eVar48":"event:find dealer-complete","eVar49":"dealer search:<searchSelection>:<searchType>","eVar11":"brand:dealer locater:results:page <pageNumber>","eVar37":"<radius>","eVar35":"0:<totalResults>","pageName":"brand:dealer locater:results:page <pageNumber>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:error:disambiguation":{"channel":"dealerships","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","list3":"dealer search:<searchSelection>:disambiguation","list2":"[<facetSelection>]","prop21":"0:0","prop11":"brand:dealer locater:error:disambiguation","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer","eVar11":"brand:dealer locater:error:disambiguation","eVar37":"<radius>","event22":"x","eVar35":"0:0","pageName":"brand:dealer locater:error:disambiguation","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:error:<errorType>":{"channel":"dealerships","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","list3":"dealer search:<searchSelection>:<errorType>","list2":"[<facetSelection>]","prop21":"0:0","prop11":"brand:dealer locater:error:<errorType>","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer","eVar11":"brand:dealer locater:error:<errorType>","eVar37":"<radius>","event22":"x","eVar35":"0:0","pageName":"brand:dealer locater:error:<errorType>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:results:advanced_search":{"channel":"dealerships","prop4":"<language>","prop5":"dealer locater:filter-start","prop54":"ui:rad:<deviceType>","_event":"click","prop48":"event: advanced dealer search-start","list2":"[<facetSelection>]","pev2":"brand:dealer locater:results:advanced search","pe":"o","eVar54":"ui:rad:<deviceType>","event43":"X","hier1":"shopping tools:locate dealer:advanced search","eVar48":"event: advanced dealer search-start","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:advanced_search:clear_filter":{"channel":"dealerships","eVar54":"ui:rad:<deviceType>","prop4":"<language>","hier1":"shopping tools:locate dealer:advanced search","prop5":"dealer locater:filter-clear","prop54":"ui:rad:<deviceType>","_event":"click","pev2":"brand:dealer locater:advanced search:clear filter","zip":"[<location>]","pe":"o","eVar22":"[dealer name search: <namesearchTerm>]","eVar4":"<language>"}},{"brand:dealer_locater:advanced_search:filter_icon_info":{"channel":"dealerships","prop4":"<language>","prop5":"dealer locater:filter-info","_event":"click","prop54":"ui:rad:<deviceType>","pev2":"brand:dealer locater:advanced search:filter icon info","list2":"<facetSelection>","pe":"o","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:advanced search","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:results:advanced_search:submit":{"channel":"dealerships","prop4":"<language>","prop5":"dealer locater:filter-submit:<dealerFilterType>","_event":"click","prop54":"ui:rad:<deviceType>","list2":"[<facetSelection>]","pev2":"brand:dealer locater:results:advanced search:submit","pe":"o","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:advanced search","eVar37":"[<radius>]","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:advanced_search:results:page_<pageNumber>":{"channel":"dealerships","prop49":"advanced dealer search:<searchSelection>:<dealerFilterType>","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","prop48":"event: advanced dealer search-complete","list2":"[<facetSelection>]","prop11":"brand:dealer locater:advanced search:results:page <pageNumber>","eVar54":"ui:rad:<deviceType>","event43":"data['pageNumber'] == 1","hier1":"shopping tools:locate dealer:advanced search","eVar48":"event: advanced dealer search-complete","eVar49":"advanced dealer search:<searchSelection>:<dealerFilterType>","eVar11":"brand:dealer locater:advanced search:results:page <pageNumber>","eVar37":"[<radius>]","eVar35":"0:<totalResults>","pageName":"brand:dealer locater:advanced search:results:page <pageNumber>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:advanced_search:<errorType>":{"channel":"dealerships","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","list3":"advanced dealer search:<dealerFilterType>:<errorType>","list2":"[<facetSelection>]","prop11":"brand:dealer locater:advanced search:<errorType>","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:advanced search","eVar11":"brand:dealer locater:advanced search:<errorType>","eVar37":"[<radius>]","event22":"x","eVar35":"0:0","pageName":"brand:dealer locater:advanced search:<errorType>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:results:map_select":{"channel":"dealerships","eVar1":"<dealerCode>","prop4":"<language>","prop5":"dealer locater:mapselect","prop54":"ui:rad:<deviceType>","_event":"click","list2":"[<facetSelection>]","pev2":"brand:dealer locater:results:map select","pe":"o","prop21":"<position>:<totalResults>","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:view dealer","eVar37":"[<radius>]","eVar35":"<position>:<totalResults>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:dealer:info":{"channel":"dealerships","eVar1":"<dealerCode>","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","prop48":"event: view dealer","list2":"[<facetSelection>]","prop21":"<position>:<totalResults>","prop11":"brand:dealer locater:dealer:info","eVar54":"ui:rad:<deviceType>","event43":"x","hier1":"shopping tools:locate dealer:view dealer","eVar48":"event: view dealer","eVar11":"brand:dealer locater:dealer:info","eVar37":"[<radius>]","eVar35":"<position>:<totalResults>","pageName":"brand:dealer locater:dealer:info","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:dealer:info:cta":{"channel":"dealerships","eVar1":"<dealerCode>","prop49":"<actionType>:<infoType>","prop4":"<language>","prop5":"dealer info:<actionType>:<infoType>","prop54":"ui:rad:<deviceType>","_event":"click","prop48":"event: dealer info cta","list2":"[<facetSelection>]","pev2":"brand:dealer locater:dealer:info:cta","pe":"o","prop21":"<position>:<totalResults>","eVar54":"ui:rad:<deviceType>","event43":"x","hier1":"shopping tools:locate dealer:view dealer","eVar48":"event: dealer info cta","eVar49":"<actionType>:<infoType>","eVar37":"[<radius>]","eVar35":"<position>:<totalResults>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locater:dealer:info:<infoType>":{"channel":"dealerships","eVar1":"<dealerCode>","prop4":"<language>","prop54":"ui:rad:<deviceType>","_event":"load","list2":"[<facetSelection>]","prop21":"<position>:<totalResults>","prop11":"brand:dealer locater:dealer:info:<infoType>","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:view dealer","eVar11":"brand:dealer locater:dealer:info:<infoType>","eVar37":"[<radius>]","eVar35":"<position>:<totalResults>","pageName":"brand:dealer locater:dealer:info:<infoType>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locator:contact:<contactType>":{"channel":"dealerships","eVar1":"<dealerCode>","prop49":"<contactType>","prop4":"<language>","prop5":"contact dealer:<ctaPlacement>","prop54":"ui:rad:<deviceType>","_event":"click","prop48":"event: contact dealer","list2":"[<facetSelection>]","pev2":"brand:dealer locator:contact:<contactType>","pe":"o","prop21":"<position>:<totalResults>","eVar54":"ui:rad:<deviceType>","event43":"x","hier1":"shopping tools:locate dealer:referral","eVar48":"event: contact dealer","eVar49":"<contactType>","eVar37":"<radius>","eVar35":"<position>:<totalResults>","event26":"x","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locator:referral:weblink":{"channel":"dealerships","eVar1":"<dealerCode>","prop4":"<language>","event4":"x","prop5":"dealer web referral:<ctaPlacement>","prop54":"ui:rad:<deviceType>","_event":"click","prop48":"event: dealer referral","list2":"[<facetSelection>]","pev2":"brand:dealer locator:referral:weblink","pe":"e","prop21":"<position>:<totalResults>","eVar54":"ui:rad:<deviceType>","event43":"x","hier1":"shopping tools:locate dealer:referral","eVar48":"event: dealer referral","eVar37":"<radius>","eVar35":"<position>:<totalResults>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}},{"brand:dealer_locator:get_directions":{"channel":"dealerships","eVar1":"<dealerCode>","prop4":"<language>","prop5":"dealer directions:<ctaPlacement>","prop54":"ui:rad:<deviceType>","_event":"click","list2":"[<facetSelection>]","pev2":"brand:dealer locator:get directions","pe":"o","prop21":"<position>:<totalResults>","eVar54":"ui:rad:<deviceType>","hier1":"shopping tools:locate dealer:referral","eVar37":"<radius>","eVar35":"<position>:<totalResults>","zip":"[<location>]","eVar4":"<language>","eVar22":"[dealer name search: <namesearchTerm>]"}}]
+};var __temp = {};
+var _DoubleClick = { "core" : __temp, "events" : 
+[{"brand:dealer_locater:error:unsupported_browser":{"_event":"load","pageName":"brand:dealer locater:error:unsupported browser"}},{"brand:dealer_locater:select_new_browser:<browserType>":{"_event":"click","pev2":"brand:dealer locater:select new browser:<browserType>"}},{"brand:dealer_locater":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"load","pageTitle":"<document.title>","userAgent":"<navigator.userAgent>","pageName":"brand:dealer locater","siteSection":"<omniS.channel>","PageID":"EU_ENGInE_dealer-locate_initiated"}},{"brand:dealer_locater:results:page_<pageNumber>":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"load","pageTitle":"<document.title>","userAgent":"<navigator.userAgent>","pageName":"brand:dealer locater:results:page <pageNumber>","siteSection":"<omniS.channel>","PageID":"EU_ENGInE_dealer-locate_completed"}},{"brand:dealer_locater:error:disambiguation":{"_event":"load","pageName":"brand:dealer locater:error:disambiguation"}},{"brand:dealer_locater:error:<errorType>":{"_event":"load","pageName":"brand:dealer locater:error:<errorType>"}},{"brand:dealer_locater:results:advanced_search":{"_event":"click","pev2":"brand:dealer locater:results:advanced search"}},{"brand:dealer_locater:advanced_search:clear_filter":{"_event":"click","pev2":"brand:dealer locater:advanced search:clear filter"}},{"brand:dealer_locater:advanced_search:filter_icon_info":{"_event":"click","pev2":"brand:dealer locater:advanced search:filter icon info"}},{"brand:dealer_locater:results:advanced_search:submit":{"_event":"click","pev2":"brand:dealer locater:results:advanced search:submit"}},{"brand:dealer_locater:advanced_search:results:page_<pageNumber>":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"load","pageTitle":"<document.title>","userAgent":"<navigator.userAgent>","pageName":"brand:dealer locater:advanced search:results:page <pageNumber>","siteSection":"<omniS.channel>"}},{"brand:dealer_locater:advanced_search:<errorType>":{"_event":"load","pageName":"brand:dealer locater:advanced search:<errorType>"}},{"brand:dealer_locater:results:map_select":{"_event":"click","pev2":"brand:dealer locater:results:map select"}},{"brand:dealer_locater:dealer:info":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"load","pageTitle":"<document.title>","userAgent":"<navigator.userAgent>","pageName":"brand:dealer locater:dealer:info","siteSection":"<omniS.channel>","PageID":"EU_ENGInE_dealer-locate_view-dealer"}},{"brand:dealer_locater:dealer:info:cta":{"_event":"click","pev2":"brand:dealer locater:dealer:info:cta"}},{"brand:dealer_locater:dealer:info:<infoType>":{"_event":"load","pageName":"brand:dealer locater:dealer:info:<infoType>"}},{"brand:dealer_locator:contact:email":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"click","pageTitle":"<document.title>","event":"EU_ENGInE_dealer-locate_dealer-contact-email","userAgent":"<navigator.userAgent>","pev2":"brand:dealer locator:contact:email","siteSection":"<omniS.channel>","PageID":"EU_ENGInE_dealer-locate_dealer-contact-email"}},{"brand:dealer_locator:contact:c2c":{"pageCategory":"<omniS.eVar15>","country":"<omniS.eVar14>","visitorLoginState":"not login","URL":"<document.URL>","language":"<omniS.eVar4>","_event":"click","pageTitle":"<document.title>","event":"EU_ENGInE_dealer-locate_dealer-contact-c2c","userAgent":"<navigator.userAgent>","pev2":"brand:dealer locator:contact:c2c","siteSection":"<omniS.channel>","PageID":"EU_ENGInE_dealer-locate_dealer-contact-c2c"}},{"brand:dealer_locator:referral:weblink":{"_event":"click","pev2":"brand:dealer locator:referral:weblink"}},{"brand:dealer_locator:get_directions":{"_event":"click","pev2":"brand:dealer locator:get directions"}}]
+};TK.resume();
+var head = document.getElementsByTagName("head")[0];
+if (typeof requirejs != 'function') {
+var requirejs = function (__a,__b) {__b();}; 	
+}
+requirejs(['main'], function() {
+var OmnitureProvider = function() {		
+var definition;
+this.superclass = TK.ProviderBase;
+var add = function(value, s) {
+if (value.length > 0) return "," + s;
+else return s;
+} 			
+var processDefinitions = function(mainDefinition, definitions, data) {
+var success = false;
+if (typeof s["linkTrackVars"] == 'undefined') s["linkTrackVars"] = "";
+if (typeof s["events"] == 'undefined') s["events"] = "";
+for (var prop in mainDefinition.core) {
+s[prop] = mainDefinition.core[prop];
+s["linkTrackVars"] += add(s["linkTrackVars"], prop);
+}
+for (var prop in definitions) {
+if (prop.indexOf("_") != 0) { // non system
+if (prop.indexOf("event") != 0) { // non event 
+value = TK.TagManager.replacePlaceholders(definitions[prop],data, false);
+value = TK.TagManager.replaceReferences(value, data, mainDefinition.core, false);
+// remove optional groups
+// check if they are in an optional group - if not log an error.
+var pattern = /(\[.*<([a-z][a-z0-9 \(\).]*)[^>]*>\])/gi;
+var matches = pattern.exec(value);
+if (matches != null && matches[0].substring(0,1) == "[") {
+//optional group
+TK.log(TK.LogLevel.TRACE, "Removing optional group " + matches[0]);
+value = value.replace(matches[0], "");
+}
+if (value.indexOf("<") >=0 || value.indexOf(">") >=0) {
+TK.log(TK.LogLevel.ERROR, "ERR:UNRESOLVED_ELEMENTS [" + value + "] " + definitions["_eventName"]); 
+return success;
+}
+s[prop] = value.replace("[","").replace("]","");
+s["linkTrackVars"] += add(s["linkTrackVars"], prop);
+}
+}
+}	
+for (var prop in definitions) {
+if (prop.indexOf("_") != 0) { // non system
+if (prop.indexOf("event") == 0) { // event
+try {
+if ((definitions[prop]).toLowerCase() != "x") {
+var ok = eval(definitions[prop]);
+if (!ok) {
+TK.log(TK.LogLevel.TRACE, "EVENT IGNORED ["  + prop + "] did not satisfy the condition [" + definitions[prop] + "]");
+continue;
+}
+}
+s["events"] += add(s["events"], prop);
+s["linkTrackEvents"] = s["events"];
+} 
+catch (e) {
+TK.log(TK.LogLevel.ERROR, "ERR:EVENT DEFINITION ["  + prop + "]");
+}
+}
+}
+}
+// event handling
+if (s["events"] === "") {
+s.eVar48="";s.eVar49="";
+s.prop48="";s.prop49="";
+TK.log(TK.LogLevel.TRACE, "48/49 REMOVED - no events set.");
+}
+success = true;
+return success;
+}
+var unsetDefinitions = function(definitions) {
+for (var prop in definitions) {
+if (prop.indexOf("_") != 0) { // non system
+if (prop.indexOf("event") != 0 && prop != "pageName" && prop != "e" && prop != "prop11") { // non event, non pagename 
+delete s[prop];
+}
+}
+}			
+};
+var constructor = function () {
+jQuery.ajax({cache:false, url:"/cs/ContentServer?cid=1190136939212&pagename=ENGInE%2Ftagging%2FOmnitureScript"}).done( function () {			         
+if (typeof jQuery != 'undefined') {
+var OM = OM || {};
+OM.webdriver = OM.webdriver || {}; 
+OM.webdriver.s = jQuery.extend({}, s);
+}
+if (typeof _Omniture == "object") {
+TK.TagManager.bootstrap("Omniture", _Omniture);
+this.initialize();
+} else {
+TK.log(TK.LogLevel.ERROR, "ERR:Omniture page variables were not defined. Please check authoring for this page.");
+}
+}.bind(this));				
+TK.log(TK.LogLevel.TRACE, "Created OmnitureProvider"); 
+};
+var getDataProvider = function() {
+return this.mainDefinition.core;
+};
+var stateChange = function (data) {
+TK.TagManager.bootstrap("Omniture", data);			
+};
+var initialize = function () {
+this.superclass.initialize();
+TK.log(TK.LogLevel.TRACE,"Initialized OmnitureProvider"); 
+TK.broadcast(document, 'OmnitureProvider-Initialized', {});				
+};
+var started = function (data) {
+if (this.hasOwnProperty("isStarted")) return;
+this.definition = data;
+TK.broadcast(jQuery(this), 'OmnitureProvider-Started', {
+});
+TK.log(TK.LogLevel.TRACE,"Started OmnitureProvider"); 
+this["isStarted"] = true;
+this.superclass.started();
+};	
+var load = function (event, definitions, data) {
+TK.log(TK.LogLevel.DEBUG, data);
+s["linkTrackVars"] = "";
+s["events"] = "";
+if (processDefinitions(this.definition, definitions, data)) {
+TK.log(TK.LogLevel.TRACE, "Firing LOAD:");
+TK.log(TK.LogLevel.TRACE, s);
+var s_code = s.t();
+if (s_code) {
+document.write(s_code);
+}
+}
+unsetDefinitions(definitions);
+};	
+var click = function (event, definitions, data) {
+s.events = "";
+s.linkTrackEvents = "";				
+if (processDefinitions(this.definition, definitions, data)) {
+var obj;
+TK.log(TK.LogLevel.TRACE, "Firing Click ");
+TK.log(TK.LogLevel.TRACE, s);
+if (event.currentTarget && event.currentTarget.activeElement.tagName == "A") {
+TK.log(TK.LogLevel.TRACE, "Click direct.");
+TK.log(TK.LogLevel.TRACE, s);
+obj = event.currentTarget.activeElement;
+} else {
+if (event.currentTarget.URL) {
+TK.log(TK.LogLevel.TRACE, "Click proxied.");
+TK.log(TK.LogLevel.TRACE, s);
+var clickProxy = $('<a id="omniproxy" href="' + event.currentTarget.URL + '"></a>');
+obj = clickProxy[0];
+}
+}
+if ((typeof definitions["pe"] == "string") && (s["pev2"] != "")) {
+s.tl(obj, s["pe"], s["pev2"]);
+} else {
+s.tl(obj, s["pe"]);
+}
+}
+unsetDefinitions(definitions);
+};
+return {
+constructor: constructor,
+initialize: initialize,
+load: load,
+click: click,
+stateChange : stateChange,
+superclass : this.superclass,
+started : started
+};
+}
+TK.TagManager.registerProvider("Omniture", OmnitureProvider);
+TK.listen(document, 'OmnitureProvider-Initialized', function (e, data) {
+}, false);
+var DoubleClickProvider = function() {		
+var definition;
+var _dataLayer = {};
+this.superclass = TK.ProviderBase;
+var add = function(value, s) {
+if (value.length > 0) return "," + s;
+else return s;
+} 			
+var processDefinitions = function(mainDefinition, definitions, data) {
+for (var prop in mainDefinition.core) {
+dataLayer[prop] = mainDefinition.core[prop];
+}
+for (var prop in definitions) {
+if (prop.indexOf("_") != 0) { // non system
+if (prop.indexOf("event") != 0) { // non event 
+value = TK.TagManager.replacePlaceholders(definitions[prop],data, false);
+value = TK.TagManager.replaceReferences(value,data , false);
+if (value.indexOf("<") >=0 || value.indexOf(">") >=0) {
+TK.log(TK.LogLevel.ERROR, "ERR:UNRESOLVED_ELEMENTS [" + value + "] " + definitions["_eventName"]); 
+return;
+}
+_dataLayer[prop] = value;
+}
+}
+}	
+}
+var unsetDefinitions = function(definitions) {
+for (var prop in definitions) {
+if (prop.indexOf("_") != 0) { // non system
+delete _dataLayer[prop];
+}
+}			
+}
+var constructor = function (data) {
+dataLayer = [];
+this.initialize(); 
+TK.log(TK.LogLevel.TRACE, "Created DoubleClickProvider"); 
+};
+var initialize = function () {
+this.superclass.initialize();
+TK.log(TK.LogLevel.TRACE,"Initialized DoubleClickProvider"); 
+TK.broadcast(document, 'DoubleClickProvider-Initialized', {});				
+};
+var started = function (data) {
+this.definition = data;
+TK.broadcast(jQuery(this), 'DoubleClickProvider-Started', {
+});
+TK.log(TK.LogLevel.TRACE,"Started DoubleClickProvider"); 
+this.superclass.started();
+};	
+var load = function (event, definitions, data) {
+////TK.log(TK.LogLevel.ERROR, "NOT IMPLEMENTED");
+processDefinitions(this.definition, definitions, data);
+dataLayer = Object.keys(_dataLayer).map(function(k) {
+var o={};
+o[k] = _dataLayer[k];
+return o; 
+});
+{
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLW9L');
+}
+};	
+var click = function (event, definitions, data) {
+TK.log(TK.LogLevel.ERROR, "NOT IMPLEMENTED");
+};
+return {
+constructor: constructor,
+initialize: initialize,
+load: load,
+click: click,
+superclass : this.superclass,
+started : started
+};
+}	
+if (typeof _DoubleClick == "object") {	
+TK.TagManager.registerProvider("DoubleClick", DoubleClickProvider, _DoubleClick);
+}
+});
+<!-- load -->

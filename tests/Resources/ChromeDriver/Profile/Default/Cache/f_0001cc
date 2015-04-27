@@ -1,0 +1,379 @@
+
+<!doctype html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<!-- head -->
+<script src='/cs/ContentServer?pagename=UKEN_ENGInE/script/packager&c=Page&cid=1204984548504&location=head&isMobile=true&require=main'></script>  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+<meta name="description" content="Global UX Homepage" />
+<meta name="keywords" content="GlobalUX" />
+<title>The Official Homepage of Ford | Ford UK</title>
+<link rel="shortcut icon" href="/cs/ENGInE/img/favicon.ico"  type="image/x-icon"/>
+<link REL="Shortcut icon" HREF="/cs/ENGInE/img/favicon.png" type="image/x-icon">
+<link REL="Shortcut icon" HREF="/cs/ENGInE/img/favicon.gif" type="image/x-icon">
+<link rel="stylesheet" href="/cs/ContentServer?pagename=GlobalUX/assets/css/foundation">
+<link rel="stylesheet" href="/cs/ContentServer?pagename=GlobalUX/assets/css/global-ux">
+<script src="/cs/ContentServer?pagename=GlobalUX/assets/js/vendor/modernizr.min"></script>
+<!--[if lt IE 9]>
+<script src="/cs/ContentServer?pagename=GlobalUX/assets/js/ie8"></script>
+<![endif]-->
+<script src="/cs/ContentServer?pagename=ENGInE/GlobalUX/JavaScriptGlobals&amp;mode=script&amp;site=UKEN_ENGInE&amp;mobile=true"></script>
+</head>
+<body>
+<script src='/cs/ContentServer?pagename=UKEN_ENGInE/script/packager&c=Page&cid=1204984548504&location=body&isMobile=true&require=main'></script> 
+<div id="global-ux" data-page="home">
+<h1>Global UX Homepage</h1>
+<!--
+javascript tasks to do to enable the menu
+- when clicking on the menu icon
+- add this css: height: 835px; overflow: hidden; to element: #globile_header (calculate what the actual height of the element is before proceeding with this value)
+- switch between the 'navon' and the 'navoff' on element: navpanel
+- add active (remove when not active) class to the element: tognavpanel
+- For the menu animation
+- need to switch between the animation classes on element: navitems
+- adding show and hide class to ul element
+-->
+<div id="cookiePolicyWrapper"></div>
+<div id='globile_header' role='banner'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<header id="mastHead">
+<div id="header_logo">
+<!--Mobile/FordLogo -->
+<a id="logo" href="/"><img src='/cs/BlobServer?blobtable=MungoBlobs&#38;blobcol=urldata&#38;blobwhere=1204858702766&#38;blobkey=id' alt="Ford Go further"></a>    
+<!--Mobile/FordLogo -->
+</div>
+<nav role='navigation'>
+<a href="#" id="tognavpanel">main navigation</a>
+<div id="navpanel" class="navoff">
+<div id="navitems" class="animStageOne">
+<div class="item one"><ul><li><a id='1204984548554' href='#' class='subcta'>Cars<span class='navarrow'></span></a></li><li><a id='1204999002929' href='#' class='subcta'>Car Promotions<span class='navarrow'></span></a></li><li><a id='1204858703174' href='#' class='subcta'>Build And Price<span class='navarrow'></span></a></li><li><a id='1204996709067' href='#' class='subcta'>Commercial Vehicles<span class='navarrow'></span></a></li><li><a id='1204999060543' href='#' class='subcta'>Commercial Vehicle Promotions<span class='navarrow'></span></a></li><li><a id='1205000146112' href='#' class='subcta'>Owner Services<span class='navarrow'></span></a></li><li><a id='1204858849855' href='/GlobalUXDealerLocator' class='cta'>Mobile Dealer Locator for GUX</a></li><li><a id='1204858848511' href='/HomeEP2' class='cta'>Home EP2</a></li><li><a id='1204859108715' href='/osbov' class='cta'>osbov</a></li><li><a id='1204859296669' href='/Approved-used-cars' class='cta'>Approved Used</a></li></ul></div><div class="item two"><ul class='1204984548554 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1204858701597' href='/Cars/Fiesta' class='cta 1204984548554'>New Fiesta</a></li><li><a id='1204858701757' href='/Cars/Fiesta-ST' class='cta 1204984548554'>Fiesta ST</a></li><li><a id='1204984548622' href='/Cars/Ka' class='cta 1204984548554'>Ka</a></li><li><a id='1204985293454' href='/Cars/Focus' class='cta 1204984548554'>Focus</a></li><li><a id='1204858701991' href='/Cars/New-Focus' class='cta 1204984548554'>New Focus</a></li><li><a id='1204858701747' href='/Cars/Focus-ST' class='cta 1204984548554'>Focus ST</a></li><li><a id='1204984552310' href='/Cars/Kuga' class='cta 1204984548554'>Kuga</a></li><li><a id='1205006691892' href='/Cars/B-MAX' class='cta 1204984548554'>B-MAX</a></li><li><a id='1204984554601' href='/Cars/C-MAX' class='cta 1204984548554'>C-MAX</a></li><li><a id='1204984554544' href='/Cars/S-MAX' class='cta 1204984548554'>S-MAX</a></li><li><a id='1204859173521' href='/Cars/New-Mustang' class='cta 1204984548554'>New Ford Mustang</a></li><li><a id='1204858971171' href='/Cars/NewMondeo' class='cta 1204984548554'>Mondeo</a></li><li><a id='1204984564132' href='/Cars/Galaxy' class='cta 1204984548554'>Galaxy</a></li><li><a id='1205004122477' href='/Cars/Ranger' class='cta 1204984548554'>All-New Ranger</a></li><li><a id='1204858704587' href='/Cars/Tourneo-Connect' class='cta 1204984548554'>Tourneo Connect</a></li><li><a id='1204858704592' href='/Cars/Tourneo-Custom' class='cta 1204984548554'>Tourneo Custom</a></li><li><a id='1204858740498' href='/Cars/EcoSport' class='cta 1204984548554'>EcoSport (Manual)</a></li></ul><ul class='1204999002929 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1204999003987' href='/CarPromotions/KaPCH' class='cta 1204999002929'>Ka Edge</a></li><li><a id='1204999003755' href='/CarPromotions/Ka' class='cta 1204999002929'>Ka Studio</a></li><li><a id='1204999004306' href='/CarPromotions/Fiesta' class='cta 1204999002929'>Fiesta Studio</a></li><li><a id='1204999008443' href='/CarPromotions/FiestaPCH' class='cta 1204999002929'>Fiesta</a></li><li><a id='1205019064702' href='/CarPromotions/B-MAX' class='cta 1204999002929'>B-MAX</a></li><li><a id='1204999008804' href='/CarPromotions/Focus' class='cta 1204999002929'>Focus Studio</a></li><li><a id='1204999008829' href='/CarPromotions/FocusPCH' class='cta 1204999002929'>Focus Zetec</a></li><li><a id='1204999008934' href='/CarPromotions/NewC-MAX' class='cta 1204999002929'>5-seat C-MAX</a></li><li><a id='1204999023400' href='/CarPromotions/NewGrandCMAX' class='cta 1204999002929'>7-seat Grand C-MAX</a></li><li><a id='1204999024489' href='/CarPromotions/Kuga' class='cta 1204999002929'>Kuga</a></li><li><a id='1204999024663' href='/CarPromotions/Mondeo' class='cta 1204999002929'>Mondeo</a></li><li><a id='1204999024946' href='/CarPromotions/S-MAX' class='cta 1204999002929'>S-MAX</a></li><li><a id='1204999025019' href='/CarPromotions/Galaxy' class='cta 1204999002929'>Galaxy</a></li><li><a id='1204999025106' href='/CarPromotions/Ranger' class='cta 1204999002929'>Ranger</a></li></ul><ul class='1204858703174 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1204858703178' href='#' class='subcta 1204858703174'>Cars<span class='navarrow'></span></a></li><li><a id='1204858703189' href='#' class='subcta 1204858703174'>Commercial Vehicles<span class='navarrow'></span></a></li></ul><ul class='1204996709067 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1204858704195' href='/CommercialVehicles/All-New-Transit' class='cta 1204996709067'>All New Transit</a></li><li><a id='1204858704202' href='/CommercialVehicles/All-New-Transit-Custom' class='cta 1204996709067'>All New Transit Custom</a></li><li><a id='1204858704212' href='/CommercialVehicles/All-New-Transit-Connect' class='cta 1204996709067'>All New Transit Connect</a></li><li><a id='1204858704248' href='/CommercialVehicles/All-New-Transit-Courier' class='cta 1204996709067'>All New Transit Courier</a></li><li><a id='1204858704220' href='/CommercialVehicles/Transit-People-Mover' class='cta 1204996709067'>Transit People Mover</a></li><li><a id='1204858704230' href='/CommercialVehicles/Fiesta-Van' class='cta 1204996709067'>Fiesta Van</a></li><li><a id='1204858704233' href='/CommercialVehicles/Ranger' class='cta 1204996709067'>Ranger</a></li><li><a id='1204858704238' href='/CommercialVehicles/Tourneo-Connect' class='cta 1204996709067'>Tourneo Connect</a></li><li><a id='1204858704243' href='/CommercialVehicles/Tourneo-Custom' class='cta 1204996709067'>Tourneo Custom</a></li></ul><ul class='1204999060543 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1204999060553' href='/CommercialPromotions/Overview' class='cta 1204999060543'>Overview</a></li><li><a id='1204999060635' href='/CommercialPromotions/FiestaVan' class='cta 1204999060543'>Fiesta Van</a></li><li><a id='1204999060642' href='/CommercialPromotions/TransitConnect' class='cta 1204999060543'>Transit Connect</a></li><li><a id='1204999060670' href='/CommercialPromotions/TransitSWB' class='cta 1204999060543'>Transit SWB</a></li><li><a id='1204999060675' href='/CommercialPromotions/TransitLWB' class='cta 1204999060543'>Transit LWB</a></li><li><a id='1205019086547' href='/CommercialPromotions/TransitCustom' class='cta 1204999060543'>Transit Custom</a></li><li><a id='1204999060682' href='/CommercialPromotions/Ranger' class='cta 1204999060543'>Ranger</a></li></ul><ul class='1205000146112 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li><a id='1205001135675' href='/OwnerServices/FinanceandProtectionforOwners' class='cta 1205000146112'>Finance and protection for owners</a></li><li><a id='1205001134807' href='#' class='subcta 1205000146112'>Vehicle service and repair<span class='navarrow'></span></a></li><li><a id='1205001134815' href='/OwnerServices/FordAccessories' class='cta 1205000146112'>Ford Accessories</a></li><li><a id='1205001135682' href='/OwnerServices/FuelEconomyandEnvironmentalProtection' class='cta 1205000146112'>Fuel economy and environmental protection</a></li><li><a id='1205001135716' href='/OwnerServices/OlderFordvehicles' class='cta 1205000146112'>Older Ford vehicles</a></li><li><a id='1205001135726' href='/OwnerServices/NewBuyers' class='cta 1205000146112'>New Buyers</a></li><li><a id='1205001135764' href='/OwnerServices/SafetyRecalls' class='cta 1205000146112'>Safety Recalls</a></li><li><a id='1205001135771' href='/OwnerServices/AccidentManagement' class='cta 1205000146112'>Ford Accident Management</a></li><li><a id='1205001135778' href='/OwnerServices/LifestyleCollection' class='cta 1205000146112'>Ford Lifestyle Collection</a></li></ul><ul class='1204859296669 hide'><li><a href='#' class='back'><span></span>Previous</a></li></ul></div><div class="item three"><ul class='1204858703178 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li> <a id='1204858703199' href='/BuildandPrice/Cars/Ka' class='cta'>Ka Build and Price</a></li><li> <a id='1204858703204' href='/BuildandPrice/Cars/Fiesta' class='cta'>New Fiesta Build and Price</a></li><li> <a id='1204858703209' href='/BuildandPrice/Cars/Fiesta-ST' class='cta'>Fiesta ST Build and Price</a></li><li> <a id='1204858703214' href='/BuildandPrice/Cars/Focus' class='cta'>Focus Build and Price</a></li><li> <a id='1204858703219' href='/BuildandPrice/Cars/New-Focus' class='cta'>New Focus Build and Price</a></li><li> <a id='1204858703224' href='/BuildandPrice/Cars/Focus-ST' class='cta'>Focus ST Build and Price</a></li><li> <a id='1204858703238' href='/BuildandPrice/Cars/Kuga' class='cta'>Kuga Build and Price</a></li><li> <a id='1204858703584' href='/BuildandPrice/Cars/B-MAX' class='cta'>B-MAX Build and Price</a></li><li> <a id='1204858703715' href='/BuildandPrice/Cars/C-MAX' class='cta'>C-MAX Build and Price</a></li><li> <a id='1204858704020' href='/BuildandPrice/Cars/S-MAX' class='cta'>S-MAX Build and Price</a></li><li> <a id='1204858704109' href='/BuildandPrice/Cars/NewMondeo' class='cta'>New Mondeo Build and Price</a></li><li> <a id='1204858704114' href='/BuildandPrice/Cars/Galaxy' class='cta'>Galaxy Build and Price</a></li><li> <a id='1204858704186' href='/BuildandPrice/Cars/Ranger' class='cta'>Ranger Build and Price</a></li><li> <a id='1204858704615' href='/BuildandPrice/Cars/Tourneo-Connect' class='cta'>Tourneo Connect Build and Price</a></li><li> <a id='1204858704620' href='/BuildandPrice/Cars/Tourneo-Custom' class='cta'>Tourneo Custom Build and Price</a></li></ul><ul class='1204858703189 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li> <a id='1204858704300' href='/BuildandPrice/CommercialVehicles/All-New-Transit' class='cta'>All New Transit Build and Price</a></li><li> <a id='1204858704305' href='/BuildandPrice/CommercialVehicles/All-New-Transit-Custom' class='cta'>All New Transit Custom Build and Price</a></li><li> <a id='1204858704310' href='/BuildandPrice/CommercialVehicles/All-New-Transit-Connect' class='cta'>All New Transit Connect Build and Price</a></li><li> <a id='1204858704315' href='/BuildandPrice/CommercialVehicles/All-New-Transit-Courier' class='cta'>All New Transit Courier Build and Price</a></li><li> <a id='1204858704320' href='/BuildandPrice/CommercialVehicles/Transit-People-Mover' class='cta'>Transit People Mover Build and Price</a></li><li> <a id='1204858704330' href='/BuildandPrice/CommercialVehicles/Fiesta-Van' class='cta'>Fiesta Van Build and Price</a></li><li> <a id='1204858704335' href='/BuildandPrice/CommercialVehicles/Ranger' class='cta'>Ranger Build and Price</a></li><li> <a id='1204858704340' href='/BuildandPrice/CommercialVehicles/Tourneo-Connect' class='cta'>Tourneo Connect Build and Price</a></li><li> <a id='1204858704345' href='/BuildandPrice/CommercialVehicles/Touneo-Custom' class='cta'>Tourneo Custom Build and Price</a></li></ul><ul class='1205001134807 hide'><li><a href='#' class='back'><span></span>Previous</a></li><li> <a id='1205018853234' href='/OwnerServices/VehicleServicesandRepair/Fixed-Pricing' class='cta'>Fixed pricing</a></li><li> <a id='1205001757934' href='/OwnerServices/VehicleServicesandRepair/ServicePromotions' class='cta'>Service Promotions</a></li></ul></div>
+</div>
+</div>
+</nav>
+</header>
+<div class="radial-drop-shadow"></div>
+</div>
+</div>
+</div>
+<!-- BILLBOARD CAROUSEL COMPONENT - START -->
+<section class='component billboard' role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<div id='gux_carousel'>
+<div class="gux-slider loading" data-controls="true" data-pagination="true" data-speed="0.4" data-automode="true" data-delay="6" data-autodirection="next">
+<div class='gux-slider-wrapper'>
+<ul>
+<li data-asset="Article_C:1204858847601">	
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952503&blobkey=id' class='img-interchange' data-asset='Image_C:1204858847580' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952504&blobkey=id' data-interchange-size='large' alt='Focus' />
+<div class='heading'>
+<h2>A leap forward in <strong>reverse</strong> parking<sup>23*</sup></h2>
+<a   data-asset="Article_C:1204858942570" href="/Cars/Focus"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">EXPLORE THE NEW FOCUS WITH ACTIVE PARK ASSIST</span>
+</a>
+</div>		
+</li>
+<li data-asset="Article_C:1204858847748">	
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858847736&blobkey=id' class='img-interchange' data-asset='Image_C:1204858847727' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858847737&blobkey=id' data-interchange-size='large' alt='Mondeo car with plane flying above.' />
+<div class='heading'>
+<h2>Light the<sup>**</sup> way</h2>
+<a   data-asset="Article_C:1204858943279" href="/Mondeo"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">EXPLORE THE ALL-NEW MONDEO WITH DYNAMIC LED HEADLIGHTS</span>
+</a>
+</div>		
+</li>
+<li data-asset="Article_C:1204858942713">	
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952544&blobkey=id' class='img-interchange' data-asset='Image_C:1204858942903' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952545&blobkey=id' data-interchange-size='large' alt='Smart Kuga' />
+<div class='heading'>
+<h2>Have a look at our current promotions<sup>1</sup></h2>
+<a   data-asset="Article_C:1204858943346" href="/Cars/Kuga"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">FIND OUT MORE ABOUT KUGA</span>
+</a>
+</div>		
+</li>
+<li data-asset="Article_C:1204858847870">	
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952525&blobkey=id' class='img-interchange' data-asset='Image_C:1204858847849' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952526&blobkey=id' data-interchange-size='large' alt='Mustang' />
+<div class='heading'>
+<h2>The New Mustang<sup>3</sup></h2>
+<a   data-asset="Article_C:1204858943372" href="/Mustang"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">FIND OUT MORE ABOUT MUSTANG</span>
+</a>
+</div>		
+</li>
+</ul>	
+<div class='carousel-arrows'>
+<a href="#" class="controls next" role='button'>
+<span>Next slide</span>
+<span class="icon-chevron-thin-right"></span>
+</a>
+<a href="#" class="controls prev" role='button'>
+<span>Previous slide</span>
+<span class="icon-chevron-thin-left"></span>
+</a>
+</div>
+<div class='carousel-pagination'></div>
+</div>
+</div>
+</div>		
+</div>
+</div>
+</section>
+<!-- BILLBOARD CAROUSEL COMPONENT - END -->
+<!-- SHOWROOM COMPONENT - START -->
+<section data-asset="Article_C:1204858847691" class='component showroom' role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<div class='showroom-inner'>
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952566&blobkey=id' class='img-interchange' data-asset='Image_C:1204858847670' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952567&blobkey=id' data-interchange-size='large' alt='selection of Ford cars' />
+<div class='heading'>
+<h2>A vehicle for every lifestyle<sup>2*</sup></h2>
+<h3 class='show-for-large-up'>Explore our range. <sup>1*</sup></h3>
+<div>
+<p><a  data-asset="Article_C:1204858847282"  id="showroom_0" href="/Cars"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">VIEW ALL CARS</span>
+</a></p>
+<p><a  data-asset="Article_C:1204858847817"  id="showroom_1" href="/CommercialVehicles"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">VIEW ALL COMMERCIAL VEHICLES</span>
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SHOWROOM COMPONENT - END -->
+<!-- PROMOTION COMPONENT - START -->	
+<section data-asset="Article_C:1204858847200" class='component promotion' role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<div class='promotion-inner'>
+<div class='promotions-wrapper'>
+<div class='poster front'>
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952476&blobkey=id' class='img-interchange' data-asset="Image_C:1204858847179"  data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952477&blobkey=id' data-interchange-size='large' alt='Yellow Fiesta Car' />
+<div class='heading'>
+<h2>Have a look at our<sup>4</sup> latest offers<sup>4*</sup>
+</h2>
+<h3 class='show-for-large-up'>Many more offers<sup>5</sup></h3>
+<div>
+<p><a data-asset="Article_C:1204858847833" id='promotion_0' href='/CarPromotions'  class='link-cta'>
+<span class='icon-chevron-hollow icon icon-link'></span>
+<span class='labels'>VIEW ALL CARS PROMOTION</span>
+</a></p>
+<p><a data-asset="Article_C:1204858846915" id='promotion_1' href='/CommercialPromotions'  class='link-cta'>
+<span class='icon-chevron-hollow icon icon-link'></span>
+<span class='labels'>VIEW ALL COMMERCIAL VEHICLE PROMOTION</span>
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROMOTION COMPONENT - END -->
+<!-- SMART NEXT STEPS COMPONENT - START -->
+<section data-asset="Article_C:1204858847915" class='component buildprice' role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<div class='buildprice-inner'>
+<img src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952438&blobkey=id' class='img-interchange' data-asset="Image_C:1204858847894" data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952439&blobkey=id' data-interchange-size='large' alt='Build and Price' />
+<div class='heading'>
+<h2>Lots of choices!</br>
+Configure the vehicle that's right for you.<sup>6</sup></h2>
+<h3 class="show-for-large-up"></h3>
+<div>
+<p><a data-asset="Article_C:1204858847801" id="nextstep_0" href="/BuildandPrice/Cars"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">BUILD & PRICE CAR</span>
+</a></p>
+<p><a data-asset="Article_C:1204858847225" id="nextstep_1" href="/BuildandPrice/CommercialVehicles"  class="link-cta">
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">COMMERCIAL VEHICLES</span>
+</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SMART NEXT STEPS COMPONENT - END -->
+<!-- CAMPAIGN COMPONENT - START -->
+<section data-asset="Article_C:1204858847772" class='component brandgallery' role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<!-- START SOCIAL-ITEMS -->
+<div class='social-items' data-tab-limit='3'>
+<!-- START SOCIAL-ITEMS INNER -->
+<div class='social-items-inner'>	
+<div class='row no-margin'>
+<div class="large-9 columns">
+<div class='heading'>
+<h2>More to discover, more to explore<sup>7</sup></h2>
+<h3 class='show-for-large-up'>Just look around you<sup>8</sup></h3>
+</div>
+</div>
+<div class='large-3 columns social-tab'><a data-asset='Article_C:1204858848162' id='campaign_0' href='/Cars/New-Focus'><img data-asset='Image_C:1204858848125' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952381&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952382&blobkey=id' class='img-interchange' alt='Focus car'/><div class='social-labels'> <div class='social-labels-inner'><p>Explore the New Focus</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+</div>
+<div class='row no-margin'>
+<div class='large-6 main columns social-tab'><a data-asset='Article_C:1204858848039' id='campaign_1' href='http://www.ford.co.uk/GoFurther'target='_blank'><img data-asset='Image_C:1204858848001' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952342&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952343&blobkey=id' class='img-interchange' alt='We test our technology in amazing ways'/><div class='social-labels'> <div class='social-labels-inner'><p>Discover How</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+<div class="large-6 columns">
+<div class='large-6 columns social-tab'><a data-asset='Article_C:1204858848223' id='campaign_2' href='/New-Mondeo'><img data-asset='Image_C:1204858848186' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952400&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952401&blobkey=id' class='img-interchange' alt='Mondeo'/><div class='social-labels'> <div class='social-labels-inner'><p>Explore the all-new Mondeo</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+<div class='large-6 columns social-tab'><a data-asset='Article_C:1204858848101' id='campaign_3' href='http://m.ford.co.uk/FutureVehicles/Overview'target='_blank'><img data-asset='Image_C:1204858848063' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952304&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952305&blobkey=id' class='img-interchange' alt='Vignale'/><div class='social-labels'> <div class='social-labels-inner'><p>Ford Motor Company presents Vignale</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+<div class='large-6 columns social-tab'><a data-asset='Article_C:1204858846994' id='campaign_4' href='/OwnerServices'><img data-asset='Image_C:1204858846973' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952323&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952324&blobkey=id' class='img-interchange' alt='Ford owners and service team'/><div class='social-labels'> <div class='social-labels-inner'><p>Owners and Service</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+<div class='large-6 columns social-tab'><a data-asset='Article_C:1204858847411' id='campaign_5' href='/OwnerServices/VehicleServicesandRepair'><img data-asset='Image_C:1204858847390' src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952419&blobkey=id' data-interchange-img-src='/cs/BlobServer?blobtable=MungoBlobs&blobcol=urldata&blobheader=image%2Fjpeg&blobwhere=1204858952420&blobkey=id' class='img-interchange' alt='Motorcraft 4 plus'/><div class='social-labels'> <div class='social-labels-inner'><p>Servicing from Motorcraft 4+</p><span class='icon-chevron-hollow icon icon-link'></span></div></div></a></div>
+</div>
+</div>
+<div class='row no-margin'>
+<!-- START VIEW/CLOSE TAB -->
+<div class="large-12 columns no-padding hide-for-large-up viewCloseTab">
+<div class="row no-margin">
+<div class='expandTabs'>
+<p>
+<a href='#' class='view-all active'>
+<span>View more<span class='icon-plus-circled'></span></span>
+</a>
+<a href='#' class='view-less'>
+<span>Close<span class='icon-minus-circled'></span></span>
+</a>
+</p>
+</div>
+</div>
+</div>
+<!-- END VIEW/CLOSE TAB -->
+</div>
+</div>
+<!-- END SOCIAL-ITEMS INNER -->
+</div>
+<!-- END SOCIAL-ITEMS -->
+</div>
+</div>	
+</section>
+<!-- CAMPAIGN COMPONENT - END -->	
+<!-- DISCLAIMER COMPONENT - START -->
+<section class='component disclaimers' data-asset="" role='region'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<div class='accordian disclaimer-inner accordian-open'>
+<h3>HAFTUNGSAUSSCHLUSS</h3>
+<div class="accordian-content">
+<div class='disclaimer-content'>
+<p>[*] <a href="http://www.ford.co.uk/experience-ford/Technology/FordSYNC">Ford SYNC</a> unterst&uuml;tzt in Verbindung mit einem</p> <p>[*] Mobiltelefon inkl. A2dP-Bluetooth-Profil die Wiedergabe von auf dem Mobiltelefon gespeicherten MP3-Musikdateien. Verf&uuml;gbare Funktionen sind abh&auml;ngig vom Mobiltelefon-Typ. In unserem Ford SYNC Portal erhalten Sie alle Infos zur Kompatibilit&auml;t mit Mobiltelefonen.</p> <p>[1] <strong>MSRP</strong> does not include delivery, processing and handling fee of $910. Excludes taxes, title, license and optional equipment. Dealer price may vary. Does not include accessory options installed by dealer.</p> <p>[2] Ratings achieved using the required premium unleaded gasoline with an octane rating of 91 or higher. If premium fuel is not used, performance will decrease.</p> <p>[3] 2014 EPA-estimated 21/31/24 (city/highway/combined) MPG. Actual mileage will vary.</p> <p>[4] Based on manufacturer's published data.</p> <p>[1*] MSRP does not include delivery, processing and handling fee of $910. Excludes taxes, title, license and optional equipment. Dealer price may vary. Does not include accessory options installed by dealer.</p> <p>[2*] Ratings achieved using the required premium unleaded gasoline with an octane rating of 91 or higher. If premium fuel is not used, performance will decrease.</p> <p>[5] Performance figures are for comparison only and were obtained with prototype vehicles by professional drivers using special safety equipment and procedures. Do not attempt.</p> <p>[6] 2015 Mustang EPA 40/39/40 city/hwy/combined mpg ratings. Actual mileage will vary.</p> <p>[7] Your location is determined based on information provided by your web browser.</p> <p>[8] Der zus&auml;tzliche Aktionsbonus betr&auml;gt &euro; 500,- und gilt beim Kauf eines neuen Ford Fiesta und Ford B-MAX bis 28.02.2015 und Zulassung auf den Endkunden bis zum 30.06.2015. Der Bonus wird auf den Kaufpreis angerechnet. Angebot gilt f&uuml;r Privatkunden (au&szlig;er Werkangeh&ouml;rige) und gewerbliche Kunden au&szlig;er Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Details bei allen teilnehmenden Ford Partnern.</p> <p>[9] Angebot gilt f&uuml;r Privatkunden und gewerbliche Kunden au&szlig;er Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Gilt f&uuml;r ein Ford Fiesta-Neufahrzeug. Details bei allen teilnehmenden Ford Partnern.</p> <p>[10] z. B. Ford Fiesta Ambiente, 3-T&uuml;rer, inkl. Klimaanlage, 1,25 l Benzinmotor, 44 kW (60 PS).</p> <p>[11]Kraftstoffverbrauch (in l/100 km nach VO (EG) 715/2007): 6,9 (innerorts), 4,2 (au&szlig;erorts), 5,2 (kombiniert); CO2-Emissionen: 120 g/km (kombiniert). CO2-Effiziensklasse: D (Label anzeigen)</p> <p>[12] Ford Auswahl-Finanzierung, ein Finanzierungsangebot der Ford Bank Niederlassung der FCE Bank plc, Josef-Lammerting-Allee 24&ndash;34, 50933 K&ouml;ln. Angebot gilt bei verbindlicher Kundenbestellung und Abschluss eines Darlehnsvertrages vom 25.11.2014 bis 28.02.2015 f&uuml;r Privat- und gewerbliche Kunden au&szlig;er Werkangeh&ouml;rige, Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Kaufpreis &euro; 9.990,-, Ford Auswahl-Finanzierung, Laufzeit 48 Monate, Gesamtlaufleistung 40.000 km, Anzahlung &euro; 0,-, Nettodarlehnsbetrag &euro; 9.990,-, Sollzinssatz (gebunden) p. a. 0 %, effektiver Jahreszins 0 %, Gesamtdarlehnsbetrag &euro; 9.990,-, 47 monatliche Raten je &euro; 109,-, Restrate &euro; 4.867,-, zzgl. Zulassungs- und &Uuml;berf&uuml;hrungskosten. Das Angebot stellt das repr&auml;sentative Beispiel nach &sect; 6a Abs. 3 Preisangabenverordnung dar. Ist der Darlehnsnehmer Verbraucher, besteht ein Widerrufsrecht nach &sect; 495 BGB.</p> <p>[13]Hinweis: Die Bluetooth&reg;-Wortmarke und Logos sind Eigentum der Bluetooth SIG Inc. und werden von der Ford-Werke GmbH und zugeh&ouml;rigen Unternehmen unter Lizenz verwendet. Andere Marken sind Eigentum der betreffenden Inhaber.&nbsp;</p> <p>[14]Hinweis: Nach der Stra&szlig;enverkehrsordnung ist dem Fahrzeugf&uuml;hrer w&auml;hrend der Fahrt die Benutzung eines Mobiltelefons ohne Freisprecheinrichtung untersagt.</p> <p>[15] MSRP does not include delivery, processing and handling fee of $910. Excludes taxes, title, license and optional equipment. Dealer price may vary. Does not include accessory options installed by dealer.</p> <p>[16] Ratings achieved using the required premium unleaded gasoline with an octane rating of 91 or higher. If premium fuel is not used, performance will decrease.</p> <p>[17] 2014 EPA-estimated 21/31/24 (city/highway/combined) MPG. Actual mileage will vary.</p> <p>[18] Based on manufacturer's published data.</p> <p>[19] MSRP does not include delivery, processing and handling fee of $910. Excludes taxes, title, license and optional equipment. Dealer price may vary. Does not include accessory options installed by dealer.</p> <p>[20] Ratings achieved using the required premium unleaded gasoline with an octane rating of 91 or higher. If premium fuel is not used, performance will decrease.</p> <p>[21] Performance figures are for comparison only and were obtained with prototype vehicles by professional drivers using special safety equipment and procedures. Do not attempt.</p> <p>[22] 2015 Mustang EPA 40/39/40 city/hwy/combined mpg ratings. Actual mileage will vary.</p> <p>[23*] Your location is determined based on information provided by your web browser.</p> <p>[24] Der zus&auml;tzliche Aktionsbonus betr&auml;gt &euro; 500,- und gilt beim Kauf eines neuen Ford Fiesta und Ford B-MAX bis 28.02.2015 und Zulassung auf den Endkunden bis zum 30.06.2015. Der Bonus wird auf den Kaufpreis angerechnet. Angebot gilt f&uuml;r Privatkunden (au&szlig;er Werkangeh&ouml;rige) und gewerbliche Kunden au&szlig;er Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Details bei allen teilnehmenden Ford Partnern.</p> <p>[25] Angebot gilt f&uuml;r Privatkunden und gewerbliche Kunden au&szlig;er Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Gilt f&uuml;r ein Ford Fiesta-Neufahrzeug. Details bei allen teilnehmenden Ford Partnern.</p> <p>[26] z. B. Ford Fiesta Ambiente, 3-T&uuml;rer, inkl. Klimaanlage, 1,25 l Benzinmotor, 44 kW (60 PS).</p> <p>[27]Kraftstoffverbrauch (in l/100 km nach VO (EG) 715/2007): 6,9 (innerorts), 4,2 (au&szlig;erorts), 5,2 (kombiniert); CO2-Emissionen: 120 g/km (kombiniert). CO2-Effiziensklasse: D (Label anzeigen)</p> <p>[28] Ford Auswahl-Finanzierung, ein Finanzierungsangebot der Ford Bank Niederlassung der FCE Bank plc, Josef-Lammerting-Allee 24&ndash;34, 50933 K&ouml;ln. Angebot gilt bei verbindlicher Kundenbestellung und Abschluss eines Darlehnsvertrages vom 25.11.2014 bis 28.02.2015 f&uuml;r Privat- und gewerbliche Kunden au&szlig;er Werkangeh&ouml;rige, Autovermieter, Beh&ouml;rden, Kommunen sowie gewerbliche Abnehmer mit g&uuml;ltigem Ford-Werke Rahmenabkommen. Kaufpreis &euro; 9.990,-, Ford Auswahl-Finanzierung, Laufzeit 48 Monate, Gesamtlaufleistung 40.000 km, Anzahlung &euro; 0,-, Nettodarlehnsbetrag &euro; 9.990,-, Sollzinssatz (gebunden) p. a. 0 %, effektiver Jahreszins 0 %, Gesamtdarlehnsbetrag &euro; 9.990,-, 47 monatliche Raten je &euro; 109,-, Restrate &euro; 4.867,-, zzgl. Zulassungs- und &Uuml;berf&uuml;hrungskosten. Das Angebot stellt das repr&auml;sentative Beispiel nach &sect; 6a Abs. 3 Preisangabenverordnung dar. Ist der Darlehnsnehmer Verbraucher, besteht ein Widerrufsrecht nach &sect; 495 BGB.</p> <p>[29] Ford SYNC unterst&uuml;tzt in Verbindung mit einem</p> <p>[30] Mobiltelefon inkl. A2dP-Bluetooth-Profil die Wiedergabe von auf dem Mobiltelefon gespeicherten MP3-Musikdateien. Verf&uuml;gbare Funktionen sind abh&auml;ngig vom Mobiltelefon-Typ. In unserem Ford SYNC Portal erhalten Sie alle Infos zur Kompatibilit&auml;t mit Mobiltelefonen.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DISCLAIMER COMPONENT - END -->
+<div id='globile_footer' role='banner'>
+<div class='row'>
+<div class='large-12 columns no-padding'>
+<footer id="appFooter">
+<nav>
+<ul>
+<li><a id='footer_0' href='/MobileDealerLocator'>Dealer Locator</a></li>
+<li><a id='footer_1' href='/TestDrive'>Test Drive</a></li>
+<li><a id='footer_2' href='/BrochureRequest'>Brochure Request</a></li>
+<li><a id='footer_3' href='/KeepMeInformed'>Keep me informed</a></li>
+<li><a id='footer_4' href='/TermsAndConditions'>Terms and Conditions</a></li>
+<li><a id='footer_5' href='/PrivacyPolicy'>Privacy Policy</a></li>
+<li><a id='footer_6' href='/ContactUs'>Contact Us</a></li>
+<li><a id='footer_7' href='/MobileCookieGuide'>New Cookie Guide - DIV with CLASS</a></li>
+<li><a id='footer_8' href='/OldMobileCookieGuide'>Old Mobile Cookie Guide</a></li>
+<script type="text/javascript">
+var redirectURL = "http:\/\/intpublish-couk.engine.ford.com\/\r\n";
+var expires = 144 * 60 * 1000;
+function setCookie(name, value, expires) {
+}
+function mobileSnifferRedirect() {
+try {
+var exp = new Date();
+exp.setTime(exp.getTime() + expires);
+// set cookie
+// determining domain
+var host = window.location.host;
+var idx1 = host.lastIndexOf(".");
+if (idx1 > -1) {
+var idx2 = host.substr(0, idx1).lastIndexOf(".");
+if (idx2 > -1) {
+if (host.substring(idx2).length < 7) {
+idx2 = host.substr(0, idx2).lastIndexOf(".");
+if (idx2 < 0) {
+idx2 = 0;
+}
+}
+var domain = host.substring(idx2); 
+var cookieValue = "ford_mobile_sniffer_forcefullsite=true; Domain=" + domain + "; Path = /;expires=" +  exp.toGMTString();
+document.cookie = cookieValue;
+window.location.href = redirectURL;
+}
+}
+} catch (ignore) {
+}
+}
+</script>
+<li><a id="full_site" href="javascript:mobileSnifferRedirect()">Go to Full Site</a></li>
+<li>© 2014, Ford Motor Company</li>
+</ul>
+</nav>
+</footer>
+</div>
+</div> 
+</div>   
+<script type="text/javascript" src="/cs/ContentServer?pagename=GlobalUX/assets/js/vendor/require.min.js" data-main="/cs/ContentServer?pagename=GlobalUX/assets/js/main.js"></script>
+<!--COOKIE LEGISLATION - START -->
+<div id="cookieAlertBoxID">
+<div class="midContent">
+<div class="BTIarticleTitle">
+Cookie Text
+</div>
+<div class='BTIarticleBody'>
+<div class='BTIarticleText'>
+<div>LINDA The Ford website uses certain cookies. A cookie is a text-only string of information that the Ford website transfers to the cookie file of the browser on your computer. Cookies allow the Ford website to perform properly and remember your browsing history. Cookies also help a website to arrange content to match your preferred interests more quickly. Cookies alone cannot be used to identify you. You can find out more about cookies and how to control them using the Ford Cookie Guide:<br />
+</div>&nbsp;<a id="linkID" class="" href="mobile/SeeCookieGuideLink">See Cookie Guide here</a>
+</div>
+</div>
+</div>
+<div class="bottom">
+<!-- <h4 class="title">About Cookies</h4> -->
+<a id="closeBtnID" class="icon close closeBtn" href="#"></a>
+</div>
+</div>
+<!--COOKIE LEGISLATION - END -->
+<!-- HANDLEBARS CAROUSEL SLIDE TEMPLATE - START -->
+<script id='carousel-template' type="text/x-handlebars-template">
+<li class="personalised" data-asset='{{this.asset}}'>
+<img src='{{this.mobileImg}}' class='img-interchange' data-interchange-img-src='{{this.desktopImg}}' data-interchange-size='large' alt='{{this.imgAltText}}' data-asset='{{this.asset}}'/>
+<div class='heading'>
+<h2>{{{this.heading}}}</h2>
+{{#each this.ctas}}
+<a href="{{url}}" class="link-cta" target="{{target}}" data-asset='{{asset}}'>
+<span class="icon-chevron-hollow icon icon-link"></span>
+<span class="labels">{{{label}}}</span>
+</a>
+{{/each}}
+</div>
+</li>
+</script>
+<!-- HANDLEBARS CAROUSEL SLIDE TEMPLATE - END -->
+</div>
+<!-- nosc comp -->
+<!-- mobile/DoubleClickNOSCRIPT-->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLW9L" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+<script src="/cs/ContentServer?pagename=ENGInE/script/messaging/core"></script>
+<script src='/cs/ContentServer?pagename=UKEN_ENGInE/script/packager&c=Page&cid=1204984548504&location=load&isMobile=true&require=main' defer></script>
+</body>
+</html>

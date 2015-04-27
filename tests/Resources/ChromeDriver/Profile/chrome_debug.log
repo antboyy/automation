@@ -1,0 +1,10 @@
+[4724:9356:0421/130927:WARNING:data_reduction_proxy_config.cc(150)] SPDY proxy OFF at startup
+[4724:9100:0421/130927:INFO:CONSOLE(0)] "Document was loaded from Application Cache with manifest https://www.google.com/_/chrome/newtab/manifest?espv=2&ie=UTF-8", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[4724:9100:0421/130927:INFO:CONSOLE(0)] "Application Cache Checking event", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[4724:9100:0421/130928:ERROR:CONSOLE(23)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://m.intpublish-couk.engine.ford.com') does not match the recipient window's origin ('https://www.google.com').", source: chrome-search://most-visited/thumbnail.js (23)
+[4724:9100:0421/130928:ERROR:CONSOLE(23)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://m.intpublish-couk.engine.ford.com') does not match the recipient window's origin ('https://www.google.com').", source: chrome-search://most-visited/thumbnail.js (23)
+[4724:9100:0421/130928:ERROR:CONSOLE(23)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://m.intpublish-couk.engine.ford.com') does not match the recipient window's origin ('https://www.google.com').", source: chrome-search://most-visited/thumbnail.js (23)
+[4724:9100:0421/130928:INFO:CONSOLE(0)] "Application Cache NoUpdate event", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[4724:9100:0421/130933:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown printing.enabled
+[4724:9100:0421/130933:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown plugins.allow_outdated
+[4724:9100:0421/130933:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown plugins.always_authorize

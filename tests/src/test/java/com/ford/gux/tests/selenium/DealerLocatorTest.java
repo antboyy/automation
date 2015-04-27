@@ -2,6 +2,7 @@ package com.ford.gux.tests.selenium;
 
 
 import com.ford.gux.tests.selenium.DealerDataSelenium.DealerData;
+import com.sun.xml.internal.bind.v2.TODO;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -10,6 +11,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.junit.Assert.assertThat;
@@ -228,7 +230,26 @@ public class DealerLocatorTest {
 
     @Ignore
     @Test
-    public void mustangPreFilterTest() throws InterruptedException {}
+    public void filterJourneyTest() throws InterruptedException {
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        dealerLocatorPage.waitForpageToLoad();
+        dealerLocatorPage.clickFordStoreFilter();
+        dealerLocatorPage.enterIntoInputBox("Birmingham");
+        dealerLocatorPage.waitForResultsToBeDisplayed();
+        dealerLocatorPage.checkTextIsPresentInList("Birmingham");
+        assertThat(dealerLocatorPage.numberOfDealersWithServicesPresent("FordStore"), greaterThan(3));
+        dealerLocatorPage.enterIntoInputBoxAndClickDisambiguation("London");
+        assertThat(dealerLocatorPage.numberOfDealersWithServicesPresent("FordStore"), greaterThan(3));
+        dealerLocatorPage.checkTextIsPresentInList("London");
+        dealerLocatorPage.clickFilter();
+        dealerLocatorPage.selectDistanceOption("10miles");
+        dealerLocatorPage.clickFilterSubmit();
+        dealerLocatorPage.waitForResultsToBeDisplayed();
+        assertThat(dealerLocatorPage.areAllDealersCloserThanSpecifiedDistance(10), is(true));
+        assertThat(dealerLocatorPage.numberOfDealersWithServicesPresent("FordStore"), not(0));
+
+
+    }
 
     @Test
     public void currentLocationSearch() throws InterruptedException {
@@ -239,8 +260,8 @@ public class DealerLocatorTest {
         dealerLocatorPage.waitForResultsToBeDisplayed();
         assertThat(dealerLocatorPage.getNumberOfResults(),not(0));
 
-
     }
+
 
     @Ignore
     @Test
@@ -262,18 +283,46 @@ public class DealerLocatorTest {
         //Small Business, Fleet is present
     }
 
+    @Ignore
     @Test
     public void locationSearchForSpecificDealer() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAFrenchDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAnAustrianDealerLocatorPage();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
-        dealerLocatorPage.enterIntoInputBox("87200");
+        dealerLocatorPage.enterIntoInputBoxAndClickDisambiguation("1070");
         dealerLocatorPage.waitForResultsToBeDisplayed();
-        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Garage Alfred  Boos SARL");
+        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Ford Seidengasse");
         System.out.println(result);
 
     }
+
+    @Ignore
+    @Test
+    public void snifferTest() throws InterruptedException {
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        dealerLocatorPage.withAUserAgentOf();
+
+
+    }
+
+        //TODO
+/*
+
+    Comma on distances
+
+    closed time on norhern irelan closed on sunday
+
+    Closing today at xx oclock feature
+
+    click on map pin and centers map or changes map
+
+    http://intpublish-it.engine.ford.com/DealerLocatorGux
+
+    Test No. 298 : Location : 12051	: Dealer : UNICAR S.P.A.
+            Fail
+    No fail disambiguation on location search breaks it
+*/
 
 
     @AfterClass

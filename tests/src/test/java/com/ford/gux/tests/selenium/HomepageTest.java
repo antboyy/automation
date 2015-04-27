@@ -51,7 +51,23 @@ public class HomepageTest {
         homepage.onADesktopView();
         assertThat(homepage.countNumberOfDesktopElementsVisible(), is(3));
         assertThat(homepage.countNumberOfMobileElementsVisible(), is(0));
+    }
 
+
+    @Test
+    public void personalisationTest() throws InterruptedException {
+
+        HomePage homepage = GIVEN.iamOnTheHomePage();
+        String firstImageWithoutPersonalisation = homepage.getImageURL();
+        int numberofImagesBeforePersonalisation = homepage.getNumberOfBillboardImages();
+        homepage.setPersonalisation("new-fiesta");
+        homepage.refresh();
+
+        String firstImageAfterPersonalisations = homepage.getImageURL();
+        int numberofImagesAfterPersonalisation = homepage.getNumberOfBillboardImages();
+
+        assertThat(firstImageWithoutPersonalisation,not(firstImageAfterPersonalisations));
+        assertThat(numberofImagesAfterPersonalisation,is(numberofImagesBeforePersonalisation+1));
 
     }
 

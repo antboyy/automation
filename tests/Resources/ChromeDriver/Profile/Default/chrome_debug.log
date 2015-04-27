@@ -1,0 +1,10 @@
+[11152:9388:0421/104556:WARNING:data_reduction_proxy_config.cc(150)] SPDY proxy OFF at startup
+[11152:2796:0421/104601:INFO:CONSOLE(0)] "Document was loaded from Application Cache with manifest https://www.google.com/_/chrome/newtab/manifest?espv=2&ie=UTF-8", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[11152:2796:0421/104601:INFO:CONSOLE(0)] "Application Cache Checking event", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[11152:2796:0421/104607:INFO:CONSOLE(0)] "Application Cache NoUpdate event", source: https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8 (0)
+[11152:9388:0421/104611:WARNING:spdy_session.cc(2373)] Received HEADERS for invalid stream 9
+[11152:9388:0421/104611:WARNING:spdy_session.cc(2373)] Received HEADERS for invalid stream 11
+[11152:9388:0421/104611:WARNING:spdy_session.cc(2373)] Received HEADERS for invalid stream 13
+[11152:2796:0421/104611:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown printing.enabled
+[11152:2796:0421/104611:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown plugins.allow_outdated
+[11152:2796:0421/104611:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown plugins.always_authorize

@@ -1,9 +1,6 @@
 package com.ford.gux.tests.selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -37,6 +34,7 @@ public class HomePage {
     }
 
     public String getImageURL() {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver,byCurrentImageURL);
         return driver.findElement(byCurrentImageURL).getAttribute("src");
 
     }
@@ -78,6 +76,28 @@ public class HomePage {
             numberOfMobileElementsVisible++;
         }}catch (NoSuchElementException e){}
         return numberOfMobileElementsVisible;
+    }
+
+    public void setPersonalisation(String nameplate) {
+/*
+        Need to use Switcheroo extension to spoof Akamai:
+        http://m.intpublish-couk.engine.ford.com/fps/   --> http://eu.fpsqa.ford.com/fps/
+*/
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("FPS.set([ { 'ViewedVehicle': { name: '"+nameplate+"', url: '/Cars/"+nameplate+"' }} ]);");
+
+    }
+
+    public void refresh() {
+        driver.navigate().refresh();
+    }
+
+    public int getNumberOfBillboardImages() {
+        if(driver.findElements(By.cssSelector("li.slides > img")).size()>1){
+            return driver.findElements(By.cssSelector("li.slides > img")).size()-2;
+        }else return driver.findElements(By.cssSelector("li.slides > img")).size();
+
     }
 
     public static class DealerLocatorPage {

@@ -92,6 +92,15 @@ public class DealerLocatorPage {
 
     }
 
+    public void enterIntoInputBoxAndClickDisambiguation(String inputText) throws InterruptedException {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, By.cssSelector("div.columns.premium-filters"));
+        driver.findElement(bySearchBox).clear();
+        driver.findElement(bySearchBox).sendKeys(inputText);
+        Thread.sleep(200);
+
+        clickDisambiguationWithName(inputText);
+    }
+
     public void enterIntoInputBoxWithoutSubmitting(String inputText) throws InterruptedException {
         WaitHelpers.waitForElementToDisplayOnScreen(driver, bySearchBox);
         driver.findElement(bySearchBox).sendKeys(inputText);
@@ -253,7 +262,7 @@ public class DealerLocatorPage {
 
     public void selectDistanceOption(String distance) throws InterruptedException {
         Thread.sleep(500);
-
+        driver.findElement(byDistanceFilter).click();
         driver.findElement(byDistanceDropDown).sendKeys(distance);
         driver.findElement(byDistanceDropDown).sendKeys(Keys.TAB);
         }
@@ -297,7 +306,8 @@ public class DealerLocatorPage {
         }else return false;
     }
 
-    public int getNumberOfResults() {
+    public int getNumberOfResults() throws InterruptedException {
+        Thread.sleep(1000);
         return driver.findElements(By.xpath("(//span[@class='icon-details'])")).size();
 
     }
@@ -375,10 +385,10 @@ public class DealerLocatorPage {
         Thread.sleep(2500);
         WaitHelpers.waitForElementToDisplayOnScreen(driver, byMapPin);
         WaitHelpers.waitForElementToDisplayOnScreen(driver,byMapZoomOut);
-        driver.findElement(byMapZoomOut).click();
+/*        driver.findElement(byMapZoomOut).click();
         Thread.sleep(1000);
         driver.findElement(byMapZoomOut).click();
-        Thread.sleep(1000);
+        Thread.sleep(1000);*/
     }
 
     public void swipeMap() {
@@ -547,4 +557,15 @@ public class DealerLocatorPage {
         }
     }
 
+    public void withAUserAgentOf() {
+
+//        driver.manage().
+
+    }
+
+    public void clickFordStoreFilter() {
+        WaitHelpers.waitForAnyElementToBeDisplayed(driver,byMustangFilter);
+        driver.findElement(byMustangFilter).click();
+
+    }
 }
