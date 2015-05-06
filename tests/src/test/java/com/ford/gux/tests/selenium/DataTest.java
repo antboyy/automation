@@ -282,7 +282,7 @@ public class DataTest {
         DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAFrenchDealerLocatorPage();
 
         dealerLocatorPage.waitForpageToLoad();
-        NodeList dealerList = ReadXMLFile.readXML("C:/Users/ALEWI143/Desktop/data-test/04 -Thu 17 Apr/googleDataLoad_Thursday/bingmapsDataloadTransition_Thursday.xml");
+        NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
 
 
         if (null != dealerList) {
