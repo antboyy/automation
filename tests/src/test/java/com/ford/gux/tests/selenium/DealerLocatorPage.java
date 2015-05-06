@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class DealerLocatorPage {
+public class DealerLocatorPage extends AbstractPage {
 
 
     static WebDriver driver ;
@@ -195,7 +195,9 @@ public class DealerLocatorPage {
     }
 
     public void clickServicesFilter() throws InterruptedException {
+        Thread.sleep(700);
         WaitHelpers.waitForElementToBeDisplayed(driver, byServicesFilter);
+        Thread.sleep(700);
         driver.findElement(byServicesFilter).click();
     }
 

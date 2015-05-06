@@ -1,14 +1,11 @@
 package com.ford.gux.tests.selenium;
 
 
-import com.ford.gux.tests.selenium.DealerDataSelenium.DealerData;
-import com.sun.xml.internal.bind.v2.TODO;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import static org.hamcrest.Matchers.greaterThan;
@@ -94,6 +91,7 @@ public class DealerLocatorTest {
     public void filterServicesResultsTest() throws InterruptedException {
 
         DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        dealerLocatorPage.onADesktopView();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("Braintree");
         dealerLocatorPage.waitForResultsToBeDisplayed();
@@ -287,21 +285,35 @@ public class DealerLocatorTest {
     @Test
     public void locationSearchForSpecificDealer() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAnAustrianDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAFrenchDealerLocatorPage();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
-        dealerLocatorPage.enterIntoInputBoxAndClickDisambiguation("1070");
+        dealerLocatorPage.enterIntoInputBoxAndClickDisambiguation("37110");
         dealerLocatorPage.waitForResultsToBeDisplayed();
-        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Ford Seidengasse");
+        String result = dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore("Garage Berger");
         System.out.println(result);
 
     }
-
-    @Ignore
+@Ignore
     @Test
     public void snifferTest() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
-        dealerLocatorPage.withAUserAgentOf();
+        assertThat(GIVEN.doesUserAgentRedirect(
+                "Windows",
+                "http://wwwedu-couk.engine.ford.com/",
+                "http://m.ford.co.uk/"
+        ), is(false));
+
+        assertThat(GIVEN.doesUserAgentRedirect(
+                "Android",
+                "http://wwwedu-couk.engine.ford.com/",
+                "http://m.ford.co.uk/"
+        ), is(true));
+
+        assertThat(GIVEN.doesUserAgentRedirect(
+                "iPhone",
+                "http://wwwedu-couk.engine.ford.com/",
+                "http://m.ford.co.uk/"
+        ), is(true));
 
 
     }
@@ -317,7 +329,8 @@ public class DealerLocatorTest {
 
     click on map pin and centers map or changes map
 
-    http://intpublish-it.engine.ford.com/DealerLocatorGux
+
+
 
     Test No. 298 : Location : 12051	: Dealer : UNICAR S.P.A.
             Fail

@@ -2,224 +2,269 @@ package com.ford.gux.tests.selenium;
 
 
 import com.ford.gux.tests.selenium.DealerDataSelenium.DealerData;
+import com.ford.gux.tests.selenium.Utils.ReadXMLFile;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DataTest {
 
-        private static Given GIVEN;
-        private static Map <String, String> testResults;
+    private static Given GIVEN;
+    private static Map<String, ArrayList<String>> testResults;
 
-        @BeforeClass
-        public static void setup() {
-            GIVEN = new Given();
-        }
+
+
+
+    @BeforeClass
+    public static void setup() throws FileNotFoundException {
+
+        GIVEN = new Given();
+
+
+    }
+
 
 
     @Test
-    public void dealerDataNameTest() throws InterruptedException {
-        System.out.println("Dealer Name Test");
+    public void locationDataNameTest() throws InterruptedException, FileNotFoundException {
+        printConsoleToFile("locationDataNameTest");
+
+        System.out.println("Location Test");
 
         this.testResults = new HashMap();
-        Boolean disambiguationPresent;
         String resultText = null;
-        String currentDealerName = "";
+       String currentDealerName = "";
         String currentDealerPostcode = "";
-        String currentDealerLocality = "";
+        String currentEntityID = "";
 
-        DealerData dealerData = new DealerData("ES");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnASpanishDealerLocatorPage();
 
+
+        String countryToTest = "Germany";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
+        dealerLocatorPage.onADesktopView();
+        String postcode;
 
         dealerLocatorPage.waitForpageToLoad();
 
-        int noOfDealers = dealerData.getNames().length;
-        String [] dealerNames = dealerData.getNames();
-        String [] dealerLocations = dealerData.getPostcodes();
+        NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
 
 
-        for (int i=0 ; i< noOfDealers ;i++) {
-//        for (int i=0 ; i< 5;i++) {
+        dealerLocatorPage.onADesktopView();
 
-            currentDealerName = dealerNames[i];
-            currentDealerPostcode = dealerLocations[i];
+        if(null != dealerList) {
 
-            System.out.println("Test No. "+i+ " : Dealer : "+currentDealerName + "\t" + "\t" + " : Location : "+currentDealerPostcode);
+            for (int temp = 0 ; temp < dealerList.getLength(); temp++) {
 
-            dealerLocatorPage.clickDealerRadioButton();
-            dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerName);
+                Node nNode = dealerList.item(temp);
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) nNode;
 
-            try {
-                dealerLocatorPage.clickSubmit();
-                dealerLocatorPage.waitForSubmitSpinnerToStop();
-                dealerLocatorPage.waitForResultsToBeDisplayed();
+                    String country = eElement.getElementsByTagName("Country").item(0).getTextContent();
 
-                resultText = dealerLocatorPage.getResultText();
-//                System.out.println(resultText);
-            } catch (Exception e) {
-                for (int j=1 ; j<3 ;j++) {
-                    Thread.sleep(1500);
-                    resultText = dealerLocatorPage.getResultText();
 
-                    /*if(currentDealerName.)testResults.
+                    if (countryToTest.equalsIgnoreCase(country)) {
 
-*/
+                        try {
+                            currentEntityID = eElement.getElementsByTagName("EntityID").item(0).getTextContent();
+                            currentDealerName = eElement.getElementsByTagName("DealerName").item(0).getTextContent();
+                            currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
+                        } catch (NullPointerException e){
+                            currentDealerPostcode = "";
+                            addValues(currentDealerName, "Fail : Postcode is empty for '" + currentDealerPostcode + "' in the results");
 
-                    testResults.put(currentDealerName, "Fail: Results NOT present");
-                    dealerLocatorPage.clickLocationRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
+                        }
 
+
+
+                        System.out.println("Test No. " + temp + " : EntityId: " + currentEntityID + " : Location : " + currentDealerPostcode + "\t" + ": Dealer : " + currentDealerName + " : Country : "+country);
+
+                        dealerLocatorPage.clickLocationRadioButton();
+                        dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerPostcode);
+
+                        try {
+                            dealerLocatorPage.clickSubmit();
+                            dealerLocatorPage.waitForSubmitSpinnerToStop();
+                            dealerLocatorPage.waitForResultsToBeDisplayed();
+
+                            resultText = dealerLocatorPage.getResultText();
+
+                        } catch (Exception e) {
+                            for (int j = 1; j < 3; j++) {
+                                Thread.sleep(1500);
+                                resultText = dealerLocatorPage.getResultText();
+                                addValues(currentDealerPostcode, "Fail: Results NOT present");
+                                dealerLocatorPage.clickDealerRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+
+
+                            }
+
+                        }
+                        if (resultText.contains(currentDealerName)) {
+
+                            addValues(currentDealerName, "Pass");
+                            dealerLocatorPage.clickDealerRadioButton();
+                        } else {
+                            // If dealer Name not found on the page THEN .... Check after showing more
+                            if (dealerLocatorPage.isShowMorePresent()) {
+                                addValues(currentDealerName, dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName));
+                                dealerLocatorPage.clickDealerRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+
+                            } else {
+                                addValues(currentDealerName, "Fail : could not find '" + currentDealerPostcode + "' in the results");
+                                dealerLocatorPage.clickDealerRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+                            }
+
+                        }
+                        System.out.println(testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", ""));
+                        System.out.println("------------------------------------------------------------");
+
+
+                    }
 
                 }
-
             }
-            if (resultText.contains(currentDealerPostcode)){
-
-                testResults.put(currentDealerName, "Pass");
-                dealerLocatorPage.clickLocationRadioButton();
-            }
-            else {
-                // If dealer postcode not found on the page THEN .... Check after showing more
-                if(dealerLocatorPage.isShowMorePresent()){
-                    testResults.put(currentDealerName,dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerPostcode));
-                    dealerLocatorPage.clickLocationRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
-
-                }else {
-                    testResults.put(currentDealerName,"Fail : could not find '"+currentDealerPostcode+"' in the results");
-                    dealerLocatorPage.clickLocationRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
-                }
-
-            }
-            System.out.println(testResults.get(currentDealerName).toString().replace(", ","\r\n").replace("{","").replace("}",""));
-            System.out.println("------------------------------------------------------------");
-
-
-
+        }else{
+            System.out.println("Null dealer list from xml");
         }
-
         printAllFails(testResults);
-
 
 
     }
 
 
     @Test
-    public void locationDataNameTest() throws InterruptedException {
-        System.out.println("Location Test");
+    public void dealerDataNameTest() throws InterruptedException, FileNotFoundException {
+        printConsoleToFile("dealerDataNameTest");
+        System.out.println("Dealer Name Test");
+
 
         this.testResults = new HashMap();
-        Boolean disambiguationPresent;
         String resultText = null;
         String currentDealerName = "";
         String currentDealerPostcode = "";
-        String currentDealerLocality = "";
+        String currentEntityID = "";
 
-        DealerData dealerData = new DealerData("ES");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnASpanishDealerLocatorPage();
-        dealerLocatorPage.onADesktopView();
-
+        String countryToTest = "Germany";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
 
         dealerLocatorPage.waitForpageToLoad();
-
-        int noOfDealers = dealerData.getNames().length;
-        String [] dealerNames = dealerData.getNames();
-        String [] dealerLocations = dealerData.getPostcodes();
-        dealerLocatorPage.onADesktopView();
+        NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
 
 
-        for (int i=0 ; i< noOfDealers ;i++) {
-//        for (int i=0 ; i< 5 ;i++) {
 
-            currentDealerName = dealerNames[i];
-            currentDealerPostcode = dealerLocations[i];
-//            currentDealerName = dealerNamesObject.ukDealerNames[i];
-//            currentDealerPostcode = dealerPostcodeObject.ukDealerPostcode[i];
+        if (null != dealerList) {
+            for (int temp = 0 ; temp < dealerList.getLength(); temp++) {
 
-            System.out.println("Test No. "+i+ " : Location : "+currentDealerPostcode + "\t" +": Dealer : "+currentDealerName);
+                Node nNode = dealerList.item(temp);
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) nNode;
 
-            dealerLocatorPage.clickLocationRadioButton();
-            dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerPostcode);
+                    String country = eElement.getElementsByTagName("Country").item(0).getTextContent();
 
-            try {
-//                dealerLocatorPage.waitForResultsToChangeAfterClickingSubmit();
-                dealerLocatorPage.clickSubmit();
-                dealerLocatorPage.waitForSubmitSpinnerToStop();
-                dealerLocatorPage.waitForResultsToBeDisplayed();
+                    if (countryToTest.equalsIgnoreCase(country)) {
+                        try {
+                            currentEntityID = eElement.getElementsByTagName("EntityID").item(0).getTextContent();
+                            currentDealerName = eElement.getElementsByTagName("DealerName").item(0).getTextContent();
+                            currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
+                        } catch (NullPointerException e){
+                            currentDealerPostcode = "";
+                            addValues(currentDealerName, "Fail : Postcode is empty for '" + currentDealerPostcode + "' in the results");
 
-                resultText = dealerLocatorPage.getResultText();
+                        }
 
-            } catch (Exception e) {
-                for (int j=1 ; j<3 ;j++) {
-                    Thread.sleep(1500);
-                    resultText = dealerLocatorPage.getResultText();
-                    testResults.put(currentDealerPostcode, "Fail: Results NOT present");
-                    dealerLocatorPage.clickDealerRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
+
+                        System.out.println("Test No. " + temp + " : EntityId: " + currentEntityID + " : Dealer : " + currentDealerName + "\t" + "\t" + " : Location : " + currentDealerPostcode + " : Country : " + country);
+
+                        dealerLocatorPage.clickDealerRadioButton();
+                        dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerName);
+
+                        try {
+                            dealerLocatorPage.clickSubmit();
+                            dealerLocatorPage.waitForSubmitSpinnerToStop();
+                            dealerLocatorPage.waitForResultsToBeDisplayed();
+
+                            resultText = dealerLocatorPage.getResultText();
+                        } catch (Exception e) {
+                            for (int j = 1; j < 3; j++) {
+                                Thread.sleep(1500);
+                                resultText = dealerLocatorPage.getResultText();
+
+                                addValues(currentDealerName, "Fail: Results NOT present");
+
+                                dealerLocatorPage.clickLocationRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+
+
+                            }
+
+                        }
+                        if (resultText.contains(currentDealerPostcode)) {
+
+                            addValues(currentDealerName, "Pass");
+                            dealerLocatorPage.clickLocationRadioButton();
+                        } else {
+                            // If dealer postcode not found on the page THEN .... Check after showing more
+                            if (dealerLocatorPage.isShowMorePresent()) {
+                                addValues(currentDealerName, dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerPostcode));
+                                dealerLocatorPage.clickLocationRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+
+                            } else {
+                                addValues(currentDealerName, "Fail : could not find '" + currentDealerPostcode + "' in the results");
+                                dealerLocatorPage.clickLocationRadioButton();
+                                dealerLocatorPage.clickLocationRadioButton();
+                            }
+
+                        }
+                        System.out.println(testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", ""));
+                        System.out.println("------------------------------------------------------------");
+
+
+                    }
+
 
 
                 }
-
             }
-            if (resultText.contains(currentDealerName)){
-
-                testResults.put(currentDealerName, "Pass");
-                dealerLocatorPage.clickDealerRadioButton();
-            }
-            else {
-                // If dealer Name not found on the page THEN .... Check after showing more
-                if(dealerLocatorPage.isShowMorePresent()){
-                    testResults.put(currentDealerName,dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName));
-                    dealerLocatorPage.clickDealerRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
-
-                }else {
-                    testResults.put(currentDealerName,"Fail : could not find '"+currentDealerPostcode+"' in the results");
-                    dealerLocatorPage.clickDealerRadioButton();
-                    dealerLocatorPage.clickLocationRadioButton();
-                }
-
-            }
-            System.out.println(testResults.get(currentDealerName).toString().replace(", ","\r\n").replace("{","").replace("}",""));
-            System.out.println("------------------------------------------------------------");
-
-
-
+        }else {
+            System.out.println("Null dealer list from xml");
         }
-
         printAllFails(testResults);
+    }
 
-
-
-        }
-
-    private void printAllFails(Map<String, String> testResults) {
+    private void printAllFails(Map<String, ArrayList<String>> testResults) {
 
         boolean hasFails = false;
 
-        for(String result : testResults.keySet()){
-            if(result.contains("Fail")) {
+        for (String result : testResults.keySet()) {
+            if (result.contains("Fail")) {
                 hasFails = true;
             }
         }
-        if (hasFails=true){
+        if (hasFails = true) {
             System.out.println("-------------------------- FAILS ------------------------------------");
 
-            for ( Map.Entry<String, String> entry : testResults.entrySet()) {
+            for (Map.Entry<String, ArrayList<String>> entry : testResults.entrySet()) {
                 String dealerName = entry.getKey();
-                String testResult = entry.getValue();
+                String testResult = String.valueOf(entry.getValue());
 
                 if (testResult.contains("Fail")) {
                     System.out.println(dealerName);
 
-
                 }
             }
 
@@ -230,11 +275,37 @@ public class DataTest {
     }
 
 
-
-
-    @Ignore
     @Test
-    public void printNumberOfDealersAndLocations() throws InterruptedException {
+    public void printNumberOfDealersAndLocations() throws InterruptedException, FileNotFoundException {
+
+        String countryToTest = "France";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAFrenchDealerLocatorPage();
+
+        dealerLocatorPage.waitForpageToLoad();
+        NodeList dealerList = ReadXMLFile.readXML("C:/Users/ALEWI143/Desktop/data-test/04 -Thu 17 Apr/googleDataLoad_Thursday/bingmapsDataloadTransition_Thursday.xml");
+
+
+        if (null != dealerList) {
+            for (int temp = 0; temp < dealerList.getLength(); temp++) {
+
+                Node nNode = dealerList.item(temp);
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) nNode;
+
+                    String country = eElement.getElementsByTagName("Country").item(0).getTextContent();
+
+                    if (countryToTest.equalsIgnoreCase(country)) {
+                        String currentEntityID = eElement.getElementsByTagName("EntityID").item(0).getTextContent();
+                        String currentDealerName = eElement.getElementsByTagName("DealerName").item(0).getTextContent();
+                        String currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
+
+                    }
+                }
+            }
+        }
+
+
+        printConsoleToFile("printNumberOfDealersAndLocations");
         this.testResults = new HashMap();
         Boolean disambiguationPresent;
         String resultText = null;
@@ -242,37 +313,51 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentDealerLocality = "";
 
-        DealerData dealerData = new DealerData("DE");
+        DealerData dealerData = new DealerData("IT");
 
         int noOfDealers = dealerData.getNames().length;
-        String [] dealerNames = dealerData.getNames();
-        String [] dealerLocations = dealerData.getPostcodes();
+        String[] dealerNames = dealerData.getNames();
+        String[] dealerLocations = dealerData.getPostcodes();
+        String[] entityIds = dealerData.getEntityID();
 
-        System.out.println("Number of Dealers: "+ noOfDealers);
-        System.out.println("Number of Locations: "+ dealerLocations.length);
+        System.out.println("EntityIds: " + entityIds.length);
+        System.out.println("Number of Dealers: " + noOfDealers);
+        System.out.println("Number of Locations: " + dealerLocations.length);
+
 
     }
-
-
-    /*@Test
-    public void dataLoad() throws InterruptedException {
-        System.out.println("Location Test");
-        DealerData data = new DealerData("DE");
-
-
-    }*/
-
 
 
     @AfterClass
     public static void tearDown() {
         GIVEN.tearDown();
         DealerLocatorPage.tearDown();
+        System.setOut(null);
+        System.setErr(null);
     }
 
 
+    private void addValues(String key, String value) {
+        ArrayList tempList = null;
+        if (testResults.containsKey(key)) {
+            tempList = testResults.get(key);
+            if (tempList == null)
+                tempList = new ArrayList();
+            tempList.add(value);
+        } else {
+            tempList = new ArrayList();
+            tempList.add(value);
+        }
+        testResults.put(key, tempList);
+    }
+
+    public void printConsoleToFile(String testName) throws FileNotFoundException {
+
+        PrintStream out = new PrintStream(new FileOutputStream(System.getProperty("user.dir") + "/target/test-results/test-results-" + testName + ".txt"));
+        System.setOut(out);
 
 
+    }
 
 }
 

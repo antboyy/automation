@@ -53,7 +53,7 @@ public class HomepageTest {
         assertThat(homepage.countNumberOfMobileElementsVisible(), is(0));
     }
 
-
+@Ignore
     @Test
     public void personalisationTest() throws InterruptedException {
 

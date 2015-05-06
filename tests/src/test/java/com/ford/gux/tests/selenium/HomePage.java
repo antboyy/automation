@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class HomePage {
+public class HomePage extends AbstractPage{
 
     public HomePage(WebDriver driver){
         this.driver = driver;

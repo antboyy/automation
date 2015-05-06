@@ -1,0 +1,1128 @@
+Location Test
+Test No. 6417 : EntityId: FordUB81511AAGBR : Location : TR1 3LN	: Dealer : Vospers - Truro : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6418 : EntityId: FordUB81511BAGBR : Location : TR20 8HT	: Dealer : Vospers - Penzance : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6419 : EntityId: FordUB81511DAGBR : Location : TR11 2SD	: Dealer : Vospers - Falmouth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6420 : EntityId: FordUB81511EAGBR : Location : PL25 4TR	: Dealer : Vospers - St Austell : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6421 : EntityId: FordUB81511FAGBR : Location : TR4 9LD	: Dealer : Vospers of Truro : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6422 : EntityId: FordUB81511TBGBR : Location : PL27 7HT	: Dealer : Tregoning Ford - Wadebridge : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6423 : EntityId: FordUB81511YBGBR : Location : TR13 0RA	: Dealer : Flora Motors - Helston : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6424 : EntityId: FordUB81512AAGBR : Location : PL6 8AY	: Dealer : Vospers - Plymouth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6425 : EntityId: FordUB81512ABGBR : Location : TQ7 1EQ	: Dealer : Quay Auto Centre - Kingsbridge : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6426 : EntityId: FordUB81512BAGBR : Location : PL7 1RS	: Dealer : Vospers - Penzance : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6427 : EntityId: FordUB81512CAGBR : Location : PL7 1AJ	: Dealer : Vospers Chaddlewood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6428 : EntityId: FordUB81512SAGBR : Location : PL19 9DP	: Dealer : Vospers - Tavistock : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6429 : EntityId: FordUB81512ZBGBR : Location : PL15 7ED	: Dealer : Sprys of Launceston : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6430 : EntityId: FordUB81513AAGBR : Location : PL7 1RS	: Dealer : Vospers Van Centre : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6431 : EntityId: FordUB81513ACGBR : Location : PL15 7ED	: Dealer : Sprys of Launceston : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6432 : EntityId: FordUB81513BAGBR : Location : PL6 8AY	: Dealer : Vospers - Plymouth : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6433 : EntityId: FordUB81594AAGBR : Location : EX32 8NP	: Dealer : Taw Ford - Barnstaple : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6434 : EntityId: FordUB81594ADGBR : Location : EX39 3ET	: Dealer : Blights Motors - Bideford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6435 : EntityId: FordUB81629AAGBR : Location : EX32 8NP	: Dealer : Taw Ford - Barnstaple : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6436 : EntityId: FordUB81629ADGBR : Location : EX39 3ET	: Dealer : Blights Motors - Bideford : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6437 : EntityId: FordUB81810AAGBR : Location : NN3 9HU	: Dealer : Allen Ford - Northampton : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6438 : EntityId: FordUB81810ACGBR : Location : NN10 6AP	: Dealer : Winslow Ford - Rushden : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6439 : EntityId: FordUB81810BAGBR : Location : NN11 8QS	: Dealer : Allen Ford - Daventry : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6440 : EntityId: FordUB81810CAGBR : Location : NN16 8UP	: Dealer : Allen Ford - Kettering : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6441 : EntityId: FordUB81810CBGBR : Location : NN14 4JW	: Dealer : Thrapston Garage - Thrapston : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6442 : EntityId: FordUB81810DAGBR : Location : NN1 5NX	: Dealer : Allen Ford - Northampton : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6443 : EntityId: FordUB81810FAGBR : Location : NN3 9HU	: Dealer : Allen Ford - Northampton : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6444 : EntityId: FordUB81810YBGBR : Location : NN9 5QE	: Dealer : Central Garage - Irthlingborough : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6445 : EntityId: FordUB81811AAGBR : Location : NN1 5NX	: Dealer : Allen Ford - Northampton : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6446 : EntityId: FordUB81811ABGBR : Location : NN9 5QE	: Dealer : Central Garage - Irthlingborough : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6447 : EntityId: FordUB81811ACGBR : Location : NN10 6AP	: Dealer : Winslow Ford - Rushden : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6448 : EntityId: FordUB81811CBGBR : Location : NN14 4JW	: Dealer : Thrapston Garage - Thrapston : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6449 : EntityId: FordUB81827AAGBR : Location : GY1 3LB	: Dealer : Trust Ford - Guernsey : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6450 : EntityId: FordUB81827BAGBR : Location : GY2 4LG	: Dealer : Trust Ford - Guernsey : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6451 : EntityId: FordUB81828AAGBR : Location : GY1 3LB	: Dealer : Trust Ford - Guernsey : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6452 : EntityId: FordUB82208ACGBR : Location : BA13 3SB	: Dealer : Elkins Ford - Westbury : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6453 : EntityId: FordUB82213AAGBR : Location : B24 9QB	: Dealer : Trust Ford - Erdington CV : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6454 : EntityId: FordUB82213ABGBR : Location : WS7 1JS	: Dealer : Acorn Ford - Burntwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6455 : EntityId: FordUB82214AAGBR : Location : B24 9QB	: Dealer : Trust Ford - Erdington : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6456 : EntityId: FordUB82214CAGBR : Location : B42 2SP	: Dealer : Trust Ford - Perry Barr : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6457 : EntityId: FordUB82214DAGBR : Location : B79 7HD	: Dealer : Trust Ford - Tamworth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6458 : EntityId: FordUB82214TBGBR : Location : WS13 6PB	: Dealer : Tempest Ford - Lichfield : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6459 : EntityId: FordUB82214ZBGBR : Location : WS7 1JS	: Dealer : Acorn Ford - Burntwood : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6460 : EntityId: FordUB82300AAGBR : Location : SP2 7PF	: Dealer : Edwards Ford - Salisbury : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6461 : EntityId: FordUB82300AEGBR : Location : BA13 3SB	: Dealer : ELKINS FORD : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6462 : EntityId: FordUB82300CAGBR : Location : TA2 8DN	: Dealer : Taunton Ford - Taunton : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6463 : EntityId: FordUB82300DAGBR : Location : BA22 8XG	: Dealer : Yeovil Ford - Yeovil : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6464 : EntityId: FordUB82300EAGBR : Location : SP7 8PL	: Dealer : Foray - Shaftesbury : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6465 : EntityId: FordUB82300FAGBR : Location : SP1 3BW	: Dealer : Andover Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6466 : EntityId: FordUB82300GAGBR : Location : DT1 1RD	: Dealer : Dorchester Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6467 : EntityId: FordUB82529AAGBR : Location : SP2 7PF	: Dealer : Edwards Ford - Salisbury : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6468 : EntityId: FordUB82529ABGBR : Location : SP7 8PL	: Dealer : Hine Motors - Shaftesbury : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6469 : EntityId: FordUB82529BAGBR : Location : SP10 3BE	: Dealer : Andover Ford - Andover : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6470 : EntityId: FordUB82529CAGBR : Location : SP10 3ZE	: Dealer : Andover Ford - Andover : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6471 : EntityId: FordUB82529EAGBR : Location : SP7 8PL	: Dealer : Foray - Shaftesbury : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6472 : EntityId: FordUB82529FAGBR : Location : SP4 6AT	: Dealer : T/A Foray Parts Distribution Centre : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6473 : EntityId: FordUB82822AAGBR : Location : TA2 8DN	: Dealer : Taunton Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6474 : EntityId: FordUB82822ACGBR : Location : TA24 5BY	: Dealer : Beaver Ford - Minehead : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6475 : EntityId: FordUB82822AEGBR : Location : BA13 3SB	: Dealer : ELKINS FORD : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6476 : EntityId: FordUB82822BAGBR : Location : BA22 8XG	: Dealer : Yeovil Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6477 : EntityId: FordUB82822BFGBR : Location : TA18 8LY	: Dealer : Misterton Garage - Crewkerne : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6478 : EntityId: FordUB82822CAGBR : Location : TA6 3PW	: Dealer : Bridgwater Ford - Bridgwater : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6479 : EntityId: FordUB82822DAGBR : Location : TA20 1EP	: Dealer : Chard Ford - Chard : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6480 : EntityId: FordUB82822GAGBR : Location : DT1 1RD	: Dealer : Dorchester Ford - Dorchester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6481 : EntityId: FordUB82822ZBGBR : Location : BA16 0NE	: Dealer : Abbey Garage - Street : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6482 : EntityId: FordUB82823EAGBR : Location : TA6 3PW	: Dealer : Bridgwater Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6483 : EntityId: FordUB83188AAGBR : Location : CF31 3BF	: Dealer : Bridgend Ford - Bridgend : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6484 : EntityId: FordUB83188ACGBR : Location : CF71 7PF	: Dealer : D G Weaver - Cowbridge : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6485 : EntityId: FordUB83357AAGBR : Location : SA6 8HR	: Dealer : C E M Day - Swansea : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6486 : EntityId: FordUB83357AEGBR : Location : SA6 5PE	: Dealer : Davies Motors - Cardigan : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6487 : EntityId: FordUB83357AGGBR : Location : SA14 6RB	: Dealer : J & J Motors - Llanelli : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6488 : EntityId: FordUB83357BAGBR : Location : SA4 4LL	: Dealer : C E M Day - Swansea : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6489 : EntityId: FordUB83357DAGBR : Location : SA62 4BT	: Dealer : C E M Day - Haverfordwest : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6490 : EntityId: FordUB83473AAGBR : Location : CF31 3BF	: Dealer : Bridgend Ford - Bridgend : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6491 : EntityId: FordUB83473ZBGBR : Location : CF71 7PF	: Dealer : D G Weaver - Cowbridge : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6492 : EntityId: FordUB83553AAGBR : Location : SA4 4LL	: Dealer : C E M Day - Swansea : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6493 : EntityId: FordUB83553ACGBR : Location : SA9 1SW	: Dealer : Continental Service Station-Swansea : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6494 : EntityId: FordUB83553AEGBR : Location : SA43 1NA	: Dealer : Davies - Cardigan : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6495 : EntityId: FordUB83553AGGBR : Location : SA14 6RB	: Dealer : J & J Motors - Llanelli : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6496 : EntityId: FordUB83553BAGBR : Location : SA6 8HR	: Dealer : C E M Day - Swansea : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6497 : EntityId: FordUB83553CAGBR : Location : SA15 4DP	: Dealer : C E M Day - Llanelli : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6498 : EntityId: FordUB83553DAGBR : Location : SA62 4BT	: Dealer : C E M Day - Haverfordwest : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6499 : EntityId: FordUB83553FAGBR : Location : SA10 7DF	: Dealer : C E M Day - Neath : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6500 : EntityId: FordUB83556AAGBR : Location : CF23 9UE	: Dealer : Evans Halshaw - Cardiff : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6501 : EntityId: FordUB83556CAGBR : Location : CF37 5YA	: Dealer : Evans Halshaw - Treforest : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6502 : EntityId: FordUB83556EAGBR : Location : CF48 1YA	: Dealer : Evans Halshaw - Merthyr Tydfil : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6503 : EntityId: FordUB83556YBGBR : Location : CF72 8AF	: Dealer : D G Weavers - Pontyclun : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6504 : EntityId: FordUB83556ZBGBR : Location : CF41 7LU	: Dealer : D G Weaver - Rhondda : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6505 : EntityId: FordUB83557AAGBR : Location : CF11 8YZ	: Dealer : Fordthorne - Cardiff : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6506 : EntityId: FordUB83557ADGBR : Location : CF44 0AG	: Dealer : Aberdare Ford - Aberdare : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6507 : EntityId: FordUB83557ZBGBR : Location : CF62 9PZ	: Dealer : P W Millar - Barry : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6508 : EntityId: FordUB83561AAGBR : Location : CF11 8YZ	: Dealer : Fordthorne : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6509 : EntityId: FordUB83725BAGBR : Location : CF48 1YA	: Dealer : Evans Halshaw - Merthyr Tydfil : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6510 : EntityId: FordUB83725EAGBR : Location : CF37 5YA	: Dealer : Evans Halshaw - Treforest : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6511 : EntityId: FordUB83725EBGBR : Location : SA33 6TP	: Dealer : D G Weaver - Rhondda : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6512 : EntityId: FordUB83725EDGBR : Location : CF72 8AF	: Dealer : D G Weaver - Pontyclun : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6513 : EntityId: FordUB83883AAGBR : Location : SN3 3LL	: Dealer : Allen Ford - Swindon : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6514 : EntityId: FordUB83883ABGBR : Location : SN6 7HJ	: Dealer : Reg Skull Motors - Highworth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6515 : EntityId: FordUB83883BAGBR : Location : SN5 5FZ	: Dealer : Allen Ford - Swindon : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6516 : EntityId: FordUB83883DAGBR : Location : BA2 3EW	: Dealer : Allen Ford - Bath : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6517 : EntityId: FordUB83885AAGBR : Location : SN3 3LL	: Dealer : Allen Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6518 : EntityId: FordUB83885DAGBR : Location : BA2 3EW	: Dealer : Allen Ford - Bath : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6519 : EntityId: FordUB84465AAGBR : Location : BH12 4QA	: Dealer : English Ford - Poole : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6520 : EntityId: FordUB84466AAGBR : Location : BH12 4QA	: Dealer : English Ford - Poole : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6521 : EntityId: FordUB84545AAGBR : Location : HR1 1LW	: Dealer : Hartwell Ford - Hereford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6522 : EntityId: FordUB84545ABGBR : Location : HR6 8AQ	: Dealer : Watsons Motor Works - Leominster : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6523 : EntityId: FordUB84545ACGBR : Location : HR7 4DJ	: Dealer : Bishops of Bromyard : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6524 : EntityId: FordUB84546AAGBR : Location : HR1 1LW	: Dealer : Hartwell Ford Hereford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6525 : EntityId: FordUB84548AAGBR : Location : GL51 0SJ	: Dealer : Bristol Street - Cheltenham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6526 : EntityId: FordUB84548CAGBR : Location : GL2 5YB	: Dealer : Bristol Street - Gloucester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6527 : EntityId: FordUB84548DAGBR : Location : GL5 2AX	: Dealer : Bristol Street - Stroud : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6528 : EntityId: FordUB84548ZBGBR : Location : GL20 8DT	: Dealer : P J Nicholls - Tewkesbury : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6529 : EntityId: FordUB84561AAGBR : Location : NP19 4QU	: Dealer : Newport Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6530 : EntityId: FordUB84561ABGBR : Location : NP12 2JG	: Dealer : Arrow Ford - Blackwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6531 : EntityId: FordUB84561BAGBR : Location : NP44 1TT	: Dealer : Cwmbran Ford - Cwmbran : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6532 : EntityId: FordUB84561BFGBR : Location : NP7 9LP	: Dealer : Clytha Motor Company-Abergavenny : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6533 : EntityId: FordUB84561CBGBR : Location : GL15 5LD	: Dealer : Thomas Bee - Lydney : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6534 : EntityId: FordUB84561DAGBR : Location : LD3 8BT	: Dealer : Brecon Ford - Brecon : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6535 : EntityId: FordUB84561DCGBR : Location : LD1 5BH	: Dealer : Tremont Ford - Llandrindod Wells : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6536 : EntityId: FordUB84561EAGBR : Location : NP16 5UH	: Dealer : Chepstow Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6537 : EntityId: FordUB84563AAGBR : Location : GL2 5YB	: Dealer : Bristol Street - Gloucester : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6538 : EntityId: FordUB84563BAGBR : Location : GL51 0SJ	: Dealer : Bristol Street - Cheltenham : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6539 : EntityId: FordUB84566AAGBR : Location : NP44 1TT	: Dealer : Cwmbran Ford - Cwmbran : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6540 : EntityId: FordUB84566ADGBR : Location : NP15 2DY	: Dealer : Raglan Ford - Raglan : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6541 : EntityId: FordUB84566AFGBR : Location : NP7 9LP	: Dealer : Clytha Motor Company-Abergavenny : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6542 : EntityId: FordUB84566BAGBR : Location : NP19 4QU	: Dealer : Newport Ford : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6543 : EntityId: FordUB84566CBGBR : Location : GL15 5LD	: Dealer : Thomas Bee - Lydney : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6544 : EntityId: FordUB84566DAGBR : Location : LD3 8BT	: Dealer : Brecon Ford - Brecon : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6545 : EntityId: FordUB84566DCGBR : Location : LD1 5EB	: Dealer : Tremont Ford - Llandrindod Wells : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6546 : EntityId: FordUB84566EAGBR : Location : NP16 5UH	: Dealer : Chepstow Ford : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6547 : EntityId: FordUB84566YBGBR : Location : NP12 2JG	: Dealer : Arrow Ford - Blackwood : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6548 : EntityId: FordUB84885AAGBR : Location : LL31 9BA	: Dealer : W R Davies - W R Davies : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6549 : EntityId: FordUB84885ABGBR : Location : LL53 6UE	: Dealer : O H Griffith & Co - Pwllheli : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6550 : EntityId: FordUB84885AFGBR : Location : LL16 4NT	: Dealer : Pentre Motors - Denbigh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6551 : EntityId: FordUB84885AGGBR : Location : LL40 1DG	: Dealer : Gwyndaf Evans Motors - Dolgellau : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6552 : EntityId: FordUB84885AJGBR : Location : SY23 3QP	: Dealer : Anthony Motors - Aberystwyth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6553 : EntityId: FordUB84885AMGBR : Location : LL40 1HS	: Dealer : Gwyndaf Evans Dolgellau : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6554 : EntityId: FordUB84885BAGBR : Location : LL77 7JA	: Dealer : W R Davies - Anglesey : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6555 : EntityId: FordUB84885BBGBR : Location : LL67 0DA	: Dealer : The Brookside Garages - Anglesey : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6556 : EntityId: FordUB84885CAGBR : Location : LL18 2EE	: Dealer : W R Davies - Rhyl : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6557 : EntityId: FordUB84886AAGBR : Location : LL31 9BA	: Dealer : W R Davies - Llandudno : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6558 : EntityId: FordUB84886AFGBR : Location : LL16 4NT	: Dealer : Pentre Motors - Denbigh : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6559 : EntityId: FordUB84886AGGBR : Location : LL40 1DG	: Dealer : Gwyndaf Evans Motors - Dolgellau : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6560 : EntityId: FordUB84886AJGBR : Location : SY23 3QP	: Dealer : Anthony Motors - Aberystwyth : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6561 : EntityId: FordUB84886AMGBR : Location : LL40 1HS	: Dealer : Gwyndaf Evans Dolgellau : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6562 : EntityId: FordUB84886BAGBR : Location : LL77 7JA	: Dealer : W R Davies - Anglesey : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6563 : EntityId: FordUB84886BBGBR : Location : LL67 0DA	: Dealer : The Brookside Garages - Anglesey : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6564 : EntityId: FordUB84886CAGBR : Location : LL18 2EE	: Dealer : W R Davies - Rhyl : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6565 : EntityId: FordUB85597AAGBR : Location : PO30 5UY	: Dealer : Premier Ford - Newport : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6566 : EntityId: FordUB85597ABGBR : Location : PO38 2PY	: Dealer : Whitwell Garage : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6567 : EntityId: FordUB85795AAGBR : Location : PO30 5UY	: Dealer : Premier Ford - Newport : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6568 : EntityId: FordUB85795ABGBR : Location : PO38 2PY	: Dealer : Whitwell Garage : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6569 : EntityId: FordUB85795ACGBR : Location : PO33 1AY	: Dealer : Westridge Garage - Ryde : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6570 : EntityId: FordUB85803AAGBR : Location : BH23 4SB	: Dealer : Keith Motors - Christchurch : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6571 : EntityId: FordUB85803ACGBR : Location : DT6 3EX	: Dealer : Harbour Bonfield Garage - Bridport : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6572 : EntityId: FordUB85803ADGBR : Location : BH19 3DX	: Dealer : ST Michaels Garage - Swanage : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6573 : EntityId: FordUB85803AEGBR : Location : BH20 5AA	: Dealer : Purbeck Ford - Wareham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6574 : EntityId: FordUB85803AFGBR : Location : BH20 6HQ	: Dealer : Wool & Bovington Motors - Wool : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6575 : EntityId: FordUB85803DAGBR : Location : BH24 3AP	: Dealer : Keith Motors Ringwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6576 : EntityId: FordUB85803WBGBR : Location : DT4 9TB	: Dealer : Chesil Beach Motors - Weymouth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6577 : EntityId: FordUB85803XBGBR : Location : BH20 6EH	: Dealer : Wool & Bovington - Wareham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6578 : EntityId: FordUB85803ZBGBR : Location : BH31 7AD	: Dealer : Verwood Ford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6579 : EntityId: FordUB85848AAGBR : Location : SO50 9PT	: Dealer : Hendy Ford - Eastleigh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6580 : EntityId: FordUB85848DAGBR : Location : SO53 4DG	: Dealer : Hendy Van & Truck - Eastleigh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6581 : EntityId: FordUB85848HBGBR : Location : PO11 9LG	: Dealer : Daron Ford - Hampshire : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6582 : EntityId: FordUB85848QAGBR : Location : PO6 4RW	: Dealer : Hendy Ford - Cosham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6583 : EntityId: FordUB85850AAGBR : Location : SO15 1GZ	: Dealer : Hendy Ford - Southampton : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6584 : EntityId: FordUB85850BAGBR : Location : SO50 9PT	: Dealer : Hendy Ford - Eastleigh : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6585 : EntityId: FordUB85850CAGBR : Location : SO23 7RR	: Dealer : Hendy Ford - Winchester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6586 : EntityId: FordUB85850EAGBR : Location : SO40 4WU	: Dealer : Hendy Ford - Marchwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6587 : EntityId: FordUB85850HAGBR : Location : PO6 4RW	: Dealer : Hendy Ford - Cosham : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6588 : EntityId: FordUB85850JAGBR : Location : PO19 8TX	: Dealer : Hendy Ford - Chichester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6589 : EntityId: FordUB85850KAGBR : Location : PO14 1TU	: Dealer : Hendy Ford - Fareham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6590 : EntityId: FordUB85850MAGBR : Location : SO30 2FZ	: Dealer : Hendy Ford Parts : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6591 : EntityId: FordUB85850XBGBR : Location : PO11 9LG	: Dealer : Daron Ford - Hampshire : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6592 : EntityId: FordUB86492BAGBR : Location : JE2 7QS	: Dealer : La Motte Ford - St Saviour : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6593 : EntityId: FordUB86492CAGBR : Location : JE3 8FP	: Dealer : La Motte Ford - St Brelade : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6594 : EntityId: FordUB86630AAGBR : Location : JE4 8UR	: Dealer : Trust Ford - Jersey : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6595 : EntityId: FordUB86630BAGBR : Location : JE3 1LU	: Dealer : Trust Ford - St Lawrence : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6596 : EntityId: FordUB88169AAGBR : Location : BN23 6PX	: Dealer : Birchwood Ford - Eastbourne : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6597 : EntityId: FordUB88169ABGBR : Location : BN25 2BA	: Dealer : Jermyn & Sons - Seaford : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6598 : EntityId: FordUB88169CAGBR : Location : TN37 7SQ	: Dealer : Birchwood Ford - St Leonards on Sea : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6599 : EntityId: FordUB88824AAGBR : Location : BN23 6PX	: Dealer : Birchwood Ford - Eastbourne : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6600 : EntityId: FordUB88824ABGBR : Location : BN25 2BA	: Dealer : Jermyn & Sons - Seaford : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6601 : EntityId: FordUB88824BAGBR : Location : BN8 6PS	: Dealer : Birchwood Ford - Uckfield : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6602 : EntityId: FordUB88824CAGBR : Location : TN37 7SQ	: Dealer : Birchwood Ford - St Leonards-on-Sea : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6603 : EntityId: FordUB91159AAGBR : Location : G53 7RA	: Dealer : Macklin Motors - Glasgow : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6604 : EntityId: FordUB91159BAGBR : Location : ML3 0EJ	: Dealer : Macklin Motors - Hamilton : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6605 : EntityId: FordUB91249AAGBR : Location : G11 6JY	: Dealer : MacHargs - Glasgow : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6606 : EntityId: FordUB91249DAGBR : Location : G14 0AP	: Dealer : Arnold Clark - Scotstoun : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6607 : EntityId: FordUB91249HAGBR : Location : G81 3ST	: Dealer : Arnold Clark - Clyde Bank : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6608 : EntityId: FordUB91249MAGBR : Location : G62 6JP	: Dealer : Arnold Clark - Milngavie : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6609 : EntityId: FordUB91259AAGBR : Location : G5 8JH	: Dealer : Arnold Clark : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6610 : EntityId: FordUB91270AAGBR : Location : PA1 2AB	: Dealer : Arnold Clark - Linwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6611 : EntityId: FordUB91270ACGBR : Location : PA20 0EY	: Dealer : W & J Duncan - Isle of Bute : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6612 : EntityId: FordUB91270BAGBR : Location : PA15 2UH	: Dealer : Arnold Clark - Greenock : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6613 : EntityId: FordUB91270CAGBR : Location : G32 8YX	: Dealer : Arnold Clark - Westhorn Drive : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6614 : EntityId: FordUB91270EAGBR : Location : G73 1SU	: Dealer : Arnold Clark - Shawfield : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6615 : EntityId: FordUB91619AAGBR : Location : ML1 2UB	: Dealer : Evans Halshaw - Motherwell : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6616 : EntityId: FordUB91619CAGBR : Location : ML5 3RB	: Dealer : Evans Halshaw - Coatbridge : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6617 : EntityId: FordUB91619DAGBR : Location : G74 5NL	: Dealer : Evans Halshaw - East Kilbride : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6618 : EntityId: FordUB91622CAGBR : Location : ML5 3RB	: Dealer : Evans Halshaw - Coatbridge : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6619 : EntityId: FordUB91622DAGBR : Location : G74 5NL	: Dealer : Evans Halshaw - East Kilbride : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6620 : EntityId: FordUB91661BAGBR : Location : G33 2ET	: Dealer : Evans Halshaw - Glasgow : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6621 : EntityId: FordUB91665AAGBR : Location : G33 2ET	: Dealer : Evans Halshaw - Glasgow : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6622 : EntityId: FordUB91665BAGBR : Location : G33 2ET	: Dealer : Evans Halshaw - Glasgow : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6623 : EntityId: FordUB91665CAGBR : Location : G66 1TA	: Dealer : Evans Halshaw - Kirkintilloch : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6624 : EntityId: FordUB91666AAGBR : Location : KA1 3XF	: Dealer : Arnold Clark - Kilmarnock : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6625 : EntityId: FordUB91666ABGBR : Location : KA18 1PW	: Dealer : James K Thomson & Sons - Cumnock : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6626 : EntityId: FordUB91666AGGBR : Location : KA22 8JX	: Dealer : Kerr Ballie Ardrossan : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6627 : EntityId: FordUB91666AHGBR : Location : KA25 6BP	: Dealer : Garnock Valley Ford - Holmhead : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6628 : EntityId: FordUB91666BAGBR : Location : KA8 8NP	: Dealer : Arnold Clark - Ayr : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6629 : EntityId: FordUB91666DAGBR : Location : ML10 6UB	: Dealer : Arnold Clark - Strathaven : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6630 : EntityId: FordUB91673AAGBR : Location : KA1 3XF	: Dealer : Arnold Clark - Kilmarnock : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6631 : EntityId: FordUB91673ABGBR : Location : KA18 1PW	: Dealer : James K Thomson & Sons - Cumnock : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6632 : EntityId: FordUB91673AGGBR : Location : KA22 8JX	: Dealer : KERR BALLIE LIMITED : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6633 : EntityId: FordUB91673AHGBR : Location : KA25 6BP	: Dealer : Garnock Valley Ford - Holmhead : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6634 : EntityId: FordUB91673BAGBR : Location : KA8 8NJ	: Dealer : Arnold Clark - Ayr : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6635 : EntityId: FordUB91673CAGBR : Location : G81 3ST	: Dealer : Arnold Clark - Clyde Bank : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6636 : EntityId: FordUB92266AAGBR : Location : PH1 3AA	: Dealer : Macrae & Dick - Perth : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6637 : EntityId: FordUB92266ABGBR : Location : PH10 7AB	: Dealer : Balmoral Garage - Blairgowrie : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6638 : EntityId: FordUB92266ACGBR : Location : PH13 9AF	: Dealer : Lamb & Gardiner - Coupar Angus : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6639 : EntityId: FordUB92266BAGBR : Location : FK7 7RW	: Dealer : Macrae & Dick - Stirling : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6640 : EntityId: FordUB92626AAGBR : Location : KW14 8EP	: Dealer : W M Dunnet - Thurso : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6641 : EntityId: FordUB92631AAGBR : Location : AB16 6HT	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6642 : EntityId: FordUB92631ABGBR : Location : AB51 3RN	: Dealer : Lawrence of Kemnay - Inverurie : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6643 : EntityId: FordUB92631CAGBR : Location : AB42 3JL	: Dealer : Arnold Clark - Peterhead : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6644 : EntityId: FordUB92631DAGBR : Location : AB12 3AR	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6645 : EntityId: FordUB92631DBGBR : Location : AB34 5HR	: Dealer : Aboyne Service Station - Aboyne : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6646 : EntityId: FordUB92631FAGBR : Location : AB11 9HJ	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6647 : EntityId: FordUB92631JAGBR : Location : AB11 8DU	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6648 : EntityId: FordUB92633AAGBR : Location : IV1 1UF	: Dealer : Macrae & Dick - Inverness : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6649 : EntityId: FordUB92633ABGBR : Location : PH26 3TA	: Dealer : Woodlands Service Centre : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6650 : EntityId: FordUB92633AJGBR : Location : PH33 6PP	: Dealer : Ben Nevis Motors - Fort William : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6651 : EntityId: FordUB92633BAGBR : Location : IV30 1XU	: Dealer : Macrae & Dick - Elgin : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6652 : EntityId: FordUB92633BBGBR : Location : AB56 4AD	: Dealer : Moravian Motors - Buckie : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6653 : EntityId: FordUB92633BCGBR : Location : AB54 8DU	: Dealer : Huntly Motors : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6654 : EntityId: FordUB92634AAGBR : Location : IV1 1UF	: Dealer : Macrae & Dick - Inverness : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6655 : EntityId: FordUB92634AJGBR : Location : PH33 6PP	: Dealer : Ben Nevis Motors - Fort William : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6656 : EntityId: FordUB92634BAGBR : Location : IV30 1XU	: Dealer : Macrae & Dick - Elgin : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6657 : EntityId: FordUB92634BBGBR : Location : AB56 4AD	: Dealer : Moravian Motors - Buckie : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6658 : EntityId: FordUB92634BCGBR : Location : AB54 8DU	: Dealer : Huntly Motors : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6659 : EntityId: FordUB92641AAGBR : Location : KW15 1HD	: Dealer : W R Tullock & Sons - Kirkwall : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6660 : EntityId: FordUB92656AAGBR : Location : KW15 1HD	: Dealer : W R Tullock & Sons - Kirkwall : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6661 : EntityId: FordUB92678AAGBR : Location : AB16 6HT	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6662 : EntityId: FordUB92678ABGBR : Location : AB51 3RN	: Dealer : Lawrence of Kemnay - Inverurie : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6663 : EntityId: FordUB92678DBGBR : Location : AB34 5HR	: Dealer : Aboyne Service Station - Aboyne : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6664 : EntityId: FordUB92678GAGBR : Location : AB12 3HL	: Dealer : Arnold Clark - Aberdeen : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6665 : EntityId: FordUB92801AAGBR : Location : PH1 3AA	: Dealer : Macrae & Dick - Perth : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6666 : EntityId: FordUB92801ADGBR : Location : PH10 7AB	: Dealer : Balmoral Garage - Blairgowrie : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6667 : EntityId: FordUB92801BAGBR : Location : FK7 7RW	: Dealer : Macrae & Dick - Stirling : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6668 : EntityId: FordUB92801BBGBR : Location : PH13 9AF	: Dealer : Lamb & Gardiner - Coupar Angus : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6669 : EntityId: FordUB92880AAGBR : Location : DD8 3TG	: Dealer : Glenford - Forfar : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6670 : EntityId: FordUB92880ABGBR : Location : DD10 9AY	: Dealer : Guthrie Brothers - Montrose : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6671 : EntityId: FordUB92902AAGBR : Location : DD8 1XP	: Dealer : A M Phillip - Forfar : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6672 : EntityId: FordUB92902CAGBR : Location : DD2 3SP	: Dealer : A M Phillip - Dundee : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6673 : EntityId: FordUB92902DAGBR : Location : EH52 5ND	: Dealer : A M Phillip - Broxburn : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6674 : EntityId: FordUB92902EAGBR : Location : KY7 6JF	: Dealer : A M Phillip - Glenrothes : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6675 : EntityId: FordUB92902FAGBR : Location : AB21 9NB	: Dealer : A M Phillip - Bucksburn : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6676 : EntityId: FordUB92949AAGBR : Location : KW14 8EP	: Dealer : Dunnets - Thurso : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6677 : EntityId: FordUB93339AAGBR : Location : ZE1 0PZ	: Dealer : Jim's Garage - Lerwick : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6678 : EntityId: FordUB93344AAGBR : Location : ZE1 0PZ	: Dealer : Jim's Garage - Lerwick : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6679 : EntityId: FordUB93383AAGBR : Location : BT28 1AN	: Dealer : Trust Ford - Lisburn : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6680 : EntityId: FordUB93383ADGBR : Location : BT35 7NA	: Dealer : C R Morrow - Newry : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6681 : EntityId: FordUB93383BAGBR : Location : BT42 3HA	: Dealer : Trust Ford - Ballymena : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6682 : EntityId: FordUB93383BCGBR : Location : BT41 2EB	: Dealer : John Mulholland - Randalstown : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6683 : EntityId: FordUB93383GAGBR : Location : BT36 4PP	: Dealer : Trust Ford - Newtownabbey : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6684 : EntityId: FordUB93383HAGBR : Location : BT12 6HR	: Dealer : trust Ford - Belfast : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6685 : EntityId: FordUB93383JBGBR : Location : BT62 2JX	: Dealer : Ballylisk Car Sales - Craigavon : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6686 : EntityId: FordUB93383KAGBR : Location : BT28 2EJ	: Dealer : Trust Ford - Lisburn : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6687 : EntityId: FordUB93662AAGBR : Location : BT28 1AN	: Dealer : Trust Ford - Lisburn : Country : BRITAIN
+[Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6688 : EntityId: FordUB93662ADGBR : Location : BT35 7NA	: Dealer : C R Morrow - Newry : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6689 : EntityId: FordUB93662BAGBR : Location : BT42 3HB	: Dealer : Trust Ford - Ballymena : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6690 : EntityId: FordUB93662BCGBR : Location : BT41 2EB	: Dealer : John Mulholland - Randalstown : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6691 : EntityId: FordUB93662CAGBR : Location : BT52 2BS	: Dealer : Trust Ford - Coleraine : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6692 : EntityId: FordUB93662DAGBR : Location : BT4 3LG	: Dealer : Trust Ford - Belfast : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6693 : EntityId: FordUB93662GAGBR : Location : BT36 4PP	: Dealer : Trust Ford - Newtownabbey : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6694 : EntityId: FordUB93662HAGBR : Location : BT12 6HR	: Dealer : Trust Ford - Belfast (Boucher) : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6695 : EntityId: FordUB93662JAGBR : Location : BT64 3AF	: Dealer : Trust Ford - Craigavon : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6696 : EntityId: FordUB93662JBGBR : Location : BT62 2JX	: Dealer : Ballylisk Car Sales - Craigavon : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6697 : EntityId: FordUB93662KAGBR : Location : BT28 2EJ	: Dealer : Trust Ford - Lisburn : Country : BRITAIN
+[Pass
+Pass
+Pass
+Pass]
+------------------------------------------------------------
+Test No. 6698 : EntityId: FordUB93662LAGBR : Location : BT23 6BL	: Dealer : Trust Ford - Belfast : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6699 : EntityId: FordUB93679AAGBR : Location : BT48 7PU	: Dealer : Desmond Motors - Londonderry : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6700 : EntityId: FordUB93679ABGBR : Location : BT47 4HR	: Dealer : Browne & Day - Claudy : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6701 : EntityId: FordUB93679ACGBR : Location : BT82 9LA	: Dealer : P G McGillion Motors - Strabane : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6702 : EntityId: FordUB93679ADGBR : Location : BT92 0JB	: Dealer : Monaghan Brothers - Enniskillen : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6703 : EntityId: FordUB93679AEGBR : Location : BT74 6HL	: Dealer : T P Topping - Enniskillen : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6704 : EntityId: FordUB93679AFGBR : Location : BT78 5HY	: Dealer : Pat Kirk - Co Tyrone : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6705 : EntityId: FordUB93679AHGBR : Location : BT71 6HW	: Dealer : Saltmarine - Dungannon : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6706 : EntityId: FordUB93791AAGBR : Location : BT48 7PU	: Dealer : Desmond Motors - Londonderry : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6707 : EntityId: FordUB93791ABGBR : Location : BT47 4HR	: Dealer : Browne & Day - Claudy : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6708 : EntityId: FordUB93791ACGBR : Location : BT82 9LA	: Dealer : P G McGillion Motors - Strabane : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6709 : EntityId: FordUB93791ADGBR : Location : BT92 0JB	: Dealer : Monaghan Brothers - Enniskillen : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6710 : EntityId: FordUB93791AEGBR : Location : BT74 6HL	: Dealer : T P Topping - Enniskillen : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6711 : EntityId: FordUB93791AFGBR : Location : BT78  5HY	: Dealer : Pat Kirk - Co Tyrone : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6712 : EntityId: FordUB93791AHGBR : Location : BT71 6HW	: Dealer : Saltmarine - Dungannon : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6713 : EntityId: FordUB94518AAGBR : Location : KY12 7RD	: Dealer : Macklin Motors - Dunfermline : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6714 : EntityId: FordUB94518ABGBR : Location : EH22 1JL	: Dealer : Dalkeith Ford Centre : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6715 : EntityId: FordUB94518ACGBR : Location : KY15 4RB	: Dealer : T/A Cupar Ford Centre : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6716 : EntityId: FordUB94520AAGBR : Location : KY12 7RD	: Dealer : Macklin Motors : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6717 : EntityId: FordUB94544AAGBR : Location : KY2 5PL	: Dealer : Evans Halshaw - Kirkcaldy : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6718 : EntityId: FordUB94544ABGBR : Location : KY8 4SE	: Dealer : Lamberts Garage - Leven : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6719 : EntityId: FordUB94547AAGBR : Location : DD3 6AH	: Dealer : Arnold Clark - Dundee : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6720 : EntityId: FordUB94609AAGBR : Location : EH15 1BT	: Dealer : Evans Halshaw - Edinburgh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6721 : EntityId: FordUB94609AFGBR : Location : TD5 8EU	: Dealer : Maxwell Motors - Kelso : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6722 : EntityId: FordUB94609AGGBR : Location : TD15 1TB	: Dealer : Maxwell Motors - Berwick upon Tweed : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6723 : EntityId: FordUB94810AAGBR : Location : ML4 3LA	: Dealer : Quickco - Glasgow : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6724 : EntityId: FordUB94832AGGBR : Location : TD15 1TB	: Dealer : Maxwell Motors - Berwick upon Tweed : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6725 : EntityId: FordUB94832CBGBR : Location : KY8 4SE	: Dealer : Lamberts Garage - Leven : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6726 : EntityId: FordUB94929AAGBR : Location : EH11 4DF	: Dealer : Peoples - Edinburgh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6727 : EntityId: FordUB94929ACGBR : Location : EH45 8ED	: Dealer : HARRISONS : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6728 : EntityId: FordUB94929CAGBR : Location : EH54 6PZ	: Dealer : Peoples - Livingston : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6729 : EntityId: FordUB94929DAGBR : Location : FK1 1SQ	: Dealer : Peoples - Falkirk : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6730 : EntityId: FordUB94945AAGBR : Location : EH11 4DF	: Dealer : Peoples - Edinburgh : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6731 : EntityId: FordUB94945ACGBR : Location : EH45 8ED	: Dealer : HARRISONS : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6732 : EntityId: FordUB94945CAGBR : Location : EH54 6PZ	: Dealer : Peoples - Livingston : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6733 : EntityId: FordUB94945DAGBR : Location : FK1 1SQ	: Dealer : Peoples - Falkirk : Country : BRITAIN
+[Pass
+Pass]
+------------------------------------------------------------
+Test No. 6734 : EntityId: FordUB98502AAGBR : Location : WD6 2AX	: Dealer : Quickco - Borehamwood : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6735 : EntityId: FordUB98583AAGBR : Location : HA0 1HG	: Dealer : @first Parts Solutions : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6736 : EntityId: FordUB98585AAGBR : Location : KT17 1EE	: Dealer : Dagenham Motors - Epsom : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6737 : EntityId: FordUB98586AAGBR : Location : SK9 1AE	: Dealer : Dagenham Motors - Wilmslow : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6738 : EntityId: FordUB98587AAGBR : Location : WA2 7NY	: Dealer : Dagenham Motors - Warrington : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6739 : EntityId: FordUB98588AAGBR : Location : B24 9QB	: Dealer : Dageham Motors - Birmingham : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6740 : EntityId: FordUB98589AAGBR : Location : RM20 3FN	: Dealer : Trust Ford - Thurrock : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6741 : EntityId: FordUB98590AAGBR : Location : BS3 2TN	: Dealer : @First Parts Solutions : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6742 : EntityId: FordUB98591AAGBR : Location : WF6 1QT	: Dealer : First Parts Solutions : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6743 : EntityId: FordUB98593AAGBR : Location : BB1 3HT	: Dealer : QUICKCO BLACKBURN : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6744 : EntityId: FordUB98594AAGBR : Location : CH4 0DS	: Dealer : Quickco - Chester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6745 : EntityId: FordUB98595AAGBR : Location : KY2 5PL	: Dealer : Quickco - Kirkcaldy : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6746 : EntityId: FordUB98596AAGBR : Location : EH15 1BT	: Dealer : Quickco - Edinburgh : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6747 : EntityId: FordUB98597AAGBR : Location : M32 0ZH	: Dealer : Quickco - Manchester : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+Test No. 6748 : EntityId: FordUB98598AAGBR : Location : BT28 2EJ	: Dealer : T/A FIRST PARTS SOLUTIONS : Country : BRITAIN
+[Pass]
+------------------------------------------------------------
+-------------------------- FAILS ------------------------------------
+AB11 8DU
+org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
+System info: host: 'WGC1W79VVT5Y1', ip: '19.163.192.31', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: RemoteWebDriver
