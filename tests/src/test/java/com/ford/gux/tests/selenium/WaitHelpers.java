@@ -242,7 +242,7 @@ public class WaitHelpers
 
     public static void waitForUrlToChangeFrom(final String currentUrl, final WebDriver driver)
     {
-        WebDriverWait wait = new WebDriverWait(driver, WAIT_TIME_IN_SEC);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(new Predicate<WebDriver>()
         {
             @Override

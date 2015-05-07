@@ -47,8 +47,8 @@ public class DataTest {
 
 
 
-        String countryToTest = "CZECH REPUBLIC";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnACzechDealerLocatorPage();
+        String countryToTest = "Germany";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
         dealerLocatorPage.onADesktopView();
         String postcode;
 
@@ -78,7 +78,7 @@ public class DataTest {
                             currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
                         } catch (NullPointerException e){
                             currentDealerPostcode = "";
-                            addValues(currentDealerName, "Fail : Postcode is empty");
+                            System.out.println("\"Fail : Postcode is empty\"");
 
                         }
 
@@ -100,7 +100,7 @@ public class DataTest {
                             for (int j = 1; j < 3; j++) {
                                 Thread.sleep(1500);
                                 resultText = dealerLocatorPage.getResultText();
-                                addValues(currentDealerPostcode, "Fail: Results NOT present");
+                                System.out.println("\"Fail: Results NOT present\"");
                                 dealerLocatorPage.clickDealerRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
 
@@ -110,23 +110,27 @@ public class DataTest {
                         }
                         if (resultText.contains(currentDealerName)) {
 
-                            addValues(currentDealerName, "Pass");
+                            System.out.println("\"Pass\"");
                             dealerLocatorPage.clickDealerRadioButton();
                         } else {
                             // If dealer Name not found on the page THEN .... Check after showing more
                             if (dealerLocatorPage.isShowMorePresent()) {
-                                addValues(currentDealerName, dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName));
+
+                                if(dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName)!="Pass"){
+                                    System.out.println("\"Fail\"");
+                                }else{
+                                    System.out.println("\"Pass\"");
+                                }
                                 dealerLocatorPage.clickDealerRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
 
                             } else {
-                                addValues(currentDealerName, "Fail : could not find dealer in the results");
+                                System.out.println("\"Fail : could not find dealer in the results\"");
                                 dealerLocatorPage.clickDealerRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
                             }
 
                         }
-                        System.out.println("\"" + testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", "").replace("[", "").replace("]", "") + "\"");
 
 
                     }
@@ -136,7 +140,6 @@ public class DataTest {
         }else{
             System.out.println("Null dealer list from xml");
         }
-//        printAllFails(testResults);
 
 
     }
@@ -154,8 +157,8 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentEntityID = "";
 
-        String countryToTest = "CZECH REPUBLIC";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnACzechDealerLocatorPage();
+        String countryToTest = "Germany";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
 
 
         dealerLocatorPage.waitForpageToLoad();
@@ -179,7 +182,7 @@ public class DataTest {
                             currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
                         } catch (NullPointerException e){
                             currentDealerPostcode = "";
-                            addValues(currentDealerName, "Fail : Postcode is empty");
+                            System.out.println("\"Fail : Postcode is empty\"");
 
                         }
 
@@ -200,7 +203,7 @@ public class DataTest {
                                 Thread.sleep(1500);
                                 resultText = dealerLocatorPage.getResultText();
 
-                                addValues(currentDealerName, "Fail: Results NOT present");
+                                System.out.println("\"Fail: Results NOT present\"");
 
                                 dealerLocatorPage.clickLocationRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
@@ -211,23 +214,26 @@ public class DataTest {
                         }
                         if (resultText.contains(currentDealerPostcode)) {
 
-                            addValues(currentDealerName, "Pass");
+                            System.out.println("\"Pass\"");
                             dealerLocatorPage.clickLocationRadioButton();
                         } else {
                             // If dealer postcode not found on the page THEN .... Check after showing more
                             if (dealerLocatorPage.isShowMorePresent()) {
-                                addValues(currentDealerName, dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerPostcode));
+                                if(dealerLocatorPage.checkTextIsPresentOnListAfterShowingMore(currentDealerName)!="Pass"){
+                                    System.out.println("\"Fail\"");
+                                }else{
+                                    System.out.println("\"Pass\"");
+                                }
                                 dealerLocatorPage.clickLocationRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
 
                             } else {
-                                addValues(currentDealerName, "Fail : could not find dealer in the results");
+                                System.out.println("\"Fail : could not find dealer in the results\"");
                                 dealerLocatorPage.clickLocationRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
                             }
 
                         }
-                        System.out.println("\"" + testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", "").replace("[", "").replace("]", "") + "\"");
 
 
                     }

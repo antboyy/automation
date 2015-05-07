@@ -1,12 +1,16 @@
 package com.ford.gux.tests.selenium;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -205,8 +209,13 @@ public class Given {
 
             this.driver=createDriverWithUserAgent(userAgent);
             AbstractPage page = new AbstractPage(driver);
-            page.go(startURL);
-            page.waitForURLToChangeFrom(startURL);
+            try {
+                page.go(startURL);
+                page.waitForURLToChangeFrom(startURL);
+
+            }catch (TimeoutException e){
+                return false;
+            }
             page.getCurrentURL();
             if (page.getCurrentURL().toString().equals(endURL)){
                 return true;
@@ -224,7 +233,18 @@ public class Given {
         this.switches.add("--user-agent="+userAgent+"\"");
         this.switches.add("--accept-language=en-GB");
         this.switches.add("--disable-logging");
+
+
+
         return this.driver = createChromeDriver();
+/*        Map<String, String> mobileEmulation = new HashMap<String, String>();
+        mobileEmulation.put("deviceName", userAgent);
+
+        Map<String, Object> chromeOptions = new HashMap<String, Object>();
+        chromeOptions.put("mobileEmulation", mobileEmulation);
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+        return this.driver = new ChromeDriver(capabilities);*/
 
     }
 
