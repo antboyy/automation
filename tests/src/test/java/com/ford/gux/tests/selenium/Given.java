@@ -37,6 +37,9 @@ public class Given {
         this.switches.add("--disable-logging");
 
         this.driver = createChromeDriver();
+
+
+        createDriverWithUserAgent(userAgent);
     }
 
 
@@ -234,9 +237,10 @@ public class Given {
         this.switches.add("--accept-language=en-GB");
         this.switches.add("--disable-logging");
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments(this.switches);
+        return new ChromeDriver(options);
 
-
-        return this.driver = createChromeDriver();
 /*        Map<String, String> mobileEmulation = new HashMap<String, String>();
         mobileEmulation.put("deviceName", userAgent);
 

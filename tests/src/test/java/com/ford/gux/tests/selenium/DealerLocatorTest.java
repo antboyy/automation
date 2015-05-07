@@ -299,20 +299,20 @@ public class DealerLocatorTest {
     public void snifferTest() throws InterruptedException {
         assertThat(GIVEN.doesUserAgentRedirect(
                 "Windows",
-                "http://intpublish-couk.engine.ford.com/DealerLocatorGux",
-                "http://m.intpublish-couk.engine.ford.com/GlobalUXDealerLocator"
+                "http://www.ford.co.uk/",
+                "http://m.ford.co.uk/"
         ), is(false));
 
         assertThat(GIVEN.doesUserAgentRedirect(
                 "Android",
-                "http://intpublish-couk.engine.ford.com/DealerLocatorGux",
-                "http://m.intpublish-couk.engine.ford.com/GlobalUXDealerLocator"
+                "http://www.ford.co.uk/",
+                "http://m.ford.co.uk/"
         ), is(true));
 
         assertThat(GIVEN.doesUserAgentRedirect(
                 "iPhone",
-                "http://intpublish-couk.engine.ford.com/DealerLocatorGux",
-                "http://m.intpublish-couk.engine.ford.com/GlobalUXDealerLocator"
+                "http://www.ford.co.uk/",
+                "http://m.ford.co.uk/"
         ), is(true));
 
 
