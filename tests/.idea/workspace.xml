@@ -23,23 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DataTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.678572" vertical-offset="915" max-vertical-offset="6273">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataTestCSV.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7303609" vertical-offset="3787" max-vertical-offset="6103">
-              <caret line="256" column="33" selection-start-line="256" selection-start-column="33" selection-end-line="256" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.42250532" vertical-offset="3898" max-vertical-offset="6103">
+              <caret line="254" column="42" selection-start-line="254" selection-start-column="42" selection-end-line="254" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -135,10 +123,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Utils/ReadXMLFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/DealerData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Given.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestOld.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java" />
       </list>
     </option>
   </component>
@@ -304,7 +292,7 @@
       <recent name="C:\tests\tests\src\test\java\com\ford\gux\tests\selenium\DealerDataSelenium" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DataTestCSV">
+  <component name="RunManager" selected="JUnit.DataTest">
     <configuration default="false" name="DataTestOld.dealerDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -349,12 +337,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DataTestCSV.locationDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DataTest.locationDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTestCSV" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
       <option name="METHOD_NAME" value="locationDataNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
@@ -377,12 +365,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DataTestCSV.dealerDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DataTest.dealerDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTestCSV" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
       <option name="METHOD_NAME" value="dealerDataNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
@@ -405,12 +393,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DataTestCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTestCSV" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
@@ -559,15 +547,15 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.DataTestOld.dealerDataNameTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DataTestOld.locationDataNameTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DataTestCSV.locationDataNameTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DataTestCSV.dealerDataNameTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DataTestCSV" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DataTest.locationDataNameTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DataTest.dealerDataNameTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DataTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DataTestCSV" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DataTestCSV.locationDataNameTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DataTestCSV.dealerDataNameTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DataTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DataTest.locationDataNameTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DataTest.dealerDataNameTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.DataTestOld.locationDataNameTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.DataTestOld.dealerDataNameTest" />
       </list>
@@ -662,25 +650,25 @@
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
           <line>112</line>
           <properties />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
           <line>213</line>
           <properties />
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
           <line>86</line>
           <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
           <line>166</line>
           <properties />
           <option name="timeStamp" value="141" />
@@ -1032,16 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.678572" vertical-offset="915" max-vertical-offset="6273">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33258426" vertical-offset="3320" max-vertical-offset="7837">
@@ -1058,10 +1036,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7303609" vertical-offset="3787" max-vertical-offset="6103">
-          <caret line="256" column="33" selection-start-line="256" selection-start-column="33" selection-end-line="256" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.42250532" vertical-offset="3898" max-vertical-offset="6103">
+          <caret line="254" column="42" selection-start-line="254" selection-start-column="42" selection-end-line="254" selection-end-column="42" />
           <folding />
         </state>
       </provider>

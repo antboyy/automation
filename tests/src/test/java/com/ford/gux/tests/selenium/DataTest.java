@@ -5,15 +5,13 @@ import com.ford.gux.tests.selenium.DealerDataSelenium.DealerData;
 import com.ford.gux.tests.selenium.Utils.ReadXMLFile;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -37,10 +35,9 @@ public class DataTest {
 
 
     @Test
-    public void locationDataNameTest() throws InterruptedException, FileNotFoundException {
+    public void locationDataNameTest() throws InterruptedException, FileNotFoundException, UnsupportedEncodingException {
         printConsoleToFile("locationDataNameTest");
-
-        System.out.println("Location Test");
+        System.out.println("EntityID,DealerName,Dealer Number,Location,TestResult");
 
         this.testResults = new HashMap();
         String resultText = null;
@@ -50,8 +47,8 @@ public class DataTest {
 
 
 
-        String countryToTest = "Germany";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAnItalianDealerLocatorPage();
+        String countryToTest = "CZECH REPUBLIC";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnACzechDealerLocatorPage();
         dealerLocatorPage.onADesktopView();
         String postcode;
 
@@ -81,13 +78,13 @@ public class DataTest {
                             currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
                         } catch (NullPointerException e){
                             currentDealerPostcode = "";
-                            addValues(currentDealerName, "Fail : Postcode is empty for '" + currentDealerPostcode + "' in the results");
+                            addValues(currentDealerName, "Fail : Postcode is empty");
 
                         }
 
 
 
-                        System.out.println("Test No. " + temp + " : EntityId: " + currentEntityID + " : Location : " + currentDealerPostcode + "\t" + ": Dealer : " + currentDealerName + " : Country : "+country);
+                        System.out.print("\"" + currentEntityID + "\",\"" + currentDealerName + "\",\"" +  temp + "\",\"" + currentDealerPostcode + "\",");
 
                         dealerLocatorPage.clickLocationRadioButton();
                         dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerPostcode);
@@ -123,14 +120,13 @@ public class DataTest {
                                 dealerLocatorPage.clickLocationRadioButton();
 
                             } else {
-                                addValues(currentDealerName, "Fail : could not find '" + currentDealerPostcode + "' in the results");
+                                addValues(currentDealerName, "Fail : could not find dealer in the results");
                                 dealerLocatorPage.clickDealerRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
                             }
 
                         }
-                        System.out.println(testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", ""));
-                        System.out.println("------------------------------------------------------------");
+                        System.out.println("\"" + testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", "").replace("[", "").replace("]", "") + "\"");
 
 
                     }
@@ -140,16 +136,16 @@ public class DataTest {
         }else{
             System.out.println("Null dealer list from xml");
         }
-        printAllFails(testResults);
+//        printAllFails(testResults);
 
 
     }
 
 
     @Test
-    public void dealerDataNameTest() throws InterruptedException, FileNotFoundException {
+    public void dealerDataNameTest() throws InterruptedException, FileNotFoundException, UnsupportedEncodingException {
         printConsoleToFile("dealerDataNameTest");
-        System.out.println("Dealer Name Test");
+        System.out.println("EntityID,DealerName,Dealer Number,Location,TestResult");
 
 
         this.testResults = new HashMap();
@@ -158,8 +154,9 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentEntityID = "";
 
-        String countryToTest = "Germany";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
+        String countryToTest = "CZECH REPUBLIC";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnACzechDealerLocatorPage();
+
 
         dealerLocatorPage.waitForpageToLoad();
         NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
@@ -182,12 +179,12 @@ public class DataTest {
                             currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
                         } catch (NullPointerException e){
                             currentDealerPostcode = "";
-                            addValues(currentDealerName, "Fail : Postcode is empty for '" + currentDealerPostcode + "' in the results");
+                            addValues(currentDealerName, "Fail : Postcode is empty");
 
                         }
 
 
-                        System.out.println("Test No. " + temp + " : EntityId: " + currentEntityID + " : Dealer : " + currentDealerName + "\t" + "\t" + " : Location : " + currentDealerPostcode + " : Country : " + country);
+                        System.out.print("\"" + currentEntityID + "\",\"" + currentDealerName + "\",\"" +  temp + "\",\"" + currentDealerPostcode + "\",");
 
                         dealerLocatorPage.clickDealerRadioButton();
                         dealerLocatorPage.enterIntoInputBoxWithoutSubmitting(currentDealerName);
@@ -224,14 +221,13 @@ public class DataTest {
                                 dealerLocatorPage.clickLocationRadioButton();
 
                             } else {
-                                addValues(currentDealerName, "Fail : could not find '" + currentDealerPostcode + "' in the results");
+                                addValues(currentDealerName, "Fail : could not find dealer in the results");
                                 dealerLocatorPage.clickLocationRadioButton();
                                 dealerLocatorPage.clickLocationRadioButton();
                             }
 
                         }
-                        System.out.println(testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", ""));
-                        System.out.println("------------------------------------------------------------");
+                        System.out.println("\"" + testResults.get(currentDealerName).toString().replace(", ", "\r\n").replace("{", "").replace("}", "").replace("[", "").replace("]", "") + "\"");
 
 
                     }
@@ -243,8 +239,66 @@ public class DataTest {
         }else {
             System.out.println("Null dealer list from xml");
         }
-        printAllFails(testResults);
+//        printAllFails(testResults);
     }
+@Ignore
+    @Test
+    public void telNumberTest() throws InterruptedException, FileNotFoundException, UnsupportedEncodingException {
+        printConsoleToFile("telNumberTest");
+        System.out.println("EntityID,DealerName,Phone Number,TestResult");
+
+
+        NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
+
+        String resultText = null;
+        String currentDealerName = "";
+        String currentDealerPostcode = "";
+        String currentEntityID = "";
+        String currentPhone = "";
+
+        String countryToTest = "Spain";
+
+        if (null != dealerList) {
+            for (int temp = 0; temp < dealerList.getLength(); temp++) {
+                resultText = null;
+                currentDealerName = "";
+                currentDealerPostcode = "";
+                currentEntityID = "";
+                currentPhone = "";
+
+                Node nNode = dealerList.item(temp);
+
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) nNode;
+
+                    String country = eElement.getElementsByTagName("Country").item(0).getTextContent();
+
+                    if (countryToTest.equalsIgnoreCase(country)) {
+                        try {
+
+                            currentEntityID = eElement.getElementsByTagName("EntityID").item(0).getTextContent();
+                            currentDealerName = eElement.getElementsByTagName("DealerName").item(0).getTextContent();
+                            currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
+                            currentPhone = eElement.getElementsByTagName("PrimaryPhone").item(0).getTextContent();
+
+                        } catch (NullPointerException e) {
+                            currentDealerPostcode = "";
+
+                        }
+                    }
+                }
+
+                if(currentDealerName.equals("")||currentDealerPostcode.equals("")||currentPhone.equals("")){
+                 System.out.print("\"" + currentEntityID + "\",\"" + currentDealerName + "\",\"" +  temp + "\",\"" + currentDealerPostcode + "\",");
+
+
+
+                }
+
+            }
+        }
+    }
+
 
     private void printAllFails(Map<String, ArrayList<String>> testResults) {
 
@@ -274,62 +328,9 @@ public class DataTest {
 
     }
 
-
-    @Test
-    public void printNumberOfDealersAndLocations() throws InterruptedException, FileNotFoundException {
-
-        String countryToTest = "France";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAFrenchDealerLocatorPage();
-
-        dealerLocatorPage.waitForpageToLoad();
-        NodeList dealerList = ReadXMLFile.readXML(System.getProperty("user.dir")+ "/Resources/DealerData/bingmapsDataloadTransition_Thursday30-all-markets.xml");
-
-
-        if (null != dealerList) {
-            for (int temp = 0; temp < dealerList.getLength(); temp++) {
-
-                Node nNode = dealerList.item(temp);
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element eElement = (Element) nNode;
-
-                    String country = eElement.getElementsByTagName("Country").item(0).getTextContent();
-
-                    if (countryToTest.equalsIgnoreCase(country)) {
-                        String currentEntityID = eElement.getElementsByTagName("EntityID").item(0).getTextContent();
-                        String currentDealerName = eElement.getElementsByTagName("DealerName").item(0).getTextContent();
-                        String currentDealerPostcode = eElement.getElementsByTagName("PostCode").item(0).getTextContent();
-
-                    }
-                }
-            }
-        }
-
-
-        printConsoleToFile("printNumberOfDealersAndLocations");
-        this.testResults = new HashMap();
-        Boolean disambiguationPresent;
-        String resultText = null;
-        String currentDealerName = "";
-        String currentDealerPostcode = "";
-        String currentDealerLocality = "";
-
-        DealerData dealerData = new DealerData("IT");
-
-        int noOfDealers = dealerData.getNames().length;
-        String[] dealerNames = dealerData.getNames();
-        String[] dealerLocations = dealerData.getPostcodes();
-        String[] entityIds = dealerData.getEntityID();
-
-        System.out.println("EntityIds: " + entityIds.length);
-        System.out.println("Number of Dealers: " + noOfDealers);
-        System.out.println("Number of Locations: " + dealerLocations.length);
-
-
-    }
-
-
     @AfterClass
     public static void tearDown() {
+
         GIVEN.tearDown();
         DealerLocatorPage.tearDown();
         System.setOut(null);
@@ -351,9 +352,11 @@ public class DataTest {
         testResults.put(key, tempList);
     }
 
-    public void printConsoleToFile(String testName) throws FileNotFoundException {
+    public void printConsoleToFile(String testName) throws FileNotFoundException, UnsupportedEncodingException {
+
 
         PrintStream out = new PrintStream(new FileOutputStream(System.getProperty("user.dir") + "/target/test-results/test-results-" + testName + ".txt"));
+        Writer write = new OutputStreamWriter(out, "UTF-8");
         System.setOut(out);
 
 
