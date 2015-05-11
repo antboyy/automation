@@ -252,5 +252,20 @@ public class Given {
 
     }
 
+    public DealerLocatorPage iamOnAHungarianDealerLocatorPage() throws InterruptedException {
+        DealerLocatorPage dealerLocatorPage = new DealerLocatorPage(driver);
+        dealerLocatorPage.go("http://intpublish-hu.engine.ford.com/DealerLocatorGux");
+
+        return dealerLocatorPage;
     }
+
+    public AbstractPage iamOnAVignalePage() throws InterruptedException {
+
+
+        AbstractPage page = new AbstractPage(driver);
+        page.go("http://intpublish-couk.engine.ford.com/Promotions/Vignale");
+        Thread.sleep(5000);
+        return page;
+    }
+}
 

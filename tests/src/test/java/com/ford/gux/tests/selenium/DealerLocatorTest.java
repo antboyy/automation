@@ -294,25 +294,38 @@ public class DealerLocatorTest {
         System.out.println(result);
 
     }
-@Ignore
+    @Test
+    public void vignaleTestNegative() throws InterruptedException {
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        assertThat(dealerLocatorPage.isPrefilterChecked(),is(false));
+   }
+
+    @Test
+    public void vignaleTestPositive() throws InterruptedException {
+        AbstractPage page  = GIVEN.iamOnAVignalePage();
+        DealerLocatorPage dealerLocatorPage = page.clickOnLinkThatContainsText("DealerLocator Gux");
+        assertThat(dealerLocatorPage.isPrefilterChecked(), is(true));
+    }
+
+
     @Test
     public void snifferTest() throws InterruptedException {
         assertThat(GIVEN.doesUserAgentRedirect(
                 "Windows",
-                "http://www.ford.co.uk/",
-                "http://m.ford.co.uk/"
+                "http://intpublish-couk.engine.ford.com/",
+                "http://m.intpublish-couk.engine.ford.com/"
         ), is(false));
 
         assertThat(GIVEN.doesUserAgentRedirect(
                 "Android",
-                "http://www.ford.co.uk/",
-                "http://m.ford.co.uk/"
+                "http://intpublish-couk.engine.ford.com/",
+                "http://m.intpublish-couk.engine.ford.com/"
         ), is(true));
 
         assertThat(GIVEN.doesUserAgentRedirect(
                 "iPhone",
-                "http://www.ford.co.uk/",
-                "http://m.ford.co.uk/"
+                "http://intpublish-couk.engine.ford.com/",
+                "http://m.intpublish-couk.engine.ford.com/"
         ), is(true));
 
 

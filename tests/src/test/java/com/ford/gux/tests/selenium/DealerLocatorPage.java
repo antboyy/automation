@@ -3,6 +3,7 @@ package com.ford.gux.tests.selenium;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.touch.TouchActions;
 
+import javax.sound.sampled.BooleanControl;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 public class DealerLocatorPage extends AbstractPage {
 
 
-    static WebDriver driver ;
+    static WebDriver driver;
 
     private By byShowMoreDealers = By.xpath("//button[@data-ng-click='showMoreDealers()']");
     private By byResultsList = By.xpath("//div[@class=\"columns large-12 dl-results-list\"]");
@@ -67,7 +68,7 @@ public class DealerLocatorPage extends AbstractPage {
         try {
             return driver.findElement(byResultsList).getText();
         } catch (NoSuchElementException e) {
-           System.out.println(e.toString());
+            System.out.println(e.toString());
 
             return e.toString();
         }
@@ -108,7 +109,7 @@ public class DealerLocatorPage extends AbstractPage {
         driver.findElement(bySearchBox).sendKeys(Keys.ARROW_RIGHT);
 
         Thread.sleep(1000);
-}
+    }
 
 
     public void onAMobileView() {
@@ -120,11 +121,12 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public static void tearDown() {
-        try{
-        if(driver!=null) {
-            driver.close();
-            driver.quit();
-        }}catch(Exception e){
+        try {
+            if (driver != null) {
+                driver.close();
+                driver.quit();
+            }
+        } catch (Exception e) {
             System.out.print(e);
 
         }
@@ -144,7 +146,7 @@ public class DealerLocatorPage extends AbstractPage {
     public void waitForResultsToBeDisplayed() throws InterruptedException {
         try {
             WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
-        }catch (TimeoutException e){
+        } catch (TimeoutException e) {
 //            System.out.println("TimeoutException");
             Thread.sleep(1500);
         }
@@ -161,6 +163,7 @@ public class DealerLocatorPage extends AbstractPage {
     public String getPostcodeofFirstDealerInResultsList() {
         return driver.findElement(byFirstDealerPostcode).getText();
     }
+
     public String getPostcodeofDealerInDetailsView() {
         return driver.findElement(byDealerDetailsPostCode).getText();
     }
@@ -239,7 +242,7 @@ public class DealerLocatorPage extends AbstractPage {
     public int numberOfDealersWithServicesPresent(String service) throws InterruptedException {
         int servicesPresent = 0;
         int servicesNotPresent = 0;
-        for (int i = 1; i < driver.findElements(By.xpath("(//span[@class='icon-details'])")).size()+1; i++) {
+        for (int i = 1; i < driver.findElements(By.xpath("(//span[@class='icon-details'])")).size() + 1; i++) {
 
             String xpath = "(//span[@class='icon-details'])[" + i + "]";
             WaitHelpers.waitForElementToDisplayOnScreen(driver, By.xpath(xpath));
@@ -247,7 +250,7 @@ public class DealerLocatorPage extends AbstractPage {
             driver.findElement(By.xpath(xpath)).click();
 
 
-            for (int j = 1; j < driver.findElements(byServicesContent).size()+1; j++) {
+            for (int j = 1; j < driver.findElements(byServicesContent).size() + 1; j++) {
                 String xpathServices = "(//p[@class='dealer-service ng-scope ng-binding'])[" + j + "]";
                 if (driver.findElement(By.xpath(xpathServices)).getText().contains(service)) {
                     servicesPresent++;
@@ -267,17 +270,17 @@ public class DealerLocatorPage extends AbstractPage {
         driver.findElement(byDistanceFilter).click();
         driver.findElement(byDistanceDropDown).sendKeys(distance);
         driver.findElement(byDistanceDropDown).sendKeys(Keys.TAB);
-        }
+    }
 
     public void clickBackToResults() {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byBackToResults);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byBackToResults);
         driver.findElement(byBackToResults).click();
         WaitHelpers.waitForElementToBeHidden(By.cssSelector("img.search-loading"), driver);
     }
 
     public void clickDistanceFilter() throws InterruptedException {
 //        WaitHelpers.waitForElementToDisplayOnScreen(driver,byDistanceFilter);
-        WaitHelpers.waitForElementToBeDisplayed(driver,byDistanceFilter);
+        WaitHelpers.waitForElementToBeDisplayed(driver, byDistanceFilter);
 //        WaitHelpers.waitForElementToBeHidden(byDealerName,driver);
         Thread.sleep(2000);
         driver.findElement(byDistanceFilter).click();
@@ -286,26 +289,26 @@ public class DealerLocatorPage extends AbstractPage {
     public boolean areAllDealersCloserThanSpecifiedDistance(int distance) throws InterruptedException {
         int numberOfDealersCloserThanSpecifiedDistance = 0;
         WaitHelpers.waitForElementToBeDisplayed(driver, By.xpath("(//span[@class='icon-details'])"));
-        for (int i = 1; i < driver.findElements(By.xpath("(//span[@class='icon-details'])")).size()+1; i++) {
+        for (int i = 1; i < driver.findElements(By.xpath("(//span[@class='icon-details'])")).size() + 1; i++) {
 
             String xpath = "(//span[@class='icon-details'])[" + i + "]";
             Thread.sleep(500);
             driver.findElement(By.xpath(xpath)).click();
 
             //inside the dealer details this is the testing bit
-                String xpathDistance = "p.dl-distance.ng-binding";
-                double milesOnScreen = Double.parseDouble(driver.findElement(By.cssSelector(xpathDistance)).getText().replace("miles","").trim());
-                if (milesOnScreen<distance){
-                    numberOfDealersCloserThanSpecifiedDistance++;
-                }
+            String xpathDistance = "p.dl-distance.ng-binding";
+            double milesOnScreen = Double.parseDouble(driver.findElement(By.cssSelector(xpathDistance)).getText().replace("miles", "").trim());
+            if (milesOnScreen < distance) {
+                numberOfDealersCloserThanSpecifiedDistance++;
+            }
 
             Thread.sleep(500);
             clickBackToResults();
             Thread.sleep(500);
-                }
-        if(numberOfDealersCloserThanSpecifiedDistance==driver.findElements(By.xpath("(//span[@class='icon-details'])")).size()){
+        }
+        if (numberOfDealersCloserThanSpecifiedDistance == driver.findElements(By.xpath("(//span[@class='icon-details'])")).size()) {
             return true;
-        }else return false;
+        } else return false;
     }
 
     public int getNumberOfResults() throws InterruptedException {
@@ -318,9 +321,12 @@ public class DealerLocatorPage extends AbstractPage {
     public int countNumberOfDesktopElementsVisible() {
         int numberOfDesktopElementsVisible = 0;
 
-        try {if(driver.findElement(By.cssSelector("div.dl-heading")).isDisplayed()){
-            numberOfDesktopElementsVisible++;
-        }}catch (NoSuchElementException e){}
+        try {
+            if (driver.findElement(By.cssSelector("div.dl-heading")).isDisplayed()) {
+                numberOfDesktopElementsVisible++;
+            }
+        } catch (NoSuchElementException e) {
+        }
 
 
         return numberOfDesktopElementsVisible;
@@ -354,24 +360,25 @@ public class DealerLocatorPage extends AbstractPage {
 
     public String getErrorText() throws InterruptedException {
 
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byErrorMessage);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byErrorMessage);
         return driver.findElement(byErrorMessage).getText();
     }
 
     public void selectMustangFilter() {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byMustangFilter);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byMustangFilter);
         driver.findElement(byMustangFilter).click();
 
     }
 
-    public void touchAutocompleteOption(String s) {}
+    public void touchAutocompleteOption(String s) {
+    }
 
-    private void touch(By byCSSSelctor){
+    private void touch(By byCSSSelctor) {
 
-            JavascriptExecutor executor = (JavascriptExecutor) driver;
-            executor.executeScript("");
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("");
 
-        }
+    }
 
     public int getNumberOfMapPins() {
         return driver.findElements(byMapPin).size();
@@ -386,7 +393,7 @@ public class DealerLocatorPage extends AbstractPage {
     public void waitForMapPinsToRender() throws InterruptedException {
         Thread.sleep(2500);
         WaitHelpers.waitForElementToDisplayOnScreen(driver, byMapPin);
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byMapZoomOut);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byMapZoomOut);
 /*        driver.findElement(byMapZoomOut).click();
         Thread.sleep(1000);
         driver.findElement(byMapZoomOut).click();
@@ -403,7 +410,7 @@ public class DealerLocatorPage extends AbstractPage {
 
     public void swipe() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        HashMap< String, Double > swipeObject = new HashMap < String, Double > ();
+        HashMap<String, Double> swipeObject = new HashMap<String, Double>();
         swipeObject.put("startX", 500.95);
         swipeObject.put("startY", 200.5);
         swipeObject.put("endX", 0.05);
@@ -413,7 +420,7 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public void clickPinIndexNumber(int indexOfNumberOfPin) {
-        String xpath = "(//div[@class='map-marker'])["+indexOfNumberOfPin+"]";
+        String xpath = "(//div[@class='map-marker'])[" + indexOfNumberOfPin + "]";
         driver.findElement(By.xpath(xpath)).click();
 
     }
@@ -426,17 +433,17 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public void clickSearchGeoLocation() {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byCurrentLocationButton);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byCurrentLocationButton);
         driver.findElement(byCurrentLocationButton).click();
     }
 
     public void clickPinExitButton() {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byPinExitButton);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byPinExitButton);
         driver.findElement(byPinExitButton).click();
     }
 
     public void clickResultsHeader() throws InterruptedException {
-        WaitHelpers.waitForElementToDisplayOnScreen(driver,byResultsHeader);
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byResultsHeader);
         driver.findElement(byResultsHeader).click();
         waitForResultsToBeDisplayed();
     }
@@ -456,7 +463,7 @@ public class DealerLocatorPage extends AbstractPage {
         Thread.sleep(1500);
         try {
             return driver.findElement(byPinExitButton).isDisplayed();
-        }catch(NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
@@ -475,7 +482,7 @@ public class DealerLocatorPage extends AbstractPage {
                 WaitHelpers.waitForElementTextToChangeAfter(action, byResultsList, driver);
 
             }
-        }catch(NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             clickSubmit();
             WaitHelpers.waitForElementToBeDisplayed(driver, byResultsList);
 
@@ -486,7 +493,7 @@ public class DealerLocatorPage extends AbstractPage {
     public void waitForSubmitSpinnerToStop() throws InterruptedException {
         try {
             WaitHelpers.waitForElementToBeHidden(bySpinnerGIF, driver);
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             Thread.sleep(1000);
             System.out.println("No GIF Spinner -- waiting instead");
         }
@@ -527,16 +534,15 @@ public class DealerLocatorPage extends AbstractPage {
         } catch (NoSuchElementException e) {
 //                    System.out.println("Couldn't find element: "+e);
 
-        } return "null";
+        }
+        return "null";
     }
-
-
 
 
     public boolean checkTextIsPresentInList(String textToCheck) {
         try {
             return driver.findElement(byResultsList).getText().contains(textToCheck);
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
@@ -544,17 +550,18 @@ public class DealerLocatorPage extends AbstractPage {
 
     public boolean isShowMorePresent() {
 
-            try {
-                return driver.findElement(byShowMoreDealers).isDisplayed();
-            }catch (NoSuchElementException e){
-                return false;
-            }
-
+        try {
+            return driver.findElement(byShowMoreDealers).isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
         }
+
+    }
+
     public boolean checkResultsAreDisplayed() {
         try {
             return driver.findElement(byResultsList).isDisplayed();
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
@@ -566,8 +573,30 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public void clickFordStoreFilter() {
-        WaitHelpers.waitForAnyElementToBeDisplayed(driver,byMustangFilter);
+        WaitHelpers.waitForAnyElementToBeDisplayed(driver, byMustangFilter);
         driver.findElement(byMustangFilter).click();
 
     }
+
+    /*public boolean isPrefilterChecked() {
+        try{
+            driver.findElement(By.cssSelector("input.custom-checkbox.ng-valid.ng-dirty.checked")).isDisplayed();
+            return true;
+        }catch(NoSuchElementException e){
+            if(driver.findElement(By.cssSelector("input.custom-checkbox.ng-valid.ng-dirty")).isDisplayed()){
+                return false;
+
+            }
+
+        }
+        return false;
+    }*/
+
+    public Boolean isPrefilterChecked() throws InterruptedException {
+        WaitHelpers.waitForAnyElementToBeDisplayed(driver, byMustangFilter);
+        Thread.sleep(2000);
+        return driver.findElement(By.id("premium-filter")).isSelected();
+
+    }
 }
+

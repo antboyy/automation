@@ -47,8 +47,9 @@ public class DataTest {
 
 
 
-        String countryToTest = "Germany";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
+        String countryToTest = "Portugal";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAPortugeseDealerLocator();
+
         dealerLocatorPage.onADesktopView();
         String postcode;
 
@@ -157,8 +158,8 @@ public class DataTest {
         String currentDealerPostcode = "";
         String currentEntityID = "";
 
-        String countryToTest = "Germany";
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
+        String countryToTest = "Portugal";
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAPortugeseDealerLocator();
 
 
         dealerLocatorPage.waitForpageToLoad();
@@ -167,7 +168,7 @@ public class DataTest {
 
 
         if (null != dealerList) {
-            for (int temp = 0 ; temp < dealerList.getLength(); temp++) {
+            for (int temp = 692 ; temp < dealerList.getLength(); temp++) {
 
                 Node nNode = dealerList.item(temp);
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {

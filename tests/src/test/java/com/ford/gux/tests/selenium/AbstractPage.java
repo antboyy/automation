@@ -64,4 +64,10 @@ public class AbstractPage {
     public String getCurrentURL() {
         return driver.getCurrentUrl();
     }
+
+    public DealerLocatorPage clickOnLinkThatContainsText(String textInLink) throws InterruptedException {
+        driver.findElement(By.xpath("//*[contains(text(),'"+textInLink+"')]")).click();
+        Thread.sleep(2000);
+        return new DealerLocatorPage(driver);
+    }
 }

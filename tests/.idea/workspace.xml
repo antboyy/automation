@@ -26,9 +26,22 @@
       <file leaf-file-name="DataTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.642857" vertical-offset="2601" max-vertical-offset="6205">
-              <caret line="172" column="63" selection-start-line="172" selection-start-column="63" selection-end-line="172" selection-end-column="63" />
+            <state vertical-scroll-proportion="-19.857143" vertical-offset="1960" max-vertical-offset="6222">
+              <caret line="161" column="83" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataRetest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataRetest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="4624">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,9 +49,36 @@
       <file leaf-file-name="DealerLocatorPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7900" max-vertical-offset="9333">
-              <caret line="494" column="18" selection-start-line="494" selection-start-column="18" selection-end-line="494" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9913" max-vertical-offset="10336">
+              <caret line="596" column="27" selection-start-line="596" selection-start-column="27" selection-end-line="596" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2798#2799#0" expanded="true" />
+                <element signature="e#2834#2835#0" expanded="true" />
+                <element signature="e#3058#3059#0" expanded="true" />
+                <element signature="e#3148#3149#0" expanded="true" />
+                <element signature="e#3194#3195#0" expanded="true" />
+                <element signature="e#3279#3280#0" expanded="true" />
+                <element signature="e#3727#3728#0" expanded="true" />
+                <element signature="e#3793#3794#0" expanded="true" />
+                <element signature="e#5012#5013#0" expanded="true" />
+                <element signature="e#5085#5086#0" expanded="true" />
+                <element signature="e#5121#5122#0" expanded="true" />
+                <element signature="e#5196#5197#0" expanded="true" />
+                <element signature="e#6162#6163#0" expanded="true" />
+                <element signature="e#6232#6233#0" expanded="true" />
+                <element signature="e#6284#6285#0" expanded="true" />
+                <element signature="e#6362#6363#0" expanded="true" />
+                <element signature="e#6553#6554#0" expanded="true" />
+                <element signature="e#6629#6630#0" expanded="true" />
+                <element signature="e#8494#8506#0" expanded="true" />
+                <element signature="e#8561#8569#0" expanded="true" />
+                <element signature="e#13450#13451#0" expanded="true" />
+                <element signature="e#13541#13542#0" expanded="true" />
+                <element signature="e#15089#15105#0" expanded="true" />
+                <element signature="e#17280#17456#0" expanded="true" />
+                <element signature="e#17437#17438#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,18 +96,8 @@
       <file leaf-file-name="ReadXMLFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Utils/ReadXMLFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="595">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomepageTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/HomepageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1598">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.464286" vertical-offset="0" max-vertical-offset="595">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -76,8 +106,8 @@
       <file leaf-file-name="Given.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Given.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.678571" vertical-offset="3371" max-vertical-offset="4284">
-              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4116" max-vertical-offset="4539">
+              <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,9 +116,12 @@
       <file leaf-file-name="AbstractPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/AbstractPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1122">
-              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1292">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
+                <element signature="e#2690#2691#0" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2771#2772#0" expanded="true" />
                 <element signature="e#3011#3012#0" expanded="true" />
                 <element signature="e#3078#3079#0" expanded="true" />
               </folding>
@@ -99,8 +132,18 @@
       <file leaf-file-name="DealerLocatorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44921875" vertical-offset="4734" max-vertical-offset="5865">
-              <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5268595" vertical-offset="4862" max-vertical-offset="6086">
+              <caret line="313" column="26" selection-start-line="313" selection-start-column="26" selection-end-line="313" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -137,8 +180,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestonDealerLocator.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/AbstractPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/HomepageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Utils/TestOutput.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerDataSelenium/data.xml" />
@@ -147,9 +188,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestOld.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTestCSV.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/WaitHelpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataRetest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/AbstractPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Given.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java" />
       </list>
     </option>
   </component>
@@ -315,14 +359,14 @@
       <recent name="C:\tests\tests\src\test\java\com\ford\gux\tests\selenium\DealerDataSelenium" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DealerLocatorTest.snifferTest">
-    <configuration default="false" name="DataTestOld.locationDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DealerLocatorTest">
+    <configuration default="false" name="DealerLocatorTest.vignaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTestOld" />
-      <option name="METHOD_NAME" value="locationDataNameTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DealerLocatorTest" />
+      <option name="METHOD_NAME" value="vignaleTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
       <option name="PARAMETERS" value="" />
@@ -334,17 +378,21 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <configuration default="false" name="DataTest.locationDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DealerLocatorTest.vignaleTestPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
-      <option name="METHOD_NAME" value="locationDataNameTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DealerLocatorTest" />
+      <option name="METHOD_NAME" value="vignaleTestPositive" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
       <option name="PARAMETERS" value="" />
@@ -366,42 +414,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DataTest.dealerDataNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DealerLocatorTest.vignaleTestNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuxSelenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
-      <option name="METHOD_NAME" value="dealerDataNameTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DealerLocatorTest" />
+      <option name="METHOD_NAME" value="vignaleTestNegative" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GuxSelenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DataTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -434,13 +454,29 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DealerLocatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GuxSelenium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.ford.gux.tests.selenium" />
+      <option name="MAIN_CLASS_NAME" value="com.ford.gux.tests.selenium.DealerLocatorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=C:\ChromeDriver\chromedriver.exe" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -574,19 +610,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DataTestOld.locationDataNameTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DataTest.locationDataNameTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DataTest.dealerDataNameTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DataTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.snifferTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTestPositive" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTestNegative" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.snifferTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.snifferTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DataTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DataTest.dealerDataNameTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DataTest.locationDataNameTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DataTestOld.locationDataNameTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.snifferTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTestPositive" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTestNegative" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DealerLocatorTest.vignaleTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -608,7 +644,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="81" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -627,7 +663,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36503857" sideWeight="0.8127753" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28280255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28280255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -662,7 +698,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java</url>
-          <line>147</line>
+          <line>149</line>
           <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
@@ -680,18 +716,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
-          <line>86</line>
+          <line>87</line>
           <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
-          <line>169</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="141" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
+          <line>185</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="145" />
+      <option name="time" value="157" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -929,13 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/15.0/guava-15.0.jar!/com/google/common/base/Predicate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20731707" vertical-offset="0" max-vertical-offset="820">
@@ -1006,25 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Utils/ReadXMLFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="595">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1122">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-          <folding>
-            <element signature="e#3011#3012#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/WaitHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.821429" vertical-offset="3481" max-vertical-offset="5542">
@@ -1033,34 +1061,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataRetest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7849" max-vertical-offset="9333">
-          <caret line="494" column="18" selection-start-line="494" selection-start-column="18" selection-end-line="494" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="4624">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DataTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.642857" vertical-offset="2601" max-vertical-offset="6205">
-          <caret line="172" column="63" selection-start-line="172" selection-start-column="63" selection-end-line="172" selection-end-column="63" />
+        <state vertical-scroll-proportion="-19.857143" vertical-offset="1960" max-vertical-offset="6222">
+          <caret line="161" column="83" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Utils/ReadXMLFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.464286" vertical-offset="0" max-vertical-offset="595">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/Given.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.678571" vertical-offset="3371" max-vertical-offset="4284">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4116" max-vertical-offset="4539">
+          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1292">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#2690#2691#0" expanded="true" />
+            <element signature="e#2735#2736#0" expanded="true" />
+            <element signature="e#2771#2772#0" expanded="true" />
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9913" max-vertical-offset="10336">
+          <caret line="596" column="27" selection-start-line="596" selection-start-column="27" selection-end-line="596" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
+            <element signature="e#3194#3195#0" expanded="true" />
+            <element signature="e#3279#3280#0" expanded="true" />
+            <element signature="e#3727#3728#0" expanded="true" />
+            <element signature="e#3793#3794#0" expanded="true" />
+            <element signature="e#5012#5013#0" expanded="true" />
+            <element signature="e#5085#5086#0" expanded="true" />
+            <element signature="e#5121#5122#0" expanded="true" />
+            <element signature="e#5196#5197#0" expanded="true" />
+            <element signature="e#6162#6163#0" expanded="true" />
+            <element signature="e#6232#6233#0" expanded="true" />
+            <element signature="e#6284#6285#0" expanded="true" />
+            <element signature="e#6362#6363#0" expanded="true" />
+            <element signature="e#6553#6554#0" expanded="true" />
+            <element signature="e#6629#6630#0" expanded="true" />
+            <element signature="e#8494#8506#0" expanded="true" />
+            <element signature="e#8561#8569#0" expanded="true" />
+            <element signature="e#13450#13451#0" expanded="true" />
+            <element signature="e#13541#13542#0" expanded="true" />
+            <element signature="e#15089#15105#0" expanded="true" />
+            <element signature="e#17280#17456#0" expanded="true" />
+            <element signature="e#17437#17438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ford/gux/tests/selenium/DealerLocatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44921875" vertical-offset="4734" max-vertical-offset="5865">
-          <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5268595" vertical-offset="4862" max-vertical-offset="6086">
+          <caret line="313" column="26" selection-start-line="313" selection-start-column="26" selection-end-line="313" selection-end-column="26" />
           <folding />
         </state>
       </provider>
