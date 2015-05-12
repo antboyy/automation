@@ -312,6 +312,7 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public int getNumberOfResults() throws InterruptedException {
+        WaitHelpers.waitForElementsToBeDisplayed(By.xpath("(//span[@class='icon-details'])"),driver);
         Thread.sleep(1000);
         return driver.findElements(By.xpath("(//span[@class='icon-details'])")).size();
 
@@ -454,6 +455,7 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
     public void clickHighlightedMapPin() {
+        WaitHelpers.waitForElementToDisplayOnScreen(driver, byHighlightedMapPin);
         WebElement element = driver.findElement(byHighlightedMapPin);
         element.click();
 
