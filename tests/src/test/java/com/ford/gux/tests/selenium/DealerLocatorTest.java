@@ -27,7 +27,7 @@ public class DealerLocatorTest {
     public void searchForDealer() throws InterruptedException {
 
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.clickDealerRadioButton();
@@ -41,7 +41,7 @@ public class DealerLocatorTest {
     @Test
     public void searchDealerThroughLocation() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.enterIntoInputBox("Stevenage, United Kingdom");
@@ -54,7 +54,7 @@ public class DealerLocatorTest {
     @Test
     public void locationDisambiguationTest() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("Basildon");
         dealerLocatorPage.clickDisambiguationWithName("Basildon, Essex");
@@ -66,7 +66,7 @@ public class DealerLocatorTest {
     @Test
     public void dealerAutocompleteTest() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.clickDealerRadioButton();
         dealerLocatorPage.enterIntoInputBoxWithoutSubmitting("trust ford - guern");
@@ -79,7 +79,7 @@ public class DealerLocatorTest {
     @Test
     public void locationAutocompleteTest() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBoxWithoutSubmitting("lond");
         dealerLocatorPage.clickDisambiguationWithName("London, United Kingdom");
@@ -90,7 +90,7 @@ public class DealerLocatorTest {
     @Test
     public void filterServicesResultsTest() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("Braintree");
@@ -105,7 +105,7 @@ public class DealerLocatorTest {
     @Test
     public void filterDistanceResultsTest() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("Manchester");
         dealerLocatorPage.waitForResultsToBeDisplayed();
@@ -119,7 +119,7 @@ public class DealerLocatorTest {
 
     @Test
     public void dealerLocatorResponsiveComponentsTest() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
         assertThat(dealerLocatorPage.countNumberOfDesktopElementsVisible(), is(1));
@@ -141,7 +141,7 @@ public class DealerLocatorTest {
 
     @Test
     public void invalidLocationSearch() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("sfksdklsklsdf");
         assertThat(dealerLocatorPage.getErrorText(), is("Unable to find any locations"));
@@ -149,7 +149,7 @@ public class DealerLocatorTest {
 
     @Test
     public void showMoreDealersRevealsMore() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("London");
         dealerLocatorPage.waitForResultsToBeDisplayed();
@@ -161,7 +161,7 @@ public class DealerLocatorTest {
 
     @Test
     public void ukIslandsSearches() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("st helier");
         dealerLocatorPage.waitForResultsToBeDisplayed();
@@ -171,7 +171,7 @@ public class DealerLocatorTest {
 
     @Test
     public void fordStorePresearchFilter() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.selectMustangFilter();
         dealerLocatorPage.enterIntoInputBox("Birmingham");
@@ -182,7 +182,7 @@ public class DealerLocatorTest {
 
     @Test
     public void numberOfMapPinsAreCorrect() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.clickDealerRadioButton();
@@ -201,7 +201,7 @@ public class DealerLocatorTest {
 
     @Test
     public void pinExitButtonsPresentOnMapPopups() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.enterIntoInputBox("Swansea");
@@ -229,7 +229,7 @@ public class DealerLocatorTest {
     @Ignore
     @Test
     public void filterJourneyTest() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.clickFordStoreFilter();
         dealerLocatorPage.enterIntoInputBox("Birmingham");
@@ -251,7 +251,7 @@ public class DealerLocatorTest {
 
     @Test
     public void currentLocationSearch() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnAGermanDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.GERMAN);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onAMobileView();
         dealerLocatorPage.clickSearchGeoLocation();
@@ -272,9 +272,9 @@ public class DealerLocatorTest {
         assertThat(dealerLocatorPage.numberOfDealersWithServicesPresent("FordStore"), is(5));
 */
         // search Autohaus Dinnebier GmbH
-        // go to details page and see the services: "Neuwagen-HÃ¤ndler" and "Ford-Service" present
+        // go to details page and see the services: "Neuwagen-Händler" and "Ford-Service" present
         // Go to auto complete : Type "Autohaus Dinnebier GmbH"
-        // assert that "Neuwagen-HÃ¤ndler" and "Ford-Service" is present
+        // assert that "Neuwagen-Händler" and "Ford-Service" is present
 
 
         //UK search "Trust Ford - Bradford
@@ -285,7 +285,7 @@ public class DealerLocatorTest {
     @Test
     public void locationSearchForSpecificDealer() throws InterruptedException {
 
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAFrenchDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.FRENCH);
         dealerLocatorPage.waitForpageToLoad();
         dealerLocatorPage.onADesktopView();
         dealerLocatorPage.enterIntoInputBoxAndClickDisambiguation("37110");
@@ -296,7 +296,7 @@ public class DealerLocatorTest {
     }
     @Test
     public void vignaleTestNegative() throws InterruptedException {
-        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAUKDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage   = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.UK);
         assertThat(dealerLocatorPage.isPrefilterChecked(),is(false));
    }
 
@@ -333,18 +333,10 @@ public class DealerLocatorTest {
 
         //TODO
 /*
-
     Comma on distances
-
     closed time on norhern irelan closed on sunday
-
     Closing today at xx oclock feature
-
     click on map pin and centers map or changes map
-
-
-
-
     Test No. 298 : Location : 12051	: Dealer : UNICAR S.P.A.
             Fail
     No fail disambiguation on location search breaks it

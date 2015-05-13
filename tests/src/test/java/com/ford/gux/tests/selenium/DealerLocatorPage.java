@@ -335,23 +335,16 @@ public class DealerLocatorPage extends AbstractPage {
     }
 
 /*    public void setBrowserType() {
-
         this.driver = setInternetExplorerUserAgent();
     }
-
     private ChromeDriver setInternetExplorerUserAgent() {
-
         List<String> switchesList = new ArrayList<String>();
-
         switchesList.add("--User-Agent=Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)");
         switchesList.add("--Accept-Language=en-GB");
         switchesList.add("--disable-logging");
-
-
         ChromeOptions options = new ChromeOptions();
         options.addArguments(switchesList);
         return new ChromeDriver(options);
-
     }*/
 
 
@@ -476,7 +469,7 @@ public class DealerLocatorPage extends AbstractPage {
             if (driver.findElement(byResultsList).isDisplayed()) {
 
                 WebDriverAction action = new WebDriverAction() {
-                    @Override
+                   
                     public void perform() {
                         clickSubmit();
                     }
@@ -587,9 +580,7 @@ public class DealerLocatorPage extends AbstractPage {
         }catch(NoSuchElementException e){
             if(driver.findElement(By.cssSelector("input.custom-checkbox.ng-valid.ng-dirty")).isDisplayed()){
                 return false;
-
             }
-
         }
         return false;
     }*/
@@ -601,4 +592,3 @@ public class DealerLocatorPage extends AbstractPage {
 
     }
 }
-

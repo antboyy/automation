@@ -2,6 +2,7 @@ package com.ford.gux.tests.selenium;
 
 
 import com.ford.gux.tests.selenium.DealerDataSelenium.DealerData;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -33,7 +34,7 @@ public class DataRetest {
         String currentDealerLocality = "";
 
         DealerData dealerData = new DealerData("ES");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnASpanishDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage =  GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.SPANISH);
 
 
         dealerLocatorPage.waitForpageToLoad();
@@ -122,7 +123,7 @@ public class DataRetest {
         String currentDealerLocality = "";
 
         DealerData dealerData = new DealerData("ES");
-        DealerLocatorPage dealerLocatorPage = GIVEN.iamOnASpanishDealerLocatorPage();
+        DealerLocatorPage dealerLocatorPage  = GIVEN.iamOnAMarketDealerLocatorPage(LADMarket.SPANISH);
         dealerLocatorPage.onADesktopView();
 
 
